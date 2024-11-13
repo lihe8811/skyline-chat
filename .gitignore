@@ -10,7 +10,6 @@
 .env.local
 venv
 temp
-tmp
 
 # dependencies
 node_modules

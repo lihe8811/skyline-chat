@@ -1,5 +1,5 @@
 import { ActionIcon } from '@lobehub/ui';
-import { Compass, FolderClosed, MessageSquare } from 'lucide-react';
+import { Compass, FolderClosed, MessageSquare, Wallpaper } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,7 +17,7 @@ export interface TopActionProps {
 const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
   const { t } = useTranslation('common');
   const switchBackToChat = useGlobalStore((s) => s.switchBackToChat);
-  const { showMarket, enableKnowledgeBase } = useServerConfigStore(featureFlagsSelectors);
+  const { showImage, showMarket, enableKnowledgeBase } = useServerConfigStore(featureFlagsSelectors);
 
   return (
     <>
@@ -56,6 +56,17 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
             placement={'right'}
             size="large"
             title={t('tab.discover')}
+          />
+        </Link>
+      )}
+      {showImage && (
+        <Link aria-label={t('tab.image')} href={'/image'}>
+          <ActionIcon
+            active={tab === SidebarTabKey.Image}
+            icon={Wallpaper}
+            placement={'right'}
+            size="large"
+            title={t('tab.image')}
           />
         </Link>
       )}

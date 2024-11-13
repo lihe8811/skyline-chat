@@ -45,4 +45,17 @@ export default ({ token }: { prefixCls: string; token: Theme }) => css`
       background-color: transparent;
     }
   }
+
+  .alert-banner {
+    top: 10px;
+  }
+    
+  .canvas-modal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sketch-canvas {
+    overflow: hidden;
+  }
 `;

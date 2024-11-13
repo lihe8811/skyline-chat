@@ -28,6 +28,7 @@ export const FeatureFlagsSchema = z.object({
   clerk_sign_up: z.boolean().optional(),
 
   market: z.boolean().optional(),
+  image: z.boolean().optional(),
   knowledge_base: z.boolean().optional(),
 
   rag_eval: z.boolean().optional(),
@@ -71,6 +72,7 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
   cloud_promotion: false,
 
   market: false,
+  image: true,
   speech_to_text: true,
 
   // the flags below can only be used with commercial license
@@ -106,6 +108,7 @@ export const mapFeatureFlagsEnvToState = (config: IFeatureFlags) => {
     showCloudPromotion: config.cloud_promotion,
 
     showMarket: config.market,
+    showImage: config.image,
     enableSTT: config.speech_to_text,
 
     hideGitHub: config.commercial_hide_github,

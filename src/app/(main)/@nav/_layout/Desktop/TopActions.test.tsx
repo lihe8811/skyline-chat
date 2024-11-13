@@ -57,7 +57,7 @@ describe('TopActions', () => {
     renderTopActions();
 
     expect(screen.getByText('tab.chat')).toBeInTheDocument();
-    // expect(screen.getByText('tab.discover')).toBeInTheDocument();
+    expect(screen.getByText('tab.image')).toBeInTheDocument();
   });
 
   it('should render only Chat icon when `-market` is set', () => {
@@ -68,7 +68,7 @@ describe('TopActions', () => {
     renderTopActions();
 
     expect(screen.getByText('tab.chat')).toBeInTheDocument();
-    // expect(screen.queryByText('tab.discover')).not.toBeInTheDocument();
+    expect(screen.queryByText('tab.image')).not.toBeInTheDocument();
   });
 
   it('should render File icon when `-knowledge_base` is set', () => {
