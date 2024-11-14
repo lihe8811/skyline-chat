@@ -27,9 +27,9 @@ const ButtonWithCanvas = () => {
     canvasRef.current?.exportImage('png')
       .then((imageData) => {
         return fetch('/api/sketch', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({ imageData }),
+          headers: {'Content-Type': 'application/json'},
+          method: 'POST',
         });
       })
       .then((response) => {
@@ -56,9 +56,9 @@ const ButtonWithCanvas = () => {
   return (
     <>
       <Button 
-        type={'primary'}
         icon={<HighlightOutlined />}
         onClick={showModal}
+        type={'primary'}
       >
         Create
       </Button>
@@ -66,7 +66,7 @@ const ButtonWithCanvas = () => {
         className={'canvas-modal'}
         footer={<>
           <Button onClick={clearCanvas}>Clear</Button>
-          <Button type={'primary'} onClick={submitCanvas}>Save</Button>
+          <Button onClick={submitCanvas} type={'primary'}>Save</Button>
         </>}
         onCancel={cancelModal}
         open={isModalOpen}
@@ -74,12 +74,12 @@ const ButtonWithCanvas = () => {
       >
         <ReactSketchCanvas
           className={'sketch-canvas'}
-          width={'512px'} 
           height={'512px'} 
           ref={canvasRef}
-          style={canvasStyle}
-          strokeWidth={6} 
           strokeColor={'#000'} 
+          strokeWidth={6} 
+          style={canvasStyle}
+          width={'512px'} 
         />
       </Modal>
     </>

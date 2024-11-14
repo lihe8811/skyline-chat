@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-import { Buffer } from 'buffer';
+import fs from 'node:fs';
+import path from 'node:path';
+import { Buffer } from 'node:buffer';
 
 import getTimestamp from '@/utils/getTimestamp';
 
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     console.error(error);
     return NextResponse.json({ error: 'Failed to save image' }, { status: 500 });
   } 
-};
+}
 
 export async function DELETE(req: NextRequest) {
   const { imageUrl } = await req.json();
@@ -39,9 +39,9 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ error: 'Image URL is required' }, { status: 400 });
   }
 
-  const filePath = path.join(process.cwd(), 'public', imageUrl);
+  const filePath = path.join(process.cwd(), 'public', 'sketch', imageUrl);
   fs.unlink(filePath, (error) => {
     console.error('Error deleting file:', error);
     return NextResponse.json({ error: 'Error deleting file:' }, { status: 500 });
   });
-};
+}

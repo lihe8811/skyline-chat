@@ -21,9 +21,9 @@ const SketchTask: FormProps['items'] = [
     {
       children: (
         <Input
+          maxLength={500}  
           placeholder={'Type prompts...'}
           type={'ghost'}
-          maxLength={500}
         />
       ),
       desc: 'Type Prompt',

@@ -6,8 +6,15 @@ import React, { useState, useEffect } from 'react';
 
 import { useImageStore } from '@/store/image';
 import getDomainName from '@/utils/getDomainName';
-import { SketchSetting, TextToImageSetting, WordArtSetting } from '@/types/image';
-import { CreativeTask, SketchTask, TextToImageTask, WordArtTask } from '@/types/image';
+import { 
+  CreativeTask, 
+  SketchSetting, 
+  SketchTask, 
+  TextToImageSetting, 
+  TextToImageTask, 
+  WordArtSetting, 
+  WordArtTask 
+} from '@/types/image';
 
 const ImageTaskSelector: React.FC = () => {
   const { imageUrl, updateDisplayUrl } = useImageStore();
@@ -24,8 +31,8 @@ const ImageTaskSelector: React.FC = () => {
         const response = await fetch(`/api/gen-image/${taskId}`, {
           cache: 'no-store',
           headers: {
+            'Cache-Control': 'no-cache',
             'Pragma': 'no-cache',
-            'Cache-Control': 'no-cache'
           },
           next: { revalidate: 0 }
         });
@@ -93,7 +100,7 @@ const ImageTaskSelector: React.FC = () => {
     }
     
     const values = await form.validateFields();
-    if (Object.values(values).some(value => value === undefined)) {
+    if (Object.values(values).includes(undefined)) {
       setVisible(true);
     } else {
       setTaskId('');
@@ -101,9 +108,9 @@ const ImageTaskSelector: React.FC = () => {
       console.table(values);
       
       fetch('/api/gen-image', {
-        method: 'POST',
+        body: JSON.stringify(values),
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(values)
+        method: 'POST',
       }).then(response => {
         if (!response.ok) {
           throw new Error(response.statusText);
@@ -125,33 +132,27 @@ const ImageTaskSelector: React.FC = () => {
       }}
     >
       <Form
-        footer={
-          <>
-            <Button htmlType="submit" type="primary">Create</Button>
-          </>
-        }
+        footer={<Button htmlType="submit" type="primary">Create</Button>}
         form={form}
         initialValues={{...{task: taskType}, ...TextToImageSetting}}
-        onValuesChange={onValuesChange}
+        items={
+          (CreativeTask ?? []).map(item => item as ItemGroup)
+            .concat((taskParams ?? []).map(item => item as ItemGroup))
+        }
         itemMinWidth={'max(30%, 240px)'}
-        items={[
-          ...(CreativeTask ?? []).map(item => item as ItemGroup), 
-          ...(taskParams ?? []).map(item => item as ItemGroup),
-        ]}
         onFinish={onFinish}
+        onValuesChange={onValuesChange}
         variant={'default'}
       />
-      <>
-        { visible && (<Alert
-          className={'alert-banner'}
-          closable
-          afterClose={hideAlert}
-          description={'Empty input is not allowed'}
-          message={'Input Error'}
-          showIcon={true}
-          type={'error'}
-        />)}
-      </>
+      { visible && (<Alert
+        afterClose={hideAlert}
+        className={'alert-banner'}
+        closable
+        description={'Empty input is not allowed'}
+        message={'Input Error'}
+        showIcon={true}
+        type={'error'}
+      />)}
     </ConfigProvider>
   );
 };

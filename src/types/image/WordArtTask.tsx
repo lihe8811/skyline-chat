@@ -12,9 +12,9 @@ const WordArtTask: FormProps['items'] = [
     children: [{
       children: (
         <Input
+          maxLength={6}  
           placeholder={'No more than 6 characters'}
           type={'ghost'}
-          maxLength={6}
         />
       ),
       desc: 'Type Text (No more than 6 characters)',
@@ -24,9 +24,9 @@ const WordArtTask: FormProps['items'] = [
     {
       children: (
         <Input
+          maxLength={200}
           placeholder={'Type prompts...'}
           type={'ghost'}
-          maxLength={200}
         />
       ),
       desc: 'Type Prompt',
@@ -36,9 +36,8 @@ const WordArtTask: FormProps['items'] = [
     {
       children: (
         <SelectWithImg
+          defaultValue={WordArtSetting.wordartFont}  
           height={36}
-          width={48}
-          defaultValue={WordArtSetting.wordartFont}
           options={[
             { 
               img: 'https://www.shejidt.com/uploads/2023/02/01/1675214418_f2a44342f7925845.png',
@@ -61,6 +60,7 @@ const WordArtTask: FormProps['items'] = [
               value: 'logoti' 
             },
           ]}
+          width={48}
         />
       ),
       desc: 'Pick Text Font',

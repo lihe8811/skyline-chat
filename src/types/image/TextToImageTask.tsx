@@ -11,9 +11,9 @@ const TextToImageTask: FormProps['items'] = [
     children: [{
       children: (
         <Input
+          maxLength={500}  
           placeholder={'Type prompts...'}
           type={'ghost'}
-          maxLength={500}
         />
       ),
       desc: 'Type Prompt',
@@ -23,9 +23,9 @@ const TextToImageTask: FormProps['items'] = [
     {
       children: (
         <Input
+          maxLength={500}  
           placeholder={'Type prompts...'}
           type={'ghost'}
-          maxLength={500}
         />
       ),
       desc: 'Type Negative Prompt',

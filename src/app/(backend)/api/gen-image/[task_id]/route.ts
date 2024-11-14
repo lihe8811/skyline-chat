@@ -12,8 +12,8 @@ export async function GET(
 
   try {
     const response = await fetch(url, {
-      method: 'GET',
       headers: { 'Authorization': `Bearer ${apiKey}` },
+      method: 'GET',
     });
     if (!response.ok) {
       throw new Error(response.statusText);
@@ -23,12 +23,12 @@ export async function GET(
     console.log(data);
     if (data.output.task_status === 'SUCCEEDED') {
       return NextResponse.json({ 
-        task_status: data.output.task_status,
-        url: data.output.results[0].url,
         headers: {
           'Cache-Control': 'no-store, must-revalidate',
           'Pragma': 'no-cache',
         },
+        task_status: data.output.task_status,
+        url: data.output.results[0].url,
       });
     } else if (['SUSPENDED', 'FAILED', 'UNKNOWN'].includes(data.output.task_status)) {
       return NextResponse.json({ 
@@ -40,13 +40,13 @@ export async function GET(
       });
     } else {
       return NextResponse.json({ 
-        task_status: data.output.task_status,
-        total: data.output.task_metrics.TOTAL,
-        succeeded: data.output.task_metrics.SUCCEEDED,
         headers: {
           'Cache-Control': 'no-store, must-revalidate',
           'Pragma': 'no-cache',
         },
+        succeeded: data.output.task_metrics.SUCCEEDED,
+        task_status: data.output.task_status,
+        total: data.output.task_metrics.TOTAL,
       });
     }
   } catch(error) {
@@ -57,5 +57,5 @@ export async function GET(
         'Pragma': 'no-cache',
       },
     });
-  };
+  }
 }

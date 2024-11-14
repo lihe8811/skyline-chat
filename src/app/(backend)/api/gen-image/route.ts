@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export interface SubmissionData {
-  task: string;
   [key: string]: string;
+  task: string;
 }
 
 const baseUrl = 'https://dashscope.aliyuncs.com/api/v1/services/aigc';
@@ -21,33 +21,33 @@ export async function POST(req: NextRequest) {
     const url = `${baseUrl}${submitJobUrlMap.get(data.task)}`
     const body = data.task === 'sketch'
       ? {
-          'model': 'wanx-sketch-to-image-lite',
           'input': {
             'sketch_image_url': data.sketchImage,
             'prompt': data.sketchPrompt,
           },
+          'model': 'wanx-sketch-to-image-lite',
           'parameters': {
-            'style': data.sketchStyle,
-            'size': '768*768',
             'n': 1,
+            'size': '768*768',
+            'style': data.sketchStyle,
           }
         }
       : data.task === 'wordart'
         ? {
-            'model': 'wordart-texture',
             'input': {
+              'prompt': data.wordartPrompt,
               'text': {
-                'text_content': data.wordartText,
                 'font_name': data.wordartFont,
                 'output_image_ratio': '1:1',
+                'text_content': data.wordartText,
               },
-              'prompt': data.wordartPrompt,
               'texture_style': data.wordartStyle,
             },
+            'model': 'wordart-texture',
             'parameters': {
-              'image_short_size': 768,
+              'alpha_channel': false,
               'n': 1,
-              'alpha_channel': false
+              'image_short_size': 768,
             }
           }
         : {
@@ -56,27 +56,27 @@ export async function POST(req: NextRequest) {
               'prompt': data.regularPrompt,
             },
             'parameters': {
-              'style': data.regularStyle,
-              'size': '1024*1024',
               'n': 1,
-              'negative_prompt': data.regularNegativePrompt
+              'negative_prompt': data.regularNegativePrompt,
+              'size': '1024*1024',
+              'style': data.regularStyle,
             }
           }
-    return { url, body }
+    return { body, url }
   };
 
-  const { url, body } = processSubmission(data);
+  const { body, url } = processSubmission(data);
   console.log(url);
   console.log(body);
   try {
     const response = await fetch(url, {
-      method: 'POST',
+      body: JSON.stringify(body),
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
         'X-DashScope-Async': 'enable'
       },
-      body: JSON.stringify(body)
+      method: 'POST',
     });
     if (!response.ok) {
       throw new Error(response.statusText);
@@ -85,5 +85,5 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ task_id: data.output.task_id });
   } catch (error) {
     return NextResponse.json({ error: error });
-  };
+  }
 }
