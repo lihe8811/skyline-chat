@@ -6,7 +6,7 @@ export const TextToImageSetting = {
   regularStyle: '<photography>',
 }
 
-const TextToImageTask: FormProps['items'] = [
+export const TextToImageTask: FormProps['items'] = [
   {
     children: [{
       children: (
@@ -57,5 +57,3 @@ const TextToImageTask: FormProps['items'] = [
     title: '文字作画',
   },
 ];
-
-export default TextToImageTask;

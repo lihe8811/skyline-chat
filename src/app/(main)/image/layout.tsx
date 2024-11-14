@@ -5,7 +5,7 @@
 import { ChatHeader } from '@lobehub/ui';
 import { LobeHub } from '@lobehub/icons';
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 interface ImageLayoutProps {

@@ -7,7 +7,7 @@ export const WordArtSetting = {
   wordartStyle: 'material',
 }
 
-const WordArtTask: FormProps['items'] = [
+export const WordArtTask: FormProps['items'] = [
   {
     children: [{
       children: (
@@ -86,5 +86,3 @@ const WordArtTask: FormProps['items'] = [
     title: '艺术字',
   },
 ];
-
-export default WordArtTask;

@@ -2,7 +2,7 @@ import { type FormProps } from '@lobehub/ui';
 import { Select } from 'antd';
 import { Palette } from 'lucide-react';
 
-const CreativeTask: FormProps['items'] = [
+export const CreativeTask: FormProps['items'] = [
   {
     children: [{
       children: (
@@ -23,5 +23,3 @@ const CreativeTask: FormProps['items'] = [
     title: 'Creative Task',
   },
 ];
-
-export default CreativeTask;

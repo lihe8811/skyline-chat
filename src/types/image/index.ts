@@ -1,4 +1,4 @@
-export * from './CreativeTask';
-export * from './SketchTask';
-export * from './TextToImageTask';
-export * from './WordArtTask';
+export { CreativeTask } from './CreativeTask';
+export { SketchTask, SketchSetting } from './SketchTask';
+export { TextToImageTask, TextToImageSetting } from './TextToImageTask';
+export { WordArtTask, WordArtSetting } from './WordArtTask';

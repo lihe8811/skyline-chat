@@ -8,7 +8,7 @@ export const SketchSetting = {
   sketchStyle: '<anime>',
 }
 
-const SketchTask: FormProps['items'] = [
+export const SketchTask: FormProps['items'] = [
   {
     children: [{
       children: (
@@ -51,5 +51,3 @@ const SketchTask: FormProps['items'] = [
     title: '涂鸦作画',
   },
 ];
-
-export default SketchTask;
