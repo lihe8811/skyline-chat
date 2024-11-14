@@ -1,7 +1,8 @@
 'use client';
 
-import { Form, ItemGroup } from "@lobehub/ui";
+import { Form } from "@lobehub/ui";
 import { Alert, Button, ConfigProvider } from "antd";
+import type { Timeout } from 'node:globals';
 import React, { useState, useEffect } from 'react';
 
 import { useImageStore } from '@/store/image';
@@ -22,7 +23,7 @@ const ImageTaskSelector: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
   const [taskId, setTaskId] = useState<string>('');
   const [status, setStatus] = useState<string>('PENDING');
-  const [intervalId, setIntervalId] = useState<number>();
+  const [intervalId, setIntervalId] = useState<Timeout>();
   const [form] = Form.useForm();
 
   useEffect(() => {
@@ -136,10 +137,7 @@ const ImageTaskSelector: React.FC = () => {
         form={form}
         initialValues={{ task: taskType, ...TextToImageSetting }}
         itemMinWidth={'max(30%, 240px)'}
-        items={[
-          (CreativeTask ?? []).map(item => item as ItemGroup),
-          ...(taskParams ?? []).map(item => item as ItemGroup)
-        ]}
+        items={[(CreativeTask ?? []), ...(taskParams ?? [])]}
         onFinish={onFinish}
         onValuesChange={onValuesChange}
         variant={'default'}
