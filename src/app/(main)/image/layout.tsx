@@ -8,12 +8,13 @@ import Link from 'next/link';
 import React, { ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-interface ImageLayoutProps {
-  children: ReactNode;
-  nav: ReactNode;
-}
-
-export default function ImageLayout({ children, nav }: ImageLayoutProps) {
+export default function ImageLayout({
+  children, 
+  nav 
+}: {
+  children: ReactNode,
+  nav: ReactNode
+}) {
   return (
     <Flexbox
       height={'100%'}
