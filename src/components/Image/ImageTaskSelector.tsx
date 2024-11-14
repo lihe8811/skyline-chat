@@ -134,12 +134,12 @@ const ImageTaskSelector: React.FC = () => {
       <Form
         footer={<Button htmlType="submit" type="primary">Create</Button>}
         form={form}
-        initialValues={{...{task: taskType}, ...TextToImageSetting}}
-        items={
-          (CreativeTask ?? []).map(item => item as ItemGroup)
-            .concat((taskParams ?? []).map(item => item as ItemGroup))
-        }
+        initialValues={{ task: taskType, ...TextToImageSetting }}
         itemMinWidth={'max(30%, 240px)'}
+        items={[
+          (CreativeTask ?? []).map(item => item as ItemGroup),
+          ...(taskParams ?? []).map(item => item as ItemGroup)
+        ]}
         onFinish={onFinish}
         onValuesChange={onValuesChange}
         variant={'default'}

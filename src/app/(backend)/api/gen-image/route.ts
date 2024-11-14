@@ -22,8 +22,8 @@ export async function POST(req: NextRequest) {
     const body = data.task === 'sketch'
       ? {
           'input': {
-            'sketch_image_url': data.sketchImage,
             'prompt': data.sketchPrompt,
+            'sketch_image_url': data.sketchImage,
           },
           'model': 'wanx-sketch-to-image-lite',
           'parameters': {
@@ -46,15 +46,15 @@ export async function POST(req: NextRequest) {
             'model': 'wordart-texture',
             'parameters': {
               'alpha_channel': false,
-              'n': 1,
               'image_short_size': 768,
+              'n': 1,
             }
           }
         : {
-            'model': 'wanx-v1',
             'input': {
               'prompt': data.regularPrompt,
             },
+            'model': 'wanx-v1',
             'parameters': {
               'n': 1,
               'negative_prompt': data.regularNegativePrompt,
