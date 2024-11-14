@@ -5,9 +5,10 @@
 import { ChatHeader } from '@lobehub/ui';
 import { LobeHub } from '@lobehub/icons';
 import Link from 'next/link';
+import React, { ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-export default function ImageLayout({ children }) {
+export default function ImageLayout({ children }: { children: ReactNode }) {
   return (
     <Flexbox
       height={'100%'}
