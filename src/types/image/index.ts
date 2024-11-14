@@ -1,4 +1,4 @@
 export { CreativeTask } from './CreativeTask';
-export { SketchTask, SketchSetting } from './SketchTask';
-export { TextToImageTask, TextToImageSetting } from './TextToImageTask';
-export { WordArtTask, WordArtSetting } from './WordArtTask';
+export { SketchSetting, SketchTask,  } from './SketchTask';
+export { TextToImageSetting, TextToImageTask } from './TextToImageTask';
+export { WordArtSetting, WordArtTask } from './WordArtTask';
