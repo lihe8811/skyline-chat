@@ -139,8 +139,8 @@ const ImageTaskSelector: React.FC = () => {
         initialValues={{ task: taskType, ...TextToImageSetting }}
         itemMinWidth={'max(30%, 240px)'}
         items={[
-          (CreativeTask ?? []).map(item => item as ItemGroup), 
-          ...(taskParams ?? []).map(item => item as ItemGroup)]}
+          ...((CreativeTask ?? []) as ItemGroup[]), 
+          ...((taskParams ?? []) as ItemGroup[])]}
         onFinish={onFinish}
         onValuesChange={onValuesChange}
         variant={'default'}
