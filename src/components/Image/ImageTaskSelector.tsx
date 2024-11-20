@@ -16,13 +16,14 @@ import {
   WordArtTask 
 } from '@/types/image';
 
+
 const ImageTaskSelector: React.FC = () => {
   const { imageUrl, updateDisplayUrl } = useImageStore();
   const [taskType, setTaskType] = useState<string>('text-to-image');
   const [visible, setVisible] = useState<boolean>(false);
   const [taskId, setTaskId] = useState<string>('');
   const [status, setStatus] = useState<string>('PENDING');
-  const [intervalId, setIntervalId] = useState<Timer>();
+  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval>>();
   const [form] = Form.useForm();
 
   useEffect(() => {
