@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use client';
 
 import { Form, ItemGroup } from "@lobehub/ui";
