@@ -18,7 +18,7 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
-    "types": ["vitest/globals", "@serwist/next/typings", "node"],
+    "types": ["vitest/globals", "@serwist/next/typings", "@types/bun"],
     "paths": {
       "@/*": ["./src/*"],
       "~test-utils": ["./tests/utils.tsx"]

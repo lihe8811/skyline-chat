@@ -23,7 +23,7 @@ const ImageTaskSelector: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
   const [taskId, setTaskId] = useState<string>('');
   const [status, setStatus] = useState<string>('PENDING');
-  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval>>();
+  const [intervalId, setIntervalId] = useState<Timer>();
   const [form] = Form.useForm();
 
   useEffect(() => {
