@@ -200,7 +200,7 @@ class DataSync {
 
     // 定义一个变量来保存定时器的ID
     // eslint-disable-next-line no-undef
-    let debounceTimer: NodeJS.Timeout;
+    let debounceTimer: ReturnType<typeof setTimeout>;
 
     yItemMap?.observe(async (event) => {
       // abort local change
