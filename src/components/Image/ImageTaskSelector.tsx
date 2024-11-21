@@ -6,7 +6,6 @@ import { Alert, Button, ConfigProvider } from "antd";
 import React, { useState, useEffect } from 'react';
 
 import { useImageStore } from '@/store/image';
-import getDomainName from '@/utils/getDomainName';
 import { 
   CreativeTask, 
   SketchSetting, 
@@ -56,7 +55,7 @@ const ImageTaskSelector: React.FC = () => {
       }
     };
     
-    if (taskId && taskId !== '') {
+    if (taskId && taskId !== '' && status !== 'SUCCEEDED') {
       const id = setInterval(fetchTaskStatus, 7500);
       setIntervalId(id);
       fetchTaskStatus();
@@ -82,7 +81,7 @@ const ImageTaskSelector: React.FC = () => {
   const onValuesChange = ({ task }: { task: string }) => {
     if (task !== undefined) {
       setTaskType(task);
-      updateDisplayUrl('/palceholder-square.png');
+      updateDisplayUrl('/placeholder-square.png');
 
       const taskSetting = task === 'sketch'
         ? SketchSetting
@@ -97,7 +96,9 @@ const ImageTaskSelector: React.FC = () => {
   const onFinish = async () => {
     if (taskType === 'sketch') {
       form.setFieldsValue({
-        sketchImage: `http://${getDomainName()}${imageUrl}`
+        // Follow Vercel Documentation 
+        // https://vercel.com/docs/projects/environment-variables/system-environment-variables
+        sketchImage: `http://${process.env.VERCEL_PROJECT_PRODUCTION_URL}${imageUrl}`
       });
     }
     
@@ -106,6 +107,7 @@ const ImageTaskSelector: React.FC = () => {
       setVisible(true);
     } else {
       setTaskId('');
+      setStatus('PENDING');
       updateDisplayUrl('/placeholder-loading.gif');
       console.table(values);
       
@@ -127,6 +129,12 @@ const ImageTaskSelector: React.FC = () => {
     }
   }
 
+  const reset = () => {
+    setTaskId('');
+    setStatus('PENDING');
+    console.log('Successfully reset');
+  }
+
   return (
     <ConfigProvider
       theme={{
@@ -134,7 +142,7 @@ const ImageTaskSelector: React.FC = () => {
       }}
     >
       <Form
-        footer={<Button htmlType="submit" type="primary">Create</Button>}
+        footer={<Button htmlType="submit" onClick={reset} type="primary">Create</Button>}
         form={form}
         initialValues={{ task: taskType, ...TextToImageSetting }}
         itemMinWidth={'max(30%, 240px)'}
