@@ -16,6 +16,7 @@ export const config = {
     '/settings(.*)',
     '/files(.*)',
     '/repos(.*)',
+    '/image(.*)',
     // ↓ cloud ↓
   ],
 };
