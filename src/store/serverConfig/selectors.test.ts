@@ -23,7 +23,7 @@ describe('featureFlagsSelectors', () => {
       showCreateSession: true,
       showChangelog: true,
       enableRAGEval: false,
-      showDalle: true,
+      showDalle: false,
       enableKnowledgeBase: true,
       showLLM: false,
       showCloudPromotion: false,
@@ -35,7 +35,7 @@ describe('featureFlagsSelectors', () => {
       showWelcomeSuggest: true,
       enableClerkSignUp: true,
       showProvider: true,
-      showMarket: true,
+      showMarket: false,
       showPinList: false,
       enableSTT: true,
     });
