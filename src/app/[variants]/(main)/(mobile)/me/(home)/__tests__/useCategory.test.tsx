@@ -62,7 +62,7 @@ describe('useCategory', () => {
       expect(items.some((item) => item.key === 'data')).toBe(true);
       expect(items.some((item) => item.key === 'docs')).toBe(false);
       expect(items.some((item) => item.key === 'feedback')).toBe(false);
-      expect(items.some((item) => item.key === 'changelog')).toBe(true);
+      expect(items.some((item) => item.key === 'changelog')).toBe(false);
     });
   });
 
@@ -81,7 +81,7 @@ describe('useCategory', () => {
       expect(items.some((item) => item.key === 'data')).toBe(false);
       expect(items.some((item) => item.key === 'docs')).toBe(false);
       expect(items.some((item) => item.key === 'feedback')).toBe(false);
-      expect(items.some((item) => item.key === 'changelog')).toBe(true);
+      expect(items.some((item) => item.key === 'changelog')).toBe(false);
     });
   });
 
