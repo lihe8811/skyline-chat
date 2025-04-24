@@ -60,7 +60,7 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
   edit_agent: true,
 
   plugins: true,
-  dalle: false,
+  dalle: true,
 
   check_updates: true,
   welcome_suggest: true,

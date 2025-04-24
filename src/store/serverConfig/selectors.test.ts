@@ -23,7 +23,7 @@ describe('featureFlagsSelectors', () => {
       showCreateSession: true,
       showChangelog: true,
       enableRAGEval: false,
-      showDalle: false,
+      showDalle: true,
       enableKnowledgeBase: true,
       showLLM: false,
       showCloudPromotion: false,
