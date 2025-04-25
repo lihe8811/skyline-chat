@@ -10,29 +10,20 @@ interface EditModeProps extends DallEImageItem {
   setEdit: (edit: boolean) => void;
 }
 
-const EditMode = memo<EditModeProps>(({ prompt, setEdit, style, size, quality }) => {
+const EditMode = memo<EditModeProps>(({ prompt, setEdit, size, quality }) => {
   const { t } = useTranslation('tool');
 
   return (
     <Flexbox gap={16}>
       <TextArea style={{ minHeight: 120 }} type={'block'} value={prompt} />
       <Flexbox horizontal justify={'space-between'}>
-        风格
-        <Radio.Group
-          defaultValue={style}
-          options={[
-            { label: 'vivid', value: 'vivid' },
-            { label: 'natural', value: 'natural' },
-          ]}
-        />
-      </Flexbox>
-      <Flexbox horizontal justify={'space-between'}>
         质量
         <Radio.Group
           defaultValue={quality}
           options={[
-            { label: 'standard', value: 'standard' },
-            { label: 'hd', value: 'hd' },
+            { label: 'high', value: 'high' },
+            { label: 'low', value: 'low' },
+            { label: 'medium', value: 'medium' },
           ]}
         />
       </Flexbox>
@@ -41,9 +32,9 @@ const EditMode = memo<EditModeProps>(({ prompt, setEdit, style, size, quality })
         <Select
           defaultValue={size}
           options={[
-            { label: '1792x1024', value: '1792x1024' },
+            { label: '1536x1024', value: '1536x1024' },
             { label: '1024x1024', value: '1024x1024' },
-            { label: '1024x1792', value: '1024x1792' },
+            { label: '1024x1536', value: '1024x1536' },
           ]}
           size={'small'}
         />

@@ -34,7 +34,7 @@ const useStyles = createStyles(({ css, token, prefixCls }) => ({
 }));
 
 const ImageItem = memo<DallEImageItem & { index: number; messageId: string }>(
-  ({ prompt, messageId, imageId, previewUrl, index, style, size, quality }) => {
+  ({ prompt, messageId, imageId, previewUrl, index, size, quality }) => {
     const { t } = useTranslation('tool');
     const { styles } = useStyles();
 
@@ -50,7 +50,6 @@ const ImageItem = memo<DallEImageItem & { index: number; messageId: string }>(
             quality={quality}
             setEdit={setEdit}
             size={size}
-            style={style}
           />
         </Flexbox>
       );

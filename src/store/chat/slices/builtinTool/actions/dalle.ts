@@ -71,7 +71,7 @@ export const dalleSlice: StateCreator<
       if (!data) return;
 
       await updateImageItem(messageId, (draft) => {
-        draft[index].imageId = data.id;
+        draft[index].imageId = `${originPrompt || params.prompt}_${index}.png`;
         draft[index].previewUrl = undefined;
       });
     });
