@@ -40,6 +40,7 @@ export const CHAT_MODELS_BLOCK_LIST = [
   'tts',
   'whisper',
   'dall-e',
+  'gpt-image-1',
 ];
 
 type ConstructorOptions<T extends Record<string, any> = any> = ClientOptions & T;

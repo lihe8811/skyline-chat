@@ -8,7 +8,7 @@ import { ToolStore } from '../../store';
 
 const n = setNamespace('builtinTool');
 
-interface Text2ImageParams extends Pick<OpenAIImagePayload, 'quality' | 'style' | 'size'> {
+interface Text2ImageParams extends Pick<OpenAIImagePayload, 'quality' | 'size'> {
   prompts: string[];
 }
 
@@ -27,8 +27,8 @@ export const createBuiltinToolSlice: StateCreator<
   [],
   BuiltinToolAction
 > = (set, get) => ({
-  text2image: ({ prompts, size = '1024x1024' as const, quality = 'standard', style = 'vivid' }) =>
-    prompts.map((p) => ({ prompt: p, quality, size, style })),
+  text2image: ({ prompts, size = '1024x1024' as const, quality = 'medium'}) =>
+    prompts.map((p) => ({ prompt: p, quality, size })),
   toggleBuiltinToolLoading: (key, value) => {
     set({ builtinToolLoading: { [key]: value } }, false, n('toggleBuiltinToolLoading'));
   },

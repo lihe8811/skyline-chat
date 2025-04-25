@@ -570,7 +570,20 @@ export const openaiSTTModels: AISTTModelCard[] = [
 export const openaiImageModels: AIText2ImageModelCard[] = [
   {
     description:
-      '最新的 DALL·E 模型，于2023年11月发布。支持更真实、准确的图像生成，具有更强的细节表现力',
+      '最新的 GPT-4o 原生多模态图像生成模型，于2025年3月发布。能够根据文本或图像输入，生成高质量、精确且富有表现力的图像',
+    displayName: 'GPT 4o',
+    id: 'gpt-image-1',
+    pricing: {
+      high: 0.17,
+      low: 0.01,
+      medium: 0.04,
+    },
+    resolutions: ['1024x1024', '1024x1536', '1536x1024'],
+    type: 'image',
+  },
+  {
+    description:
+      '第三代 DALL·E 模型，于2023年11月发布。支持更真实、准确的图像生成，具有更强的细节表现力',
     displayName: 'DALL·E 3',
     id: 'dall-e-3',
     pricing: {

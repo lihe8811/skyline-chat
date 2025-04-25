@@ -13,7 +13,7 @@ class ImageGenerationService {
     params: Omit<OpenAIImagePayload, 'model' | 'n'>,
     options?: FetchOptions,
   ) => {
-    const payload: OpenAIImagePayload = { ...params, model: 'dall-e-3', n: 1 };
+    const payload: OpenAIImagePayload = { ...params, model: 'gpt-image-1', n: 1 };
 
     const provider = ModelProvider.OpenAI;
 
@@ -32,9 +32,9 @@ class ImageGenerationService {
       throw await res.json();
     }
 
-    const urls = await res.json();
+    const data = await res.json();
 
-    return urls[0] as string;
+    return data[0]["b64_json"] as string;
   };
 }
 

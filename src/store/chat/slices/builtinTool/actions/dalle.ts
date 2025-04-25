@@ -9,7 +9,6 @@ import { imageGenerationService } from '@/services/textToImage';
 import { uploadService } from '@/services/upload';
 import { chatSelectors } from '@/store/chat/selectors';
 import { ChatStore } from '@/store/chat/store';
-import { useFileStore } from '@/store/file';
 import { DallEImageItem } from '@/types/tool/dalle';
 
 
@@ -48,9 +47,9 @@ export const dalleSlice: StateCreator<
     await pMap(items, async (params, index) => {
       toggleDallEImageLoading(messageId + params.prompt, true);
 
-      let url = '';
+      let base64 = '';
       try {
-        url = await imageGenerationService.generateImage(params);
+        base64 = await imageGenerationService.generateImage(params);
       } catch (e) {
         toggleDallEImageLoading(messageId + params.prompt, false);
         errorArray[index] = e;
@@ -58,21 +57,16 @@ export const dalleSlice: StateCreator<
         await get().updatePluginState(messageId, { error: errorArray });
       }
 
-      if (!url) return;
+      if (!base64) return;
 
       await updateImageItem(messageId, (draft) => {
-        draft[index].previewUrl = url;
+        draft[index].base64 = base64;
       });
 
       toggleDallEImageLoading(messageId + params.prompt, false);
-      const imageFile = await uploadService.getImageFileByUrlWithCORS(
-        url,
-        `${originPrompt || params.prompt}_${index}.png`,
-      );
+      const imageFile = uploadService.base64ToFile(base64, `${originPrompt || params.prompt}_${index}.png`);
 
-      const data = await useFileStore.getState().uploadWithProgress({
-        file: imageFile,
-      });
+      const data = await uploadService.uploadFileToS3(imageFile);
 
       if (!data) return;
 
@@ -82,6 +76,7 @@ export const dalleSlice: StateCreator<
       });
     });
   },
+
   text2image: async (id, data) => {
     // const isAutoGen = settingsSelectors.isDalleAutoGenerating(useGlobalStore.getState());
     // if (!isAutoGen) return;
