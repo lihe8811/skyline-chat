@@ -57,8 +57,10 @@ export const POST = checkAuth(async (req: Request, { params, jwtPayload }) => {
     // ============  2. create chat completion   ============ //
 
     const data = (await req.json()) as TextToImagePayload;
+    console.log(data);
 
     const images = await agentRuntime.textToImage(data);
+    console.log(images);
 
     return NextResponse.json(images);
   } catch (e) {

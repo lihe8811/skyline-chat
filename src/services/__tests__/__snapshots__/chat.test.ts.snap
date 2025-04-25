@@ -6,7 +6,7 @@ exports[`ChatService > createAssistantMessage > with tools messages > work with 
   "messages": [
     {
       "content": "<plugins description="The plugins you can use below">
-<collection name="DALL·E 3">
+<collection name="GPT Image">
 <collection.instructions>Whenever a description of an image is given, use lobe-image-designer to create the images and then summarize the prompts used to generate the images in plain text. If the user does not ask for a specific number of images, default to creating four captions to send to lobe-image-designer that are written to be as diverse as possible.
 
   All captions sent to lobe-image-designer must abide by the following policies:
