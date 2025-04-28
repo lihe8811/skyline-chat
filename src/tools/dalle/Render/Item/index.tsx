@@ -67,7 +67,7 @@ const ImageItem = memo<DallEImageItem & { index: number; messageId: string }>(
           <Flexbox gap={12}>
             <Flexbox>
               <Highlighter
-                copyButtonSize={'small'}
+                actionIconSize={'small'}
                 fileName={t('dalle.prompt')}
                 fullFeatured
                 language={'prompt'}
