@@ -63,14 +63,14 @@ export const dalleSlice: StateCreator<
 
       toggleDallEImageLoading(messageId + params.prompt, false);
 
-      const data = await uploadService.uploadBase64ToS3(`data:image/png;base64,${base64}`);
-      console.log(data);
+      const { metadata } = await uploadService.uploadBase64ToS3(base64);
+      console.log(metadata);
 
-      if (!data) return;
+      if (!metadata) return;
 
       await updateImageItem(messageId, (draft) => {
-        draft[index].imageId = `${originPrompt || params.prompt}_${index}.png`;
-        draft[index].previewUrl = undefined;
+        draft[index].imageId = metadata.path;
+        draft[index].previewUrl = metadata.path;
       });
     });
   },
