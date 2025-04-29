@@ -48,7 +48,6 @@ export const dalleSlice: StateCreator<
       let base64 = '';
       try {
         base64 = await imageGenerationService.generateImage(params);
-        console.log(base64);
       } catch (e) {
         toggleDallEImageLoading(messageId + params.prompt, false);
         errorArray[index] = e;
@@ -63,9 +62,9 @@ export const dalleSlice: StateCreator<
       });
 
       toggleDallEImageLoading(messageId + params.prompt, false);
-      const imageFile = uploadService.base64ToFile(base64, `${originPrompt || params.prompt}_${index}.png`);
 
-      const data = await uploadService.uploadFileToS3(imageFile);
+      const data = await uploadService.uploadBase64ToS3(base64);
+      console.log(data);
 
       if (!data) return;
 

@@ -41,16 +41,6 @@ class UploadService {
     }
   };
 
-  public base64ToFile = (base64: string, filename: string, type = 'image/png'): File => {
-    const byteString = atob(base64.split(',')[1]);
-    const buffer = new ArrayBuffer(byteString.length);
-    const data = new Uint8Array(buffer);
-    for (let i = 0; i < byteString.length; i++) {
-      data[i] = byteString.charCodeAt(i);
-    }
-    return new File([data], filename, { lastModified: Date.now(), type });
-  };
-
   uploadBase64ToS3 = async (
     base64Data: string,
     options: UploadFileToS3Options = {},
