@@ -59,7 +59,6 @@ export const POST = checkAuth(async (req: Request, { params, jwtPayload }) => {
     const data = (await req.json()) as TextToImagePayload;
 
     const images = await agentRuntime.textToImage(data);
-    console.log(NextResponse.json(images));
 
     return NextResponse.json(images);
   } catch (e) {
