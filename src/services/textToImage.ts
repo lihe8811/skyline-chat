@@ -33,6 +33,7 @@ class ImageGenerationService {
     }
 
     const data = await res.json();
+    console.log(data);
 
     return data[0]["b64_json"] as string;
   };
