@@ -61,7 +61,7 @@ export const dalleSlice: StateCreator<
 
       toggleDallEImageLoading(messageId + params.prompt, false);
 
-      const { metadata } = await uploadService.uploadBase64ToS3(base64);
+      const { metadata } = await uploadService.uploadBase64ToS3(`data:image/png;base64,${base64}`);
       console.log(metadata);
 
       if (!metadata) return;
