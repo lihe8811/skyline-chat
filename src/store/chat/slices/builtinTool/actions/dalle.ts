@@ -57,6 +57,8 @@ export const dalleSlice: StateCreator<
 
       if (!base64) return;
 
+      console.log(base64);
+
       await updateImageItem(messageId, (draft) => {
         draft[index].base64 = base64;
       });

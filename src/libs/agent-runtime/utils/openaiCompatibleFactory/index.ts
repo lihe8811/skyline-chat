@@ -355,7 +355,6 @@ export const LobeOpenAICompatibleFactory = <T extends Record<string, any> = any>
     async textToImage(payload: TextToImagePayload) {
       try {
         const res = await this.client.images.generate(payload);
-        console.log(res);
         return (res.data || []).map((o) => o.b64_json) as string[];
       } catch (error) {
         throw this.handleError(error);
