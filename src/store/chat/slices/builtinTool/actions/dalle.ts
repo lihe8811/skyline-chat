@@ -38,8 +38,6 @@ export const dalleSlice: StateCreator<
     const message = getMessageById(messageId);
     if (!message) return;
 
-    const parent = getMessageById(message!.parentId!);
-    const originPrompt = parent?.content;
     let errorArray: any[] = [];
 
     await pMap(items, async (params, index) => {
@@ -70,7 +68,7 @@ export const dalleSlice: StateCreator<
 
       await updateImageItem(messageId, (draft) => {
         draft[index].imageId = metadata.path;
-        draft[index].previewUrl = metadata.path;
+        draft[index].previewUrl = undefined;
       });
     });
   },
