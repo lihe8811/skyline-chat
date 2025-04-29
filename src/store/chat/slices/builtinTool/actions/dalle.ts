@@ -48,6 +48,7 @@ export const dalleSlice: StateCreator<
       let base64 = '';
       try {
         base64 = await imageGenerationService.generateImage(params);
+        console.log(base64);
       } catch (e) {
         toggleDallEImageLoading(messageId + params.prompt, false);
         errorArray[index] = e;
@@ -56,8 +57,6 @@ export const dalleSlice: StateCreator<
       }
 
       if (!base64) return;
-
-      console.log(base64);
 
       await updateImageItem(messageId, (draft) => {
         draft[index].base64 = base64;
