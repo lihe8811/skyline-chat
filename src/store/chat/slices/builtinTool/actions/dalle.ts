@@ -6,7 +6,7 @@ import { StateCreator } from 'zustand/vanilla';
 import { useClientDataSWR } from '@/libs/swr';
 import { fileService } from '@/services/file';
 import { imageGenerationService } from '@/services/textToImage';
-import { uploadService } from '@/services/upload';
+import { getFileStoreState } from '@/store/file/store';
 import { chatSelectors } from '@/store/chat/selectors';
 import { ChatStore } from '@/store/chat/store';
 import { DallEImageItem } from '@/types/tool/dalle';
@@ -61,13 +61,13 @@ export const dalleSlice: StateCreator<
 
       toggleDallEImageLoading(messageId + params.prompt, false);
 
-      const { metadata } = await uploadService.uploadBase64ToS3(`data:image/png;base64,${base64}`);
-      console.log(metadata);
+      const data = await getFileStoreState().uploadBase64FileWithProgress(`data:image/png;base64,${base64}`);
+      console.log(data);
 
-      if (!metadata) return;
+      if (!data) return;
 
       await updateImageItem(messageId, (draft) => {
-        draft[index].imageId = metadata.filename;
+        draft[index].imageId = data.id;
         draft[index].previewUrl = undefined;
       });
     });
