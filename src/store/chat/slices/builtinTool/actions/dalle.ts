@@ -67,7 +67,7 @@ export const dalleSlice: StateCreator<
       if (!metadata) return;
 
       await updateImageItem(messageId, (draft) => {
-        draft[index].imageId = metadata.path;
+        draft[index].imageId = metadata.filename;
         draft[index].previewUrl = undefined;
       });
     });

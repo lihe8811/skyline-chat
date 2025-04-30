@@ -666,7 +666,6 @@ export const generateAIChat: StateCreator<
                 alt: value?.filename || value?.id,
               }));
 
-            console.log(image.id);
             uploadTasks.set(image.id, task);
 
             break;
