@@ -62,7 +62,6 @@ export const dalleSlice: StateCreator<
       toggleDallEImageLoading(messageId + params.prompt, false);
 
       const data = await getFileStoreState().uploadBase64FileWithProgress(`data:image/png;base64,${base64}`);
-      console.log(data);
 
       if (!data) return;
 
