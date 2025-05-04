@@ -40,7 +40,6 @@ export const dalleSlice: StateCreator<
 
     let errorArray: any[] = [];
 
-    console.log(items);
     await pMap(items, async (params, index) => {
       toggleDallEImageLoading(messageId + params.prompt, true);
 
