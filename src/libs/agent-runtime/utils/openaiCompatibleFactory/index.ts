@@ -360,7 +360,6 @@ export const LobeOpenAICompatibleFactory = <T extends Record<string, any> = any>
 
     async textToImage(payload: TextToImagePayload) {
       try {
-        console.log(payload);
         const res = await this.client.images.generate(payload);
         return (res.data || []).map((o) => o.b64_json) as string[];
       } catch (error) {
