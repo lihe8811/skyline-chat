@@ -442,6 +442,8 @@ export const generateAIChat: StateCreator<
     }
 
     // 4. fetch the AI response
+    console.log(messages);
+    console.log(params);
     const { isFunctionCall } = await internal_fetchAIChatMessage({
       messages,
       messageId: assistantId,
@@ -495,7 +497,6 @@ export const generateAIChat: StateCreator<
     const agentConfig = agentSelectors.currentAgentConfig(getAgentStoreState());
     console.log(agentConfig);
     const chatConfig = agentChatConfigSelectors.currentChatConfig(getAgentStoreState());
-    console.log(chatConfig);
 
     const compiler = template(chatConfig.inputTemplate, { interpolate: /{{([\S\s]+?)}}/g });
 
