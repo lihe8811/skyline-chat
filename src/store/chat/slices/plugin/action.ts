@@ -508,7 +508,6 @@ export const chatPlugin: StateCreator<
           identifier,
           type: (type ?? 'default') as any,
         };
-        console.log(payload);
 
         // if the apiName is md5, try to find the correct apiName in the plugins
         if (apiName.startsWith(PLUGIN_SCHEMA_API_MD5_PREFIX)) {
