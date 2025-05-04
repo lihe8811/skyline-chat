@@ -553,7 +553,6 @@ export const generateAIChat: StateCreator<
     const uploadTasks: Map<string, Promise<{ id?: string; url?: string }>> = new Map();
 
     const historySummary = topicSelectors.currentActiveTopicSummary(get());
-    console.log(preprocessMsgs);
     await chatService.createAssistantMessageStream({
       abortController,
       params: {
