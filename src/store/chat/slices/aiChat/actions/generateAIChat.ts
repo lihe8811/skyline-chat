@@ -442,8 +442,6 @@ export const generateAIChat: StateCreator<
     }
 
     // 4. fetch the AI response
-    console.log(messages);
-    console.log(params);
     const { isFunctionCall } = await internal_fetchAIChatMessage({
       messages,
       messageId: assistantId,
@@ -619,6 +617,7 @@ export const generateAIChat: StateCreator<
         }
 
         // update the content after fetch result
+        console.log(content);
         await internal_updateMessageContent(messageId, content, {
           toolCalls: parsedToolCalls,
           reasoning: !!reasoning ? { ...reasoning, duration } : undefined,
