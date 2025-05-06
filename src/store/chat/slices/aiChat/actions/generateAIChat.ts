@@ -604,6 +604,7 @@ export const generateAIChat: StateCreator<
         }
 
         let parsedToolCalls = toolCalls;
+        console.log(parsedToolCalls);
         if (parsedToolCalls && parsedToolCalls.length > 0) {
           internal_toggleToolCallingStreaming(messageId, undefined);
           parsedToolCalls = parsedToolCalls.map((item) => ({
