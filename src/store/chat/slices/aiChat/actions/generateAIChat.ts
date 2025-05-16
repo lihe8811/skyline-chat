@@ -494,7 +494,6 @@ export const generateAIChat: StateCreator<
 
     const agentConfig = agentSelectors.currentAgentConfig(getAgentStoreState());
     const chatConfig = agentChatConfigSelectors.currentChatConfig(getAgentStoreState());
-    console.log(chatConfig.inputTemplate);
 
     const compiler = template(chatConfig.inputTemplate, { interpolate: /{{([\S\s]+?)}}/g });
 
@@ -619,7 +618,6 @@ export const generateAIChat: StateCreator<
         }
 
         // update the content after fetch result
-        console.log(content);
         await internal_updateMessageContent(messageId, content, {
           toolCalls: parsedToolCalls,
           reasoning: !!reasoning ? { ...reasoning, duration } : undefined,
