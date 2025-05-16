@@ -493,8 +493,8 @@ export const generateAIChat: StateCreator<
     );
 
     const agentConfig = agentSelectors.currentAgentConfig(getAgentStoreState());
-    console.log(agentConfig);
     const chatConfig = agentChatConfigSelectors.currentChatConfig(getAgentStoreState());
+    console.log(chatConfig.inputTemplate);
 
     const compiler = template(chatConfig.inputTemplate, { interpolate: /{{([\S\s]+?)}}/g });
 
@@ -528,6 +528,7 @@ export const generateAIChat: StateCreator<
 
           return m;
         });
+    console.log(preprocessMsgs);
 
     // 3. add systemRole
     if (agentConfig.systemRole) {
