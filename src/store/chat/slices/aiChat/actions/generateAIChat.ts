@@ -603,18 +603,24 @@ export const generateAIChat: StateCreator<
         }
 
         let parsedToolCalls = toolCalls;
-        console.log(preprocessMsgs);
-        console.log(messages);
-        console.log(parsedToolCalls);
         if (parsedToolCalls && parsedToolCalls.length > 0) {
           internal_toggleToolCallingStreaming(messageId, undefined);
-          parsedToolCalls = parsedToolCalls.map((item) => ({
-            ...item,
-            function: {
-              ...item.function,
-              arguments: !!item.function.arguments ? item.function.arguments : '{}',
-            },
-          }));
+          parsedToolCalls = parsedToolCalls.map((item) => {
+            const args = item.function.arguments ? JSON.parse(item.function.arguments) : {};
+            
+            if (args.prompts && messages?.length > 0) {
+              args.prompts = messages.map(msg => msg.content).filter(Boolean);
+            }
+            console.log(args);
+            
+            return {
+              ...item,
+              function: {
+                ...item.function,
+                arguments: JSON.stringify(args),
+              },
+            };
+          });
           isFunctionCall = true;
         }
 
