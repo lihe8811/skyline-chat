@@ -527,7 +527,6 @@ export const generateAIChat: StateCreator<
 
           return m;
         });
-    console.log(preprocessMsgs);
 
     // 3. add systemRole
     if (agentConfig.systemRole) {
@@ -604,6 +603,8 @@ export const generateAIChat: StateCreator<
         }
 
         let parsedToolCalls = toolCalls;
+        console.log(preprocessMsgs);
+        console.log(messages);
         console.log(parsedToolCalls);
         if (parsedToolCalls && parsedToolCalls.length > 0) {
           internal_toggleToolCallingStreaming(messageId, undefined);
