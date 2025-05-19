@@ -611,7 +611,6 @@ export const generateAIChat: StateCreator<
             if (args.prompts && messages?.length > 0) {
               args.prompts = messages.map(msg => msg.content).filter(Boolean);
             }
-            console.log(args);
             
             return {
               ...item,

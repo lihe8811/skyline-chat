@@ -44,6 +44,7 @@ export const transformOpenAIStream = (
     const item = chunk.choices[0];
     if (!item) {
       if (chunk.usage) {
+        console.log(chunk.usage);
         const usage = chunk.usage;
         return { data: convertUsage(usage), id: chunk.id, type: 'usage' };
       }
