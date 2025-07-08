@@ -1,6 +1,7 @@
 [
   {
     "children": {
+<<<<<<< HEAD
       "fixes": ["Some ai image generation feedback issues."]
     },
     "date": "2025-07-15",
@@ -157,6 +158,8 @@
   },
   {
     "children": {
+=======
+>>>>>>> 1225f12e1 (📝 docs(bot): Auto sync agents & plugin to readme)
       "features": ["Add MCP marketplace and mcp plugin one-click installation in desktop."]
     },
     "date": "2025-07-08",
