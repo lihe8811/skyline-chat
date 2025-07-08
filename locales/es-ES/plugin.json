@@ -290,7 +290,10 @@
       "showDetails": "Mostrar detalles"
     },
     "errorTypes": {
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Error de autorización",
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "Conexión fallida",
       "INITIALIZATION_TIMEOUT": "Tiempo de inicialización agotado",
       "PROCESS_SPAWN_ERROR": "Error al iniciar el proceso",

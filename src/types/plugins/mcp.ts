@@ -1,6 +1,9 @@
 import { PluginQueryParams, SystemDependency } from '@lobehub/market-sdk';
 
+<<<<<<< HEAD
 import { MCPErrorType } from '@/libs/mcp';
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 import { MCPInstallStep } from '@/store/tool/slices/mcpStore';
 
 export interface CheckMcpInstallParams {
@@ -148,7 +151,16 @@ export interface MCPErrorInfo {
   /**
    * 错误类型
    */
+<<<<<<< HEAD
   type: MCPErrorType;
+=======
+  type:
+    | 'CONNECTION_FAILED'
+    | 'PROCESS_SPAWN_ERROR'
+    | 'INITIALIZATION_TIMEOUT'
+    | 'VALIDATION_ERROR'
+    | 'UNKNOWN_ERROR';
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 }
 
 export interface MCPInstallProgress {

@@ -4,11 +4,16 @@ import { AnchorProps } from 'antd';
 import { unionBy } from 'lodash-es';
 import { FC, PropsWithChildren, createContext, useContext, useState } from 'react';
 
+<<<<<<< HEAD
 interface TocState {
+=======
+const TocContext = createContext<{
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   isLoading: boolean;
   setFinished: () => void;
   setToc: (data: any) => void;
   toc?: AnchorProps['items'];
+<<<<<<< HEAD
 }
 
 const TocContext = createContext<TocState>({
@@ -17,6 +22,9 @@ const TocContext = createContext<TocState>({
   setToc: () => {},
   toc: [],
 });
+=======
+}>({ isLoading: true, setFinished: () => {}, setToc: () => {}, toc: [] });
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 
 export interface TOCItem {
   href: string;

@@ -28,6 +28,7 @@ const useStyles = createStyles(({ css, token }) => {
     `,
   };
 });
+<<<<<<< HEAD
 interface NavProps {
   activeTab?: AssistantNavKey;
   mobile?: boolean;
@@ -35,6 +36,14 @@ interface NavProps {
 }
 
 const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
+=======
+
+const Nav = memo<{
+  activeTab?: AssistantNavKey;
+  mobile?: boolean;
+  setActiveTab?: (tab: AssistantNavKey) => void;
+}>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   const { t } = useTranslation('discover');
   const { pluginCount, knowledgeCount, identifier } = useDetailContext();
   const { styles } = useStyles();

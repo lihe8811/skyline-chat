@@ -50,7 +50,11 @@
     "@typescript/native-preview": "7.0.0-dev.20250711.1",
     "consola": "^3.1.0",
     "cookie": "^1.0.2",
+<<<<<<< HEAD
     "electron": "~37.1.0",
+=======
+    "electron": "^37.2.0",
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
     "electron-builder": "^26.0.12",
     "electron-is": "^3.0.0",
     "electron-log": "^5.3.3",

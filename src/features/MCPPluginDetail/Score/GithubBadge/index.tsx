@@ -59,7 +59,10 @@ const GithubBadge = memo(() => {
       <Snippet language={'md'} style={{ fontSize: 12 }} variant={'outlined'}>
         {badgeLite}
       </Snippet>
+<<<<<<< HEAD
       {/* eslint-disable-next-line @next/next/no-img-element */}
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       <img
         alt="MCP Badge"
         height={selectedStyle === 'for-the-badge' ? 28 : 20}
@@ -75,7 +78,10 @@ const GithubBadge = memo(() => {
       <Snippet language={'md'} style={{ fontSize: 12 }} variant={'outlined'}>
         {badge}
       </Snippet>
+<<<<<<< HEAD
       {/* eslint-disable-next-line @next/next/no-img-element */}
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       <img alt="MCP Badge" src={styledBadgeFullUrl} />
     </>
   );

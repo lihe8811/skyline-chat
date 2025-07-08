@@ -240,6 +240,7 @@ export class MCPClient {
     } catch (e) {
       log('MCP connection failed:', e);
 
+<<<<<<< HEAD
       if (this.params.type === 'http') {
         const error = e as Error;
         if (error.message.includes('401'))
@@ -264,6 +265,24 @@ export class MCPClient {
         }
       }
 
+=======
+      // 对于 stdio 连接失败，尝试预检查命令以获取详细错误信息
+      if (this.params.type === 'stdio') {
+        log('Attempting to pre-check stdio command for detailed error information...');
+
+        const preCheckResult = await preCheckStdioCommand({
+          args: this.params.args,
+          command: this.params.command,
+          env: this.params.env,
+        });
+
+        if (!preCheckResult.success && preCheckResult.error) {
+          log('Detailed error captured: %O', preCheckResult.error);
+          throw preCheckResult.error;
+        }
+      }
+
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       // For other connection types or when pre-check doesn't provide more information
       if ((e as any).code === -32_000) {
         throw createMCPError(
@@ -271,17 +290,31 @@ export class MCPClient {
           'Failed to connect to MCP server, please check your configuration',
           {
             originalError: (e as Error).message,
+<<<<<<< HEAD
             params: {
               args: this.params.args,
               command: this.params.command,
               type: this.params.type,
             },
+=======
+            params:
+              this.params.type === 'stdio'
+                ? {
+                    args: this.params.args,
+                    command: this.params.command,
+                    type: this.params.type,
+                  }
+                : {
+                    type: this.params.type,
+                  },
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
             step: 'mcp_connect',
           },
         );
       }
 
       // Wrap other unknown errors
+<<<<<<< HEAD
       throw createMCPError('UNKNOWN_ERROR', (e as Error).message, {
         originalError: (e as Error).message,
         params: {
@@ -289,6 +322,20 @@ export class MCPClient {
           command: this.params.command,
           type: this.params.type,
         },
+=======
+      throw createMCPError('UNKNOWN_ERROR', 'Unknown error occurred', {
+        originalError: (e as Error).message,
+        params:
+          this.params.type === 'stdio'
+            ? {
+                args: this.params.args,
+                command: this.params.command,
+                type: this.params.type,
+              }
+            : {
+                type: this.params.type,
+              },
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
         step: 'mcp_connect',
       });
     }

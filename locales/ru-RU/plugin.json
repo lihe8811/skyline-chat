@@ -290,7 +290,10 @@
       "showDetails": "Показать детали"
     },
     "errorTypes": {
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Ошибка авторизации",
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "Ошибка подключения",
       "INITIALIZATION_TIMEOUT": "Превышено время инициализации",
       "PROCESS_SPAWN_ERROR": "Ошибка запуска процесса",

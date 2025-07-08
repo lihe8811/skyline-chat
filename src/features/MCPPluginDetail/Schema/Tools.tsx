@@ -14,6 +14,7 @@ import { useDetailContext } from '../DetailProvider';
 import { useStyles } from './style';
 import { ModeType } from './types';
 
+<<<<<<< HEAD
 interface ToolsProps {
   activeKey?: string[];
   mode?: ModeType;
@@ -21,6 +22,13 @@ interface ToolsProps {
 }
 
 const Tools = memo<ToolsProps>(({ mode, activeKey = [], setActiveKey }) => {
+=======
+const Tools = memo<{
+  activeKey?: string[];
+  mode?: ModeType;
+  setActiveKey?: (key: string[]) => void;
+}>(({ mode, activeKey = [], setActiveKey }) => {
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   const { t } = useTranslation('discover');
   const { tools } = useDetailContext();
   const { styles, theme } = useStyles();

@@ -128,6 +128,7 @@ class MCPService {
   }
 
   async getStreamableMcpServerManifest(
+<<<<<<< HEAD
     params: {
       auth?: {
         accessToken?: string;
@@ -142,6 +143,17 @@ class MCPService {
     signal?: AbortSignal,
   ) {
     return toolsClient.mcp.getStreamableMcpServerManifest.query(params, { signal });
+=======
+    identifier: string,
+    url: string,
+    metadata?: CustomPluginMetadata,
+    signal?: AbortSignal,
+  ) {
+    return toolsClient.mcp.getStreamableMcpServerManifest.query(
+      { identifier, metadata, url },
+      { signal },
+    );
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   }
 
   async getStdioMcpServerManifest(

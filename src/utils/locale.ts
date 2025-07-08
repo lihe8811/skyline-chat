@@ -1,8 +1,7 @@
 import { resolveAcceptLanguage } from 'resolve-accept-language';
 
 import { DEFAULT_LANG } from '@/const/locale';
-import { Locales, locales, normalizeLocale } from '@/locales/resources';
-import { RouteVariants } from '@/utils/server/routeVariants';
+import { locales, normalizeLocale } from '@/locales/resources';
 
 export const getAntdLocale = async (lang?: string) => {
   let normalLang: any = normalizeLocale(lang);
@@ -45,6 +44,7 @@ export const parseBrowserLanguage = (headers: Headers, defaultLang: string = DEF
 
   return browserLang;
 };
+<<<<<<< HEAD
 
 /**
  * Parse the page locale from the URL and search
@@ -59,3 +59,5 @@ export const parsePageLocale = async (props: {
   const browserLocale = await RouteVariants.getLocale(props);
   return normalizeLocale(searchParams?.hl || browserLocale) as Locales;
 };
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))

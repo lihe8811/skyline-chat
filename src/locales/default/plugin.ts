@@ -292,7 +292,10 @@ export default {
       showDetails: '查看详情',
     },
     errorTypes: {
+<<<<<<< HEAD
       AUTHORIZATION_ERROR: '授权验证错误',
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       CONNECTION_FAILED: '连接失败',
       INITIALIZATION_TIMEOUT: '初始化超时',
       PROCESS_SPAWN_ERROR: '进程启动失败',

@@ -290,7 +290,10 @@
       "showDetails": "عرض التفاصيل"
     },
     "errorTypes": {
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "خطأ في التحقق من التفويض",
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "فشل الاتصال",
       "INITIALIZATION_TIMEOUT": "انتهت مهلة التهيئة",
       "PROCESS_SPAWN_ERROR": "فشل بدء العملية",

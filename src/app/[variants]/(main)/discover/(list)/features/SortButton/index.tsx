@@ -167,7 +167,10 @@ const SortButton = memo(() => {
   return (
     <Dropdown
       menu={{
+<<<<<<< HEAD
         // @ts-expect-error 等待 antd 修复
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
         activeKey: activeItem.key,
         items: items as DropdownMenuItemType[],
         onClick: ({ key }) => handleSort(key),

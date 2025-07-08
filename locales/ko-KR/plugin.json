@@ -290,7 +290,10 @@
       "showDetails": "세부 정보 보기"
     },
     "errorTypes": {
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "권한 인증 오류",
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "연결 실패",
       "INITIALIZATION_TIMEOUT": "초기화 시간 초과",
       "PROCESS_SPAWN_ERROR": "프로세스 시작 실패",

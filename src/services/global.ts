@@ -21,7 +21,11 @@ class GlobalService {
     return lambdaClient.config.getGlobalConfig.query();
   };
 
+<<<<<<< HEAD
   getDefaultAgentConfig = async (): Promise<PartialDeep<LobeAgentConfig>> => {
+=======
+  getDefaultAgentConfig = async (): Promise<DeepPartial<LobeAgentConfig>> => {
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
     return lambdaClient.config.getDefaultAgentConfig.query();
   };
 }

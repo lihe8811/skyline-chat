@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "buildCommand": "NODE_OPTIONS=--max-old-space-size=8192 bun run build", 
   "installCommand": "bun install",
   "functions": {
@@ -6,4 +7,8 @@
       "maxDuration": 30
     }
   }
+=======
+  "buildCommand": "bun run build",
+  "installCommand": "bun install"
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 }

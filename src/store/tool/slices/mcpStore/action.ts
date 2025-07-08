@@ -229,6 +229,7 @@ export const createMCPPluginStoreSlice: StateCreator<
       }
       if (connection?.type === 'http') {
         manifest = await mcpService.getStreamableMcpServerManifest(
+<<<<<<< HEAD
           {
             identifier,
             metadata: {
@@ -236,6 +237,13 @@ export const createMCPPluginStoreSlice: StateCreator<
               description: plugin.description,
             },
             url: connection.url!,
+=======
+          identifier,
+          connection.url!,
+          {
+            avatar: plugin.icon,
+            description: plugin.description,
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
           },
           abortController.signal,
         );

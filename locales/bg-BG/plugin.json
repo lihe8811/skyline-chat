@@ -290,7 +290,10 @@
       "showDetails": "Покажи детайли"
     },
     "errorTypes": {
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Грешка при удостоверяване на разрешения",
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "Връзката не бе осъществена",
       "INITIALIZATION_TIMEOUT": "Времето за инициализация изтече",
       "PROCESS_SPAWN_ERROR": "Неуспешно стартиране на процеса",
