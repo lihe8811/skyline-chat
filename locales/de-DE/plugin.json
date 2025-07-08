@@ -290,14 +290,7 @@
       "showDetails": "Details anzeigen"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Autorisierungsfehler",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Autorisierungsfehler",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       "CONNECTION_FAILED": "Verbindung fehlgeschlagen",
       "INITIALIZATION_TIMEOUT": "Initialisierung zeitüberschritten",
       "PROCESS_SPAWN_ERROR": "Prozessstart fehlgeschlagen",

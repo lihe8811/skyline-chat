@@ -290,19 +290,12 @@
       "showDetails": "Mostra dettagli"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "Errore di autorizzazione",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Errore di autorizzazione",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-      "CONNECTION_FAILED": "Connessione fallita",
+      "AUTHORIZATION_ERROR": "Errore di verifica dell'autorizzazione",
+      "CONNECTION_FAILED": "Connessione non riuscita",
       "INITIALIZATION_TIMEOUT": "Timeout di inizializzazione",
-      "PROCESS_SPAWN_ERROR": "Errore nell'avvio del processo",
+      "PROCESS_SPAWN_ERROR": "Errore di avvio del processo",
       "UNKNOWN_ERROR": "Errore sconosciuto",
-      "VALIDATION_ERROR": "Validazione dei parametri fallita"
+      "VALIDATION_ERROR": "Errore di convalida dei parametri"
     },
     "installError": "Installazione del plugin MCP fallita, motivo: {{detail}}",
     "installMethods": {

@@ -290,19 +290,12 @@
       "showDetails": "詳細を表示"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "認証エラー",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "認証エラー",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-      "CONNECTION_FAILED": "接続失敗",
-      "INITIALIZATION_TIMEOUT": "初期化タイムアウト",
-      "PROCESS_SPAWN_ERROR": "プロセス起動失敗",
+      "CONNECTION_FAILED": "接続に失敗しました",
+      "INITIALIZATION_TIMEOUT": "初期化がタイムアウトしました",
+      "PROCESS_SPAWN_ERROR": "プロセスの起動に失敗しました",
       "UNKNOWN_ERROR": "不明なエラー",
-      "VALIDATION_ERROR": "パラメータ検証失敗"
+      "VALIDATION_ERROR": "パラメータの検証に失敗しました"
     },
     "installError": "MCPプラグインのインストールに失敗しました。原因：{{detail}}",
     "installMethods": {

@@ -290,19 +290,12 @@
       "showDetails": "세부 정보 보기"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "권한 인증 오류",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "권한 인증 오류",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+      "AUTHORIZATION_ERROR": "인증 오류",
       "CONNECTION_FAILED": "연결 실패",
       "INITIALIZATION_TIMEOUT": "초기화 시간 초과",
-      "PROCESS_SPAWN_ERROR": "프로세스 시작 실패",
+      "PROCESS_SPAWN_ERROR": "프로세스 생성 실패",
       "UNKNOWN_ERROR": "알 수 없는 오류",
-      "VALIDATION_ERROR": "매개변수 검증 실패"
+      "VALIDATION_ERROR": "매개변수 유효성 검사 실패"
     },
     "installError": "MCP 플러그인 설치 실패, 실패 원인: {{detail}}",
     "installMethods": {

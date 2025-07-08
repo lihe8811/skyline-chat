@@ -290,19 +290,12 @@
       "showDetails": "Show details"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Authorization Verification Error",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Authorization Verification Error",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       "CONNECTION_FAILED": "Connection failed",
       "INITIALIZATION_TIMEOUT": "Initialization timeout",
       "PROCESS_SPAWN_ERROR": "Process spawn error",
       "UNKNOWN_ERROR": "Unknown error",
-      "VALIDATION_ERROR": "Parameter validation failed"
+      "VALIDATION_ERROR": "Validation error"
     },
     "installError": "MCP plugin installation failed. Reason: {{detail}}",
     "installMethods": {

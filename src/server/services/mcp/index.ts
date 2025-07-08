@@ -218,6 +218,7 @@ class MCPService {
     } catch (error) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       console.error(`Failed to initialize MCP client:`, error);
 =======
       console.error(`Failed to initialize MCP client for key ${key}:`, error);
@@ -225,6 +226,9 @@ class MCPService {
 =======
       console.error(`Failed to initialize MCP client:`, error);
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+      console.error(`Failed to initialize MCP client for key ${key}:`, error);
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 
       // 保留完整的错误信息，特别是详细的 stderr 输出
       const errorMessage = error instanceof Error ? error.message : String(error);

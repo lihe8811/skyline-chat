@@ -1,94 +1,6 @@
 {
   "name": "@lobehub/chat",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   "version": "1.99.2",
-=======
-  "version": "1.97.2",
->>>>>>> ed716c27f (:bookmark: chore(release): v1.97.2 [skip ci])
-=======
-  "version": "1.97.3",
->>>>>>> 53f9c3b27 (:bookmark: chore(release): v1.97.3 [skip ci])
-=======
-  "version": "1.97.4",
->>>>>>> eb45ed864 (:bookmark: chore(release): v1.97.4 [skip ci])
-=======
-  "version": "1.97.5",
->>>>>>> eaf7f1b9c (:bookmark: chore(release): v1.97.5 [skip ci])
-=======
-  "version": "1.97.6",
->>>>>>> f3fa286f2 (:bookmark: chore(release): v1.97.6 [skip ci])
-=======
-  "version": "1.97.7",
->>>>>>> fc99fc3fa (:bookmark: chore(release): v1.97.7 [skip ci])
-=======
-  "version": "1.97.8",
->>>>>>> 91022bfa0 (:bookmark: chore(release): v1.97.8 [skip ci])
-=======
-  "version": "1.97.9",
->>>>>>> 04cad6262 (:bookmark: chore(release): v1.97.9 [skip ci])
-=======
-  "version": "1.97.10",
->>>>>>> 86ff38458 (:bookmark: chore(release): v1.97.10 [skip ci])
-=======
-  "version": "1.97.11",
->>>>>>> 1353d208e (:bookmark: chore(release): v1.97.11 [skip ci])
-=======
-  "version": "1.97.12",
->>>>>>> 4963c599c (:bookmark: chore(release): v1.97.12 [skip ci])
-=======
-  "version": "1.97.13",
->>>>>>> fd44b088d (:bookmark: chore(release): v1.97.13 [skip ci])
-=======
-  "version": "1.97.14",
->>>>>>> 2ef77567f (:bookmark: chore(release): v1.97.14 [skip ci])
-=======
-  "version": "1.97.15",
->>>>>>> 2212ea98a (:bookmark: chore(release): v1.97.15 [skip ci])
-=======
-  "version": "1.97.16",
->>>>>>> feb42fcc9 (:bookmark: chore(release): v1.97.16 [skip ci])
-=======
-  "version": "1.97.17",
->>>>>>> 127d38d70 (:bookmark: chore(release): v1.97.17 [skip ci])
-=======
-  "version": "1.98.0",
->>>>>>> 1c9c8d75e (:bookmark: chore(release): v1.98.0 [skip ci])
-=======
-  "version": "1.98.1",
->>>>>>> b2a2fe361 (:bookmark: chore(release): v1.98.1 [skip ci])
-=======
-  "version": "1.98.2",
->>>>>>> f64f00fd6 (:bookmark: chore(release): v1.98.2 [skip ci])
-=======
-  "version": "1.99.0",
->>>>>>> 025529d94 (:bookmark: chore(release): v1.99.0 [skip ci])
-=======
-  "version": "1.99.1",
->>>>>>> 8e4f59c25 (:bookmark: chore(release): v1.99.1 [skip ci])
-=======
-  "version": "1.99.2",
->>>>>>> 8c99c5dfd (:bookmark: chore(release): v1.99.2 [skip ci])
   "description": "Lobe Chat - an open-source, high-performance chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Supports one-click free deployment of your private ChatGPT/LLM web application.",
   "keywords": [
     "framework",
@@ -260,16 +172,10 @@
     "@vercel/speed-insights": "^1.2.0",
     "@xterm/xterm": "^5.5.0",
     "ahooks": "^3.8.5",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     "ai": "^3.4.33",
->>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
-=======
->>>>>>> 09f921d53 (⚡️ perf: add database autovacuum sql (#8395))
-    "antd": "^5.26.4",
-    "antd-style": "^3.7.1",
-    "brotli-wasm": "^3.0.1",
+    "antd": "^5.19.3",
+    "array-move": "^4.0.0",
+    "classnames": "^2.5.1",
     "chroma-js": "^3.1.2",
     "cookie": "^1.0.2",
     "countries-and-timezones": "^3.8.0",

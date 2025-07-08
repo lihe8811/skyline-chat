@@ -290,19 +290,12 @@
       "showDetails": "Xem chi tiết"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "Lỗi xác thực ủy quyền",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Lỗi xác thực ủy quyền",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-      "CONNECTION_FAILED": "Kết nối thất bại",
-      "INITIALIZATION_TIMEOUT": "Khởi tạo quá thời gian",
-      "PROCESS_SPAWN_ERROR": "Khởi tạo tiến trình thất bại",
+      "AUTHORIZATION_ERROR": "Lỗi xác thực",
+      "CONNECTION_FAILED": "Lỗi kết nối",
+      "INITIALIZATION_TIMEOUT": "Hết thời gian khởi tạo",
+      "PROCESS_SPAWN_ERROR": "Lỗi khởi động tiến trình",
       "UNKNOWN_ERROR": "Lỗi không xác định",
-      "VALIDATION_ERROR": "Xác thực tham số thất bại"
+      "VALIDATION_ERROR": "Lỗi xác thực tham số"
     },
     "installError": "Cài đặt plugin MCP thất bại, nguyên nhân: {{detail}}",
     "installMethods": {

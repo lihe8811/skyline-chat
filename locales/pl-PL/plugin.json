@@ -290,19 +290,12 @@
       "showDetails": "Pokaż szczegóły"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Błąd autoryzacji",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Błąd autoryzacji",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-      "CONNECTION_FAILED": "Nieudane połączenie",
-      "INITIALIZATION_TIMEOUT": "Przekroczono czas inicjalizacji",
-      "PROCESS_SPAWN_ERROR": "Błąd uruchomienia procesu",
+      "CONNECTION_FAILED": "Połączenie nie powiodło się",
+      "INITIALIZATION_TIMEOUT": "Przekroczono limit czasu inicjalizacji",
+      "PROCESS_SPAWN_ERROR": "Błąd uruchamiania procesu",
       "UNKNOWN_ERROR": "Nieznany błąd",
-      "VALIDATION_ERROR": "Błąd walidacji parametrów"
+      "VALIDATION_ERROR": "Walidacja parametrów nie powiodła się"
     },
     "installError": "Instalacja wtyczki MCP nie powiodła się, powód: {{detail}}",
     "installMethods": {

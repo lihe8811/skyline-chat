@@ -16,6 +16,7 @@ import { ModeType } from './types';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface ToolsProps {
   activeKey?: string[];
   mode?: ModeType;
@@ -24,11 +25,14 @@ interface ToolsProps {
 
 const Tools = memo<ToolsProps>(({ mode, activeKey = [], setActiveKey }) => {
 =======
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 const Tools = memo<{
   activeKey?: string[];
   mode?: ModeType;
   setActiveKey?: (key: string[]) => void;
 }>(({ mode, activeKey = [], setActiveKey }) => {
+<<<<<<< HEAD
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 =======
 interface ToolsProps {
@@ -39,6 +43,8 @@ interface ToolsProps {
 
 const Tools = memo<ToolsProps>(({ mode, activeKey = [], setActiveKey }) => {
 >>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   const { t } = useTranslation('discover');
   const { tools } = useDetailContext();
   const { styles, theme } = useStyles();

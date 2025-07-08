@@ -290,14 +290,7 @@
       "showDetails": "查看詳情"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "授權驗證錯誤",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "授權驗證錯誤",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       "CONNECTION_FAILED": "連接失敗",
       "INITIALIZATION_TIMEOUT": "初始化逾時",
       "PROCESS_SPAWN_ERROR": "進程啟動失敗",

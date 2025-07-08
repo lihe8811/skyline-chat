@@ -6,6 +6,7 @@ import { FC, PropsWithChildren, createContext, useContext, useState } from 'reac
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface TocState {
 =======
 const TocContext = createContext<{
@@ -13,10 +14,14 @@ const TocContext = createContext<{
 =======
 interface TocState {
 >>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
+=======
+const TocContext = createContext<{
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   isLoading: boolean;
   setFinished: () => void;
   setToc: (data: any) => void;
   toc?: AnchorProps['items'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -35,6 +40,9 @@ const TocContext = createContext<TocState>({
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 =======
 >>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
+=======
+}>({ isLoading: true, setFinished: () => {}, setToc: () => {}, toc: [] });
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 
 export interface TOCItem {
   href: string;

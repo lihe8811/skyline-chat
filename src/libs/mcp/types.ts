@@ -32,6 +32,7 @@ export interface McpPrompt {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 /**
@@ -71,6 +72,8 @@ export interface AuthConfig {
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 =======
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 interface HttpMCPClientParams {
   auth?: AuthConfig;
   headers?: Record<string, string>;
@@ -91,6 +94,7 @@ export type MCPClientParams = HttpMCPClientParams | StdioMCPParams;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 export type MCPErrorType =
@@ -105,6 +109,8 @@ export type MCPErrorType =
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 =======
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 export interface MCPErrorData {
   message: string;
   /**
@@ -150,18 +156,24 @@ export interface MCPErrorData {
    */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   type: MCPErrorType;
 =======
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   type:
     | 'CONNECTION_FAILED'
     | 'PROCESS_SPAWN_ERROR'
     | 'INITIALIZATION_TIMEOUT'
     | 'VALIDATION_ERROR'
     | 'UNKNOWN_ERROR';
+<<<<<<< HEAD
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 =======
   type: MCPErrorType;
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 }
 
 /**

@@ -232,7 +232,7 @@
     "openAPIInvalid": "OpenAPI ayrıştırma hatası, hata: \n\n {{error}}",
     "reinstallError": "{{name}} eklentisi yenilenemedi",
     "testConnectionFailed": "Manifest alınamadı: {{error}}",
-    "urlError": "Bağlantı JSON formatında içerik döndürmedi. Lütfen geçerli bir bağlantı olduğundan emin olun"
+    "urlError": "Bağlantı JSON formatında içerik döndürmedi. Lütfen geçerli bir bağlantıyı olduğundan emin olun"
   },
   "inspector": {
     "args": "Parametre listesini görüntüle",
@@ -290,19 +290,12 @@
       "showDetails": "Detayları göster"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "Yetkilendirme doğrulama hatası",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Yetkilendirme doğrulama hatası",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-      "CONNECTION_FAILED": "Bağlantı başarısız",
-      "INITIALIZATION_TIMEOUT": "Başlatma zaman aşımı",
-      "PROCESS_SPAWN_ERROR": "İşlem başlatılamadı",
-      "UNKNOWN_ERROR": "Bilinmeyen hata",
-      "VALIDATION_ERROR": "Parametre doğrulama hatası"
+      "AUTHORIZATION_ERROR": "Yetkilendirme Hatası",
+      "CONNECTION_FAILED": "Bağlantı Hatası",
+      "INITIALIZATION_TIMEOUT": "Başlatma Zaman Aşımı",
+      "PROCESS_SPAWN_ERROR": "İşlem Başlatma Hatası",
+      "UNKNOWN_ERROR": "Bilinmeyen Hata",
+      "VALIDATION_ERROR": "Parametre Doğrulama Hatası"
     },
     "installError": "MCP eklenti kurulumu başarısız oldu, hata nedeni: {{detail}}",
     "installMethods": {

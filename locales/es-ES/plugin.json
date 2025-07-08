@@ -290,16 +290,9 @@
       "showDetails": "Mostrar detalles"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "Error de autorización",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Error de autorización",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+      "AUTHORIZATION_ERROR": "Error de verificación de autorización",
       "CONNECTION_FAILED": "Conexión fallida",
-      "INITIALIZATION_TIMEOUT": "Tiempo de inicialización agotado",
+      "INITIALIZATION_TIMEOUT": "Tiempo de espera de inicialización agotado",
       "PROCESS_SPAWN_ERROR": "Error al iniciar el proceso",
       "UNKNOWN_ERROR": "Error desconocido",
       "VALIDATION_ERROR": "Error de validación de parámetros"

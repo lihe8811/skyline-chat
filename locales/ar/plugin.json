@@ -290,14 +290,7 @@
       "showDetails": "عرض التفاصيل"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "خطأ في التحقق من التفويض",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "خطأ في التحقق من التفويض",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       "CONNECTION_FAILED": "فشل الاتصال",
       "INITIALIZATION_TIMEOUT": "انتهت مهلة التهيئة",
       "PROCESS_SPAWN_ERROR": "فشل بدء العملية",

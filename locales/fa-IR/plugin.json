@@ -290,19 +290,12 @@
       "showDetails": "نمایش جزئیات"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AUTHORIZATION_ERROR": "خطای تأیید مجوز",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "خطای تأیید مجوز",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+      "AUTHORIZATION_ERROR": "خطای تأیید اعتبار",
       "CONNECTION_FAILED": "اتصال ناموفق بود",
-      "INITIALIZATION_TIMEOUT": "زمان راه‌اندازی به پایان رسید",
-      "PROCESS_SPAWN_ERROR": "خطا در راه‌اندازی فرآیند",
+      "INITIALIZATION_TIMEOUT": "پایان زمان اولیه سازی",
+      "PROCESS_SPAWN_ERROR": "خطا در ایجاد فرآیند",
       "UNKNOWN_ERROR": "خطای ناشناخته",
-      "VALIDATION_ERROR": "اعتبارسنجی پارامترها ناموفق بود"
+      "VALIDATION_ERROR": "خطای اعتبارسنجی پارامتر"
     },
     "installError": "نصب افزونه MCP ناموفق بود، دلیل خطا: {{detail}}",
     "installMethods": {

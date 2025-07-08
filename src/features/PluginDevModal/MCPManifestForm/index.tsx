@@ -1,6 +1,7 @@
 import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Alert, FormItem, Input, InputPassword } from '@lobehub/ui';
 import { Button, Divider, Form, FormInstance, Radio } from 'antd';
 =======
@@ -11,15 +12,22 @@ import { Button, Divider, Form, FormInstance } from 'antd';
 import { Alert, FormItem, Input, InputPassword } from '@lobehub/ui';
 import { Button, Divider, Form, FormInstance, Radio } from 'antd';
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+import { Alert, FormItem, Input, TextArea } from '@lobehub/ui';
+import { Button, Divider, Form, FormInstance } from 'antd';
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KeyValueEditor from '@/components/KeyValueEditor';
 import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
 =======
+=======
+>>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
 import { isDesktop } from '@/const/version';
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
