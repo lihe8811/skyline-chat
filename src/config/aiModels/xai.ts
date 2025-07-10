@@ -7,29 +7,14 @@ const xaiChatModels: AIChatModelCard[] = [
       functionCall: true,
       reasoning: true,
       search: true,
-<<<<<<< HEAD
-<<<<<<< HEAD
       vision: true,
-=======
->>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
-=======
-      vision: true,
->>>>>>> 8512f5a9a (🐛 fix: add vision support to Grok 4 (#8386))
     },
     contextWindowTokens: 256_000,
     description:
       '我们最新最强大的旗舰模型，在自然语言处理、数学计算和推理方面表现卓越 —— 是一款完美的全能型选手。',
     displayName: 'Grok 4 0709',
     enabled: true,
-<<<<<<< HEAD
-<<<<<<< HEAD
     id: 'grok-4',
-=======
-    id: 'grok-4-0709',
->>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
-=======
-    id: 'grok-4',
->>>>>>> d6f17f824 (🐛 fix: Grok-4 reasoning model universal matching (#8390))
     pricing: {
       cachedInput: 0.75,
       input: 3,

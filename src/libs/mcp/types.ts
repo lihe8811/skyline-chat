@@ -30,11 +30,6 @@ export interface McpPrompt {
   name: string;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 /**
  * MCP 认证配置接口
  * 支持第一阶段的手动配置和未来的 OAuth 2.1 自动化流程
@@ -67,13 +62,6 @@ export interface AuthConfig {
   type: 'none' | 'bearer' | 'oauth2'; // accessToken 的过期时间戳
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 interface HttpMCPClientParams {
   auth?: AuthConfig;
   headers?: Record<string, string>;
@@ -92,11 +80,6 @@ export interface StdioMCPParams {
 
 export type MCPClientParams = HttpMCPClientParams | StdioMCPParams;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 export type MCPErrorType =
   | 'CONNECTION_FAILED'
   | 'PROCESS_SPAWN_ERROR'
@@ -104,13 +87,7 @@ export type MCPErrorType =
   | 'VALIDATION_ERROR'
   | 'UNKNOWN_ERROR'
   | 'AUTHORIZATION_ERROR';
-<<<<<<< HEAD
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+
 export interface MCPErrorData {
   message: string;
   /**
@@ -154,26 +131,7 @@ export interface MCPErrorData {
   /**
    * 错误类型
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   type: MCPErrorType;
-=======
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-  type:
-    | 'CONNECTION_FAILED'
-    | 'PROCESS_SPAWN_ERROR'
-    | 'INITIALIZATION_TIMEOUT'
-    | 'VALIDATION_ERROR'
-    | 'UNKNOWN_ERROR';
-<<<<<<< HEAD
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-  type: MCPErrorType;
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 }
 
 /**

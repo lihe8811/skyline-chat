@@ -228,10 +228,7 @@ export const createMCPPluginStoreSlice: StateCreator<
         );
       }
       if (connection?.type === 'http') {
-        manifest = await mcpService.getStreamableMcpServerManifest(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+        const res = await mcpService.getMcpManifest(
           {
             identifier,
             metadata: {
@@ -239,30 +236,10 @@ export const createMCPPluginStoreSlice: StateCreator<
               description: plugin.description,
             },
             url: connection.url!,
-=======
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-          identifier,
-          connection.url!,
-          {
-            avatar: plugin.icon,
-            description: plugin.description,
-<<<<<<< HEAD
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-          {
-            identifier,
-            metadata: {
-              avatar: plugin.icon,
-              description: plugin.description,
-            },
-            url: connection.url!,
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
           },
           abortController.signal,
         );
+        manifest = res.manifest;
       }
 
       // set version

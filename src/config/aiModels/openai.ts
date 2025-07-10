@@ -807,17 +807,8 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
-<<<<<<< HEAD
-<<<<<<< HEAD
     description:
       'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
-=======
-    description: 'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
->>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
-=======
-    description:
-      'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     displayName: 'GPT-4o Transcribe',
     id: 'gpt-4o-transcribe',
     maxOutput: 2000,
@@ -829,17 +820,8 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
-<<<<<<< HEAD
-<<<<<<< HEAD
     description:
       'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
-=======
-    description: 'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
->>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
-=======
-    description:
-      'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     displayName: 'GPT-4o Mini Transcribe',
     id: 'gpt-4o-mini-transcribe',
     maxOutput: 2000,
@@ -856,8 +838,10 @@ export const openaiImageModels: AIImageModelCard[] = [
   {
     description:
       '最新的 GPT-4o 原生多模态图像生成模型，于2025年3月发布。能够根据文本或图像输入，生成高质量、精确且富有表现力的图像',
-    displayName: 'GPT 4o',
+    displayName: 'GPT Image 1',
+    enabled: true,
     id: 'gpt-image-1',
+    parameters: gptImage1ParamsSchema,
     pricing: {
       high: 0.17,
       low: 0.01,
@@ -886,15 +870,6 @@ export const openaiImageModels: AIImageModelCard[] = [
       input: 0.02, // $0.020 per image (1024×1024)
     },
     resolutions: ['256x256', '512x512', '1024x1024'],
-    type: 'image',
-  },
-  // https://platform.openai.com/docs/models/gpt-image-1
-  {
-    description: 'ChatGPT 原生多模态图片生成模型',
-    displayName: 'GPT Image 1',
-    enabled: true,
-    id: 'gpt-image-1',
-    parameters: gptImage1ParamsSchema,
     type: 'image',
   },
 ];

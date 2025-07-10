@@ -128,10 +128,6 @@ class MCPService {
   }
 
   async getStreamableMcpServerManifest(
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     params: {
       auth?: {
         accessToken?: string;
@@ -143,29 +139,9 @@ class MCPService {
       metadata?: CustomPluginMetadata;
       url: string;
     },
-<<<<<<< HEAD
     signal?: AbortSignal,
   ) {
     return toolsClient.mcp.getStreamableMcpServerManifest.query(params, { signal });
-=======
-    identifier: string,
-    url: string,
-    metadata?: CustomPluginMetadata,
-    signal?: AbortSignal,
-  ) {
-    return toolsClient.mcp.getStreamableMcpServerManifest.query(
-      { identifier, metadata, url },
-      { signal },
-    );
-<<<<<<< HEAD
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-    signal?: AbortSignal,
-  ) {
-    return toolsClient.mcp.getStreamableMcpServerManifest.query(params, { signal });
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   }
 
   async getStdioMcpServerManifest(
