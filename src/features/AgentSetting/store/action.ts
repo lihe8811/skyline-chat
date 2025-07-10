@@ -1,5 +1,4 @@
-import { getSingletonAnalyticsOptional } from '@lobehub/analytics';
-import type { PartialDeep } from 'type-fest';
+import { DeepPartial } from 'utility-types';
 import { StateCreator } from 'zustand/vanilla';
 
 import { chainPickEmoji } from '@/chains/pickEmoji';

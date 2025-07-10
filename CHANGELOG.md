@@ -534,8 +534,6 @@
 <details>
 <summary>More details</summary>
 
-
-
 </details>
 
 <div align="right">

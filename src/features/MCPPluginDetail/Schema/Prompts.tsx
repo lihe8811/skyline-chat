@@ -14,9 +14,6 @@ import { useDetailContext } from '../DetailProvider';
 import { useStyles } from './style';
 import { ModeType } from './types';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface PromptsProps {
   activeKey?: string[];
   mode?: ModeType;
@@ -24,27 +21,6 @@ interface PromptsProps {
 }
 
 const Prompts = memo<PromptsProps>(({ mode, activeKey = [], setActiveKey }) => {
-=======
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-const Prompts = memo<{
-  activeKey?: string[];
-  mode?: ModeType;
-  setActiveKey?: (key: string[]) => void;
-}>(({ mode, activeKey = [], setActiveKey }) => {
-<<<<<<< HEAD
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-interface PromptsProps {
-  activeKey?: string[];
-  mode?: ModeType;
-  setActiveKey?: (key: string[]) => void;
-}
-
-const Prompts = memo<PromptsProps>(({ mode, activeKey = [], setActiveKey }) => {
->>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   const { t } = useTranslation('discover');
   const { prompts } = useDetailContext();
   const { styles, theme } = useStyles();

@@ -216,19 +216,7 @@ class MCPService {
       log(`New client initialized and cached for key: ${key.slice(0, 20)}`);
       return client;
     } catch (error) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      console.error(`Failed to initialize MCP client:`, error);
-=======
       console.error(`Failed to initialize MCP client for key ${key}:`, error);
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      console.error(`Failed to initialize MCP client:`, error);
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
-      console.error(`Failed to initialize MCP client for key ${key}:`, error);
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
 
       // 保留完整的错误信息，特别是详细的 stderr 输出
       const errorMessage = error instanceof Error ? error.message : String(error);
@@ -242,7 +230,7 @@ class MCPService {
       }
 
       // 记录详细的错误信息用于调试
-      log('Detailed initialization error: %O', {
+      log('Detailed initialization error for key %s: %O', key, {
         error: errorMessage,
         params: this.sanitizeForLogging(params),
         stack: error instanceof Error ? error.stack : undefined,
@@ -251,7 +239,7 @@ class MCPService {
       throw new TRPCError({
         cause: error,
         code: 'INTERNAL_SERVER_ERROR',
-        message: errorMessage, // 直接使用完整的错误信息
+        message: `Failed to initialize MCP client for key ${key}: ${errorMessage}`,
       });
     }
   }
