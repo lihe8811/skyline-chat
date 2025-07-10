@@ -517,24 +517,30 @@
 
 <sup>Released on **2025-07-10**</sup>
 
-#### 💄 Styles
+#### ✨ Features
 
-- **misc**: Implement data analytics event tracking framework.
+- **plugin**: Support Streamable HTTP MCP Server Auth ([#8425](https://github.com/lobehub/lobe-chat/pull/8425)) @arvinxx
+- **plugin**: Add MCP marketplace and mcp plugin one-click installation in desktop ([#8334](https://github.com/lobehub/lobe-chat/pull/8334)) @arvinxx
+
+<br/>
+
+#### 🐛 Bug Fixes
+
+- **core**: Fix Grok-4 reasoning model universal matching ([#8390](https://github.com/lobehub/lobe-chat/pull/8390)) @arvinxx
+- **core**: Add vision support to Grok 4 ([#8386](https://github.com/lobehub/lobe-chat/pull/8386)) @arvinxx
 
 <br/>
 
 <details>
-<summary><kbd>Improvements and Fixes</kbd></summary>
+<summary>More details</summary>
 
-#### Styles
 
-- **misc**: Implement data analytics event tracking framework, closes [#8352](https://github.com/lobehub/lobe-chat/issues/8352) ([f433aca](https://github.com/lobehub/lobe-chat/commit/f433aca))
 
 </details>
 
 <div align="right">
 
-[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+Back to top
 
 </div>
 
