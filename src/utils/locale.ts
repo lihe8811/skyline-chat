@@ -1,7 +1,8 @@
 import { resolveAcceptLanguage } from 'resolve-accept-language';
 
 import { DEFAULT_LANG } from '@/const/locale';
-import { locales, normalizeLocale } from '@/locales/resources';
+import { Locales, locales, normalizeLocale } from '@/locales/resources';
+import { RouteVariants } from '@/utils/server/routeVariants';
 
 export const getAntdLocale = async (lang?: string) => {
   let normalLang: any = normalizeLocale(lang);
@@ -45,6 +46,9 @@ export const parseBrowserLanguage = (headers: Headers, defaultLang: string = DEF
   return browserLang;
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 63f482a13 (🐛 fix: fix locale hydration error in SSR (#8365))
 
 /**
  * Parse the page locale from the URL and search
@@ -59,5 +63,8 @@ export const parsePageLocale = async (props: {
   const browserLocale = await RouteVariants.getLocale(props);
   return normalizeLocale(searchParams?.hl || browserLocale) as Locales;
 };
+<<<<<<< HEAD
 =======
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+>>>>>>> 63f482a13 (🐛 fix: fix locale hydration error in SSR (#8365))
