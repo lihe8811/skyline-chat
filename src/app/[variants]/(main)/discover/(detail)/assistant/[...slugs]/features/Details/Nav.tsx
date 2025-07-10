@@ -28,9 +28,6 @@ const useStyles = createStyles(({ css, token }) => {
     `,
   };
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface NavProps {
   activeTab?: AssistantNavKey;
   mobile?: boolean;
@@ -38,28 +35,6 @@ interface NavProps {
 }
 
 const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
-=======
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-
-const Nav = memo<{
-  activeTab?: AssistantNavKey;
-  mobile?: boolean;
-  setActiveTab?: (tab: AssistantNavKey) => void;
-}>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
-<<<<<<< HEAD
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-interface NavProps {
-  activeTab?: AssistantNavKey;
-  mobile?: boolean;
-  setActiveTab?: (tab: AssistantNavKey) => void;
-}
-
-const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
->>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   const { t } = useTranslation('discover');
   const { pluginCount, knowledgeCount, identifier } = useDetailContext();
   const { styles } = useStyles();

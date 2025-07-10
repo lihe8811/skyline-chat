@@ -13,17 +13,7 @@ const MarkdownRender = memo<{ children?: string }>(({ children }) => {
         <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
       </Center>
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-
->>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
   return (
     <Markdown
       allowHtml
@@ -40,19 +30,8 @@ const MarkdownRender = memo<{ children?: string }>(({ children }) => {
         h5: H5,
         img: ({ src, ...rest }: { src: string }) => {
           if (src.includes('glama.ai')) return;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
           // eslint-disable-next-line @next/next/no-img-element
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-
-          // eslint-disable-next-line @next/next/no-img-element
->>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
           if (src && src.startsWith('http')) return <img src={src} {...rest} />;
           return;
         },
