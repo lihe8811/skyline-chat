@@ -1,4 +1,5 @@
-import { DeepPartial } from 'utility-types';
+import type { PartialDeep } from 'type-fest';
+import { getSingletonAnalyticsOptional } from '@lobehub/analytics';
 import { StateCreator } from 'zustand/vanilla';
 
 import { chainPickEmoji } from '@/chains/pickEmoji';
@@ -32,19 +33,44 @@ export interface PublicAction {
    * @param id - 代理的 ID
    * @returns 一个 Promise，用于异步操作完成后的处理
    */
-  autocompleteAgentDescription: () => Promise<void>;
-  autocompleteAgentTags: () => Promise<void>;
+  autoCompleteAgentDescription: (id: string) => Promise<void>;
   /**
-   * 自动完成代理标题
+   * 自动完成代理信息
    * @param id - 代理的 ID
    * @returns 一个 Promise，用于异步操作完成后的处理
    */
-  autocompleteAgentTitle: () => Promise<void>;
+  autoCompleteAgentMeta: (id: string) => Promise<void>;
   /**
-   * 自动完成助理元数据
+   * 自动完成代理名称
+   * @param id - 代理的 ID
+   * @returns 一个 Promise，用于异步操作完成后的处理
    */
-  autocompleteAllMeta: (replace?: boolean) => void;
-  autocompleteMeta: (key: keyof MetaData) => void;
+  autoCompleteAgentTitle: (id: string) => Promise<void>;
+  /**
+   * 自动完成代理标签
+   * @param id - 代理的 ID
+   * @returns 一个 Promise，用于异步操作完成后的处理
+   */
+  autoCompleteAgentTags: (id: string) => Promise<void>;
+  /**
+   * 重置代理
+   */
+  resetAgent: () => void;
+  /**
+   * 更新代理配置
+   * @param agent - LobeAgentConfig 的部分对象
+   */
+  updateAgentConfig: (agent: PartialDeep<LobeAgentConfig>) => void;
+  /**
+   * 更新代理元数据
+   * @param meta - MetaData 的部分对象
+   */
+  updateAgentMeta: (meta: PartialDeep<MetaData>) => void;
+  /**
+   * 更新代理会话配置
+   * @param config - LobeAgentChatConfig 的部分对象
+   */
+  updateChatConfig: (config: PartialDeep<LobeAgentChatConfig>) => void;
 }
 
 export interface Action extends PublicAction {
@@ -57,9 +83,9 @@ export interface Action extends PublicAction {
 
   resetAgentMeta: () => Promise<void>;
   setAgentConfig: (config: PartialDeep<LobeAgentConfig>) => Promise<void>;
-  setAgentMeta: (meta: Partial<MetaData>) => Promise<void>;
+  setAgentMeta: (meta: PartialDeep<MetaData>) => Promise<void>;
 
-  setChatConfig: (config: Partial<LobeAgentChatConfig>) => Promise<void>;
+  setChatConfig: (config: PartialDeep<LobeAgentChatConfig>) => Promise<void>;
   streamUpdateMetaArray: (key: keyof MetaData) => any;
   streamUpdateMetaString: (key: keyof MetaData) => any;
   toggleAgentPlugin: (pluginId: string, state?: boolean) => void;
@@ -97,7 +123,7 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
       trace: get().getCurrentTracePayload({ traceName: TraceNameMap.EmojiPicker }),
     });
   },
-  autocompleteAgentDescription: async () => {
+  autoCompleteAgentDescription: async (id: string) => {
     const { dispatchMeta, config, meta, updateLoadingState, streamUpdateMetaString } = get();
 
     const systemRole = config.systemRole;
@@ -121,7 +147,58 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
       trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryAgentDescription }),
     });
   },
-  autocompleteAgentTags: async () => {
+  autoCompleteAgentMeta: async (id: string) => {
+    const { dispatchMeta, config, meta, updateLoadingState, streamUpdateMetaString } = get();
+
+    const systemRole = config.systemRole;
+
+    if (!systemRole) return;
+
+    const preValue = meta.description;
+
+    // 替换为 ...
+    dispatchMeta({ type: 'update', value: { description: '...' } });
+
+    chatService.fetchPresetTaskResult({
+      onError: () => {
+        dispatchMeta({ type: 'update', value: { description: preValue } });
+      },
+      onLoadingChange: (loading) => {
+        updateLoadingState('description', loading);
+      },
+      onMessageHandle: streamUpdateMetaString('description'),
+      params: merge(get().internal_getSystemAgentForMeta(), chainSummaryDescription(systemRole)),
+      trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryAgentDescription }),
+    });
+  },
+  autoCompleteAgentTitle: async (id: string) => {
+    const { dispatchMeta, config, meta, updateLoadingState, streamUpdateMetaString } = get();
+
+    const systemRole = config.systemRole;
+
+    if (!systemRole) return;
+
+    const previousTitle = meta.title;
+
+    // 替换为 ...
+    dispatchMeta({ type: 'update', value: { title: '...' } });
+
+    chatService.fetchPresetTaskResult({
+      onError: () => {
+        dispatchMeta({ type: 'update', value: { title: previousTitle } });
+      },
+      onLoadingChange: (loading) => {
+        updateLoadingState('title', loading);
+      },
+      onMessageHandle: streamUpdateMetaString('title'),
+      params: merge(
+        get().internal_getSystemAgentForMeta(),
+        chainSummaryAgentName([meta.description, systemRole].filter(Boolean).join(',')),
+      ),
+      trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryAgentTitle }),
+    });
+  },
+  autoCompleteAgentTags: async (id: string) => {
     const { dispatchMeta, config, meta, updateLoadingState, streamUpdateMetaArray } = get();
 
     const systemRole = config.systemRole;
@@ -149,97 +226,58 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
       trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryAgentTags }),
     });
   },
-  autocompleteAgentTitle: async () => {
-    const { dispatchMeta, config, meta, updateLoadingState, streamUpdateMetaString } = get();
-
-    const systemRole = config.systemRole;
-
-    if (!systemRole) return;
-
-    const previousTitle = meta.title;
-
-    // 替换为 ...
-    dispatchMeta({ type: 'update', value: { title: '...' } });
-
-    chatService.fetchPresetTaskResult({
-      onError: () => {
-        dispatchMeta({ type: 'update', value: { title: previousTitle } });
-      },
-      onLoadingChange: (loading) => {
-        updateLoadingState('title', loading);
-      },
-      onMessageHandle: streamUpdateMetaString('title'),
-      params: merge(
-        get().internal_getSystemAgentForMeta(),
-        chainSummaryAgentName([meta.description, systemRole].filter(Boolean).join(',')),
-      ),
-      trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryAgentTitle }),
-    });
+  resetAgent: () => {
+    get().resetAgentConfig();
+    get().resetAgentMeta();
   },
-  autocompleteAllMeta: (replace) => {
-    const { meta } = get();
-
-    if (!meta.title || replace) {
-      get().autocompleteAgentTitle();
-    }
-
-    if (!meta.description || replace) {
-      get().autocompleteAgentDescription();
-    }
-
-    if (!meta.avatar || replace) {
-      get().autoPickEmoji();
-    }
-
-    if (!meta.tags || replace) {
-      get().autocompleteAgentTags();
-    }
+  updateAgentConfig: async (config: PartialDeep<LobeAgentConfig>) => {
+    await get().dispatchConfig({ config, type: 'update' });
   },
-  autocompleteMeta: (key) => {
-    const {
-      autoPickEmoji,
-      autocompleteAgentTitle,
-      autocompleteAgentDescription,
-      autocompleteAgentTags,
-    } = get();
+  updateAgentMeta: async (meta: PartialDeep<MetaData>) => {
+    const { dispatchMeta, id, meta: currentMeta } = get();
+    const mergedMeta = merge(currentMeta, meta);
 
-    switch (key) {
-      case 'avatar': {
-        autoPickEmoji();
-        return;
+    try {
+      const analytics = getSingletonAnalyticsOptional();
+      if (analytics) {
+        analytics.track({
+          name: 'agent_meta_updated',
+          properties: {
+            assistant_avatar: mergedMeta.avatar,
+            assistant_background_color: mergedMeta.backgroundColor,
+            assistant_description: mergedMeta.description,
+            assistant_name: mergedMeta.title,
+            assistant_tags: mergedMeta.tags,
+            is_inbox: id === 'inbox',
+            session_id: id || 'unknown',
+            timestamp: Date.now(),
+            user_id: useUserStore.getState().user?.id || 'anonymous',
+          },
+        });
       }
-
-      case 'description': {
-        autocompleteAgentDescription();
-        return;
-      }
-
-      case 'title': {
-        autocompleteAgentTitle();
-        return;
-      }
-
-      case 'tags': {
-        autocompleteAgentTags();
-        return;
-      }
+    } catch (error) {
+      console.warn('Failed to track agent meta update:', error);
     }
+    await dispatchMeta({ type: 'update', value: meta });
   },
-  dispatchConfig: async (payload) => {
+  updateChatConfig: async (config: PartialDeep<LobeAgentChatConfig>) => {
+    await get().setAgentConfig({ chatConfig: config });
+  },
+  dispatchConfig: async (payload: ConfigDispatch) => {
     const nextConfig = configReducer(get().config, payload);
 
     set({ config: nextConfig }, false, payload);
 
     await get().onConfigChange?.(nextConfig);
   },
-  dispatchMeta: async (payload) => {
+  dispatchMeta: async (payload: MetaDataDispatch) => {
     const nextValue = metaDataReducer(get().meta, payload);
 
     set({ meta: nextValue }, false, payload);
 
     await get().onMetaChange?.(nextValue);
   },
-  getCurrentTracePayload: (data) => ({
+  getCurrentTracePayload: (data: Partial<TracePayload>) => ({
     sessionId: get().id,
     topicId: TraceTopicType.AgentSettings,
     ...data,
@@ -256,10 +294,10 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   resetAgentMeta: async () => {
     await get().dispatchMeta({ type: 'reset' });
   },
-  setAgentConfig: async (config) => {
+  setAgentConfig: async (config: PartialDeep<LobeAgentConfig>) => {
     await get().dispatchConfig({ config, type: 'update' });
   },
-  setAgentMeta: async (meta) => {
+  setAgentMeta: async (meta: PartialDeep<MetaData>) => {
     const { dispatchMeta, id, meta: currentMeta } = get();
     const mergedMeta = merge(currentMeta, meta);
 
@@ -287,7 +325,7 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     await dispatchMeta({ type: 'update', value: meta });
   },
 
-  setChatConfig: async (config) => {
+  setChatConfig: async (config: PartialDeep<LobeAgentChatConfig>) => {
     await get().setAgentConfig({ chatConfig: config });
   },
 
@@ -315,11 +353,11 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     };
   },
 
-  toggleAgentPlugin: (id, state) => {
+  toggleAgentPlugin: (id: string, state?: boolean) => {
     get().dispatchConfig({ pluginId: id, state, type: 'togglePlugin' });
   },
 
-  updateLoadingState: (key, value) => {
+  updateLoadingState: (key: keyof LoadingState, value: boolean) => {
     set(
       { loadingState: { ...get().loadingState, [key]: value } },
       false,
