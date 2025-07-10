@@ -60,9 +60,13 @@ const GithubBadge = memo(() => {
         {badgeLite}
       </Snippet>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* eslint-disable-next-line @next/next/no-img-element */}
 =======
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+>>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
       <img
         alt="MCP Badge"
         height={selectedStyle === 'for-the-badge' ? 28 : 20}
@@ -79,9 +83,13 @@ const GithubBadge = memo(() => {
         {badge}
       </Snippet>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* eslint-disable-next-line @next/next/no-img-element */}
 =======
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+>>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
       <img alt="MCP Badge" src={styledBadgeFullUrl} />
     </>
   );
