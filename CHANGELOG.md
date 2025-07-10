@@ -3,6 +3,7 @@
 # Changelog
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### [Version 1.99.2](https://github.com/lobehub/lobe-chat/compare/v1.99.1...v1.99.2)
 
 <sup>Released on **2025-07-15**</sup>
@@ -541,6 +542,8 @@
 
 </div>
 
+=======
+>>>>>>> e02e74c9a (:bookmark: chore(release): v1.97.1 [skip ci])
 ### [Version 1.97.1](https://github.com/lobehub/lobe-chat/compare/v1.97.0...v1.97.1)
 
 <sup>Released on **2025-07-10**</sup>
@@ -566,8 +569,11 @@
 
 </div>
 
+<<<<<<< HEAD
 =======
 >>>>>>> e1481e60f (:bookmark: chore(release): v1.97.0 [skip ci])
+=======
+>>>>>>> e02e74c9a (:bookmark: chore(release): v1.97.1 [skip ci])
 ## [Version 1.97.0](https://github.com/lobehub/lobe-chat/compare/v1.96.20...v1.97.0)
 
 <sup>Released on **2025-07-08**</sup>
