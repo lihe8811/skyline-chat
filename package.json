@@ -213,9 +213,12 @@
     "@xterm/xterm": "^5.5.0",
     "ahooks": "^3.8.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "ai": "^3.4.33",
 >>>>>>> 8dc2aef55 (⚡️ perf: make most pages static to improve performance (#8383))
+=======
+>>>>>>> 09f921d53 (⚡️ perf: add database autovacuum sql (#8395))
     "antd": "^5.26.4",
     "antd-style": "^3.7.1",
     "brotli-wasm": "^3.0.1",

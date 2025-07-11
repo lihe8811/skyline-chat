@@ -7,8 +7,11 @@
 -- Lowering to 2% to ensure frequent cleanup.
 ALTER TABLE "embeddings" SET (autovacuum_vacuum_scale_factor = 0.02, autovacuum_vacuum_threshold = 1000);
 
+<<<<<<< HEAD
 --> statement-breakpoint
 
+=======
+>>>>>>> 09f921d53 (⚡️ perf: add database autovacuum sql (#8395))
 -- Tuning for the 'chunks' table
 -- This table also experiences many updates/deletes and requires similar tuning.
 ALTER TABLE "chunks" SET (autovacuum_vacuum_scale_factor = 0.02, autovacuum_vacuum_threshold = 1000);
