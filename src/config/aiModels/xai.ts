@@ -18,10 +18,14 @@ const xaiChatModels: AIChatModelCard[] = [
     displayName: 'Grok 4 0709',
     enabled: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: 'grok-4',
 =======
     id: 'grok-4-0709',
 >>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
+=======
+    id: 'grok-4',
+>>>>>>> d6f17f824 (🐛 fix: Grok-4 reasoning model universal matching (#8390))
     pricing: {
       cachedInput: 0.75,
       input: 3,

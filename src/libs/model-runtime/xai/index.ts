@@ -10,6 +10,7 @@ export interface XAIModelCard {
 export const GrokReasoningModels = new Set([
   'grok-3-mini',
 <<<<<<< HEAD
+<<<<<<< HEAD
   'grok-4',
 ]);
 
@@ -21,6 +22,14 @@ export const isGrokReasoningModel = (model: string) =>
 ]);
 
 >>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
+=======
+  'grok-4',
+]);
+
+export const isGrokReasoningModel = (model: string) =>
+  Array.from(GrokReasoningModels).some((id) => model.includes(id));
+
+>>>>>>> d6f17f824 (🐛 fix: Grok-4 reasoning model universal matching (#8390))
 export const LobeXAI = createOpenAICompatibleRuntime({
   baseURL: 'https://api.x.ai/v1',
   chatCompletion: {
@@ -30,6 +39,7 @@ export const LobeXAI = createOpenAICompatibleRuntime({
       return {
         ...rest,
 <<<<<<< HEAD
+<<<<<<< HEAD
         frequency_penalty: isGrokReasoningModel(model) ? undefined : frequency_penalty,
         model,
         presence_penalty: isGrokReasoningModel(model) ? undefined : presence_penalty,
@@ -38,6 +48,11 @@ export const LobeXAI = createOpenAICompatibleRuntime({
         model,
         presence_penalty: GrokReasoningModels.has(model) ? undefined : presence_penalty,
 >>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
+=======
+        frequency_penalty: isGrokReasoningModel(model) ? undefined : frequency_penalty,
+        model,
+        presence_penalty: isGrokReasoningModel(model) ? undefined : presence_penalty,
+>>>>>>> d6f17f824 (🐛 fix: Grok-4 reasoning model universal matching (#8390))
         stream: true,
         ...(enabledSearch && {
           search_parameters: {
