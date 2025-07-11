@@ -1394,8 +1394,13 @@
   "grok-3-mini-fast": {
     "description": "Modèle léger, réfléchit avant de répondre. Rapide et intelligent, adapté aux tâches logiques ne nécessitant pas de connaissances approfondies, avec accès à la trace de pensée originale."
   },
+<<<<<<< HEAD
   "grok-4": {
     "description": "Notre tout dernier modèle phare, le plus puissant, excelle dans le traitement du langage naturel, le calcul mathématique et le raisonnement — un véritable champion polyvalent."
+=======
+  "grok-4-0709": {
+    "description": "Notre tout dernier et plus puissant modèle phare, excellent en traitement du langage naturel, calcul mathématique et raisonnement — un véritable champion polyvalent."
+>>>>>>> 00215c02e (💄 style: update i18n (#8387))
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B est un modèle linguistique combinant créativité et intelligence, intégrant plusieurs modèles de pointe."
