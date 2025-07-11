@@ -1412,15 +1412,7 @@
   "grok-3-mini-fast": {
     "description": "Modelo ligero que piensa antes de responder. Rápido e inteligente, adecuado para tareas lógicas que no requieren conocimientos profundos de dominio y capaz de proporcionar la trayectoria original del pensamiento."
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "grok-4": {
-=======
   "grok-4-0709": {
->>>>>>> 00215c02e (💄 style: update i18n (#8387))
-=======
-  "grok-4": {
->>>>>>> 790eeb86c (💄 style: update i18n (#8400))
     "description": "Nuestro modelo insignia más reciente y potente, que destaca en procesamiento de lenguaje natural, cálculo matemático y razonamiento — un competidor versátil y perfecto."
   },
   "gryphe/mythomax-l2-13b": {
