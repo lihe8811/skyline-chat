@@ -8,9 +8,13 @@ const xaiChatModels: AIChatModelCard[] = [
       reasoning: true,
       search: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
       vision: true,
 =======
 >>>>>>> b7ca44794 (💄 style: add `grok-4-0709` model from xAI (#8379))
+=======
+      vision: true,
+>>>>>>> 8512f5a9a (🐛 fix: add vision support to Grok 4 (#8386))
     },
     contextWindowTokens: 256_000,
     description:
