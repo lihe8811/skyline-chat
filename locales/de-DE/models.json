@@ -1395,10 +1395,14 @@
     "description": "Ein leichtgewichtiges Modell, das vor der Antwort nachdenkt. Es arbeitet schnell und intelligent, eignet sich für logische Aufgaben ohne tiefgehendes Fachwissen und ermöglicht die Nachverfolgung des ursprünglichen Denkprozesses."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "grok-4": {
 =======
   "grok-4-0709": {
 >>>>>>> 00215c02e (💄 style: update i18n (#8387))
+=======
+  "grok-4": {
+>>>>>>> 790eeb86c (💄 style: update i18n (#8400))
     "description": "Unser neuestes und leistungsstärkstes Flaggschiffmodell, das in der Verarbeitung natürlicher Sprache, mathematischen Berechnungen und logischem Denken herausragende Leistungen erbringt – ein perfekter Allrounder."
   },
   "gryphe/mythomax-l2-13b": {

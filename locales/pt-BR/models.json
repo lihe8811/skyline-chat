@@ -1401,12 +1401,17 @@
     "description": "Modelo leve que pensa antes de responder. Rápido e inteligente, adequado para tarefas lógicas que não exigem conhecimento profundo de domínio, e capaz de fornecer o rastro original do pensamento."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "grok-4": {
     "description": "Nosso mais recente e poderoso modelo principal, com desempenho excepcional em processamento de linguagem natural, cálculo matemático e raciocínio — um competidor versátil perfeito."
 =======
   "grok-4-0709": {
     "description": "Nosso modelo mais recente e poderoso, com desempenho excepcional em processamento de linguagem natural, cálculo matemático e raciocínio — um competidor versátil perfeito."
 >>>>>>> 00215c02e (💄 style: update i18n (#8387))
+=======
+  "grok-4": {
+    "description": "Nosso mais recente e poderoso modelo principal, com desempenho excepcional em processamento de linguagem natural, cálculo matemático e raciocínio — um competidor versátil perfeito."
+>>>>>>> 790eeb86c (💄 style: update i18n (#8400))
   },
   "gryphe/mythomax-l2-13b": {
     "description": "MythoMax l2 13B é um modelo de linguagem que combina criatividade e inteligência, integrando vários modelos de ponta."

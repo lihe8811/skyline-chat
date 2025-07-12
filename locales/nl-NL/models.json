@@ -1398,10 +1398,14 @@
     "description": "Lichtgewicht model dat eerst nadenkt voor het reageren. Snel en intelligent, geschikt voor logische taken zonder diepgaande domeinkennis en kan de oorspronkelijke denkprocessen vastleggen."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "grok-4": {
 =======
   "grok-4-0709": {
 >>>>>>> 00215c02e (💄 style: update i18n (#8387))
+=======
+  "grok-4": {
+>>>>>>> 790eeb86c (💄 style: update i18n (#8400))
     "description": "Ons nieuwste en krachtigste vlaggenschipmodel, uitmuntend in natuurlijke taalverwerking, wiskundige berekeningen en redeneren — een perfecte allrounder."
   },
   "gryphe/mythomax-l2-13b": {
