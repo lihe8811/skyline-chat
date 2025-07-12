@@ -188,6 +188,7 @@ export const openaiChatModels: AIChatModelCard[] = [
       'o1-mini是一款针对编程、数学和科学应用场景而设计的快速、经济高效的推理模型。该模型具有128K上下文和2023年10月的知识截止日期。',
     displayName: 'o1-mini',
     id: 'o1-mini', // deprecated on 2025-10-27
+    id: 'o1-mini', // deprecated on 2025-10-27
     maxOutput: 65_536,
     pricing: {
       cachedInput: 0.55,
@@ -492,6 +493,7 @@ export const openaiChatModels: AIChatModelCard[] = [
       output: 10,
     },
     releasedAt: '2024-12-17',
+    releasedAt: '2024-12-17',
     /*
     settings: {
       searchImpl: 'params',
@@ -699,6 +701,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     maxOutput: 100_000,
     pricing: {
       cachedInput: 0.375,
+      cachedInput: 0.375,
       input: 1.5,
       output: 6,
     },
@@ -789,6 +792,8 @@ export const openaiTTSModels: AITTSModelCard[] = [
     pricing: {
       input: 0.6,
       output: 12,
+      input: 0.6,
+      output: 12,
     },
     type: 'tts',
   },
@@ -797,6 +802,7 @@ export const openaiTTSModels: AITTSModelCard[] = [
 // 语音识别模型
 export const openaiSTTModels: AISTTModelCard[] = [
   {
+    description: '通用语音识别模型，支持多语言语音识别、语音翻译和语言识别。',
     description: '通用语音识别模型，支持多语言语音识别、语音翻译和语言识别。',
     displayName: 'Whisper',
     id: 'whisper-1',
@@ -807,8 +813,7 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
-    description:
-      'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+    description: 'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
     displayName: 'GPT-4o Transcribe',
     id: 'gpt-4o-transcribe',
     maxOutput: 2000,
@@ -820,8 +825,7 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
-    description:
-      'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+    description: 'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
     displayName: 'GPT-4o Mini Transcribe',
     id: 'gpt-4o-mini-transcribe',
     maxOutput: 2000,
@@ -878,11 +882,16 @@ export const openaiImageModels: AIImageModelCard[] = [
 export const openaiRealtimeModels: AIRealtimeModelCard[] = [
   {
     contextWindowTokens: 16_000,
+    contextWindowTokens: 16_000,
     description: 'GPT-4o 实时版本，支持音频和文本实时输入输出',
+    displayName: 'GPT-4o Realtime 241217',
     displayName: 'GPT-4o Realtime 241217',
     id: 'gpt-4o-realtime-preview',
     maxOutput: 4096,
     pricing: {
+      audioInput: 40,
+      audioOutput: 80,
+      cachedAudioInput: 2.5,
       audioInput: 40,
       audioOutput: 80,
       cachedAudioInput: 2.5,
@@ -891,15 +900,22 @@ export const openaiRealtimeModels: AIRealtimeModelCard[] = [
       output: 20,
     },
     releasedAt: '2024-12-17',
+    releasedAt: '2024-12-17',
     type: 'realtime',
   },
   {
     contextWindowTokens: 32_000,
+    contextWindowTokens: 32_000,
     description: 'GPT-4o 实时版本，支持音频和文本实时输入输出',
+    displayName: 'GPT-4o Realtime 250603',
+    id: 'gpt-4o-realtime-preview-2025-06-03',
     displayName: 'GPT-4o Realtime 250603',
     id: 'gpt-4o-realtime-preview-2025-06-03',
     maxOutput: 4096,
     pricing: {
+      audioInput: 40,
+      audioOutput: 80,
+      cachedAudioInput: 2.5,
       audioInput: 40,
       audioOutput: 80,
       cachedAudioInput: 2.5,
@@ -908,11 +924,15 @@ export const openaiRealtimeModels: AIRealtimeModelCard[] = [
       output: 20,
     },
     releasedAt: '2025-06-03',
+    releasedAt: '2025-06-03',
     type: 'realtime',
   },
   {
     contextWindowTokens: 16_000,
+    contextWindowTokens: 16_000,
     description: 'GPT-4o 实时版本，支持音频和文本实时输入输出',
+    displayName: 'GPT-4o Realtime 241001',
+    id: 'gpt-4o-realtime-preview-2024-10-01', // deprecated on 2025-09-10
     displayName: 'GPT-4o Realtime 241001',
     id: 'gpt-4o-realtime-preview-2024-10-01', // deprecated on 2025-09-10
     maxOutput: 4096,
@@ -920,10 +940,14 @@ export const openaiRealtimeModels: AIRealtimeModelCard[] = [
       audioInput: 100,
       audioOutput: 200,
       cachedAudioInput: 20,
+      audioInput: 100,
+      audioOutput: 200,
+      cachedAudioInput: 20,
       cachedInput: 2.5,
       input: 5,
       output: 20,
     },
+    releasedAt: '2024-10-01',
     releasedAt: '2024-10-01',
     type: 'realtime',
   },
