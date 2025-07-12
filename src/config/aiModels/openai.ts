@@ -807,8 +807,12 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
+<<<<<<< HEAD
     description:
       'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+=======
+    description: 'GPT-4o Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
     displayName: 'GPT-4o Transcribe',
     id: 'gpt-4o-transcribe',
     maxOutput: 2000,
@@ -820,8 +824,12 @@ export const openaiSTTModels: AISTTModelCard[] = [
   },
   {
     contextWindowTokens: 16_000,
+<<<<<<< HEAD
     description:
       'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+=======
+    description: 'GPT-4o Mini Transcribe 是一种使用 GPT-4o 转录音频的语音转文本模型。与原始 Whisper 模型相比，它提高了单词错误率，并提高了语言识别和准确性。使用它来获得更准确的转录。',
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
     displayName: 'GPT-4o Mini Transcribe',
     id: 'gpt-4o-mini-transcribe',
     maxOutput: 2000,

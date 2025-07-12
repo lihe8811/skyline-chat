@@ -940,12 +940,15 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Mô hình Doubao-Seed-1.6-thinking có khả năng suy nghĩ được tăng cường đáng kể, so với Doubao-1.5-thinking-pro, nâng cao hơn nữa các năng lực cơ bản như lập trình, toán học, suy luận logic, đồng thời hỗ trợ hiểu hình ảnh. Hỗ trợ cửa sổ ngữ cảnh 256k, độ dài đầu ra tối đa 16k tokens."
+<<<<<<< HEAD
   },
   "doubao-vision-lite-32k": {
     "description": "Mô hình Doubao-vision là mô hình đa phương thức lớn do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cùng khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất vượt trội trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể ứng dụng trong các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
   },
   "doubao-vision-pro-32k": {
     "description": "Mô hình Doubao-vision là mô hình đa phương thức lớn do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cùng khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất vượt trội trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể ứng dụng trong các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
+=======
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
   "emohaa": {
     "description": "Emohaa là mô hình tâm lý, có khả năng tư vấn chuyên nghiệp, giúp người dùng hiểu các vấn đề cảm xúc."

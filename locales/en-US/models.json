@@ -940,12 +940,15 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Doubao-Seed-1.6-thinking features greatly enhanced thinking capabilities. Compared to Doubao-1.5-thinking-pro, it further improves foundational skills such as coding, math, and logical reasoning, and supports visual understanding. It supports a 256k context window and output lengths up to 16k tokens."
+<<<<<<< HEAD
   },
   "doubao-vision-lite-32k": {
     "description": "The Doubao-vision model is a multimodal large model launched by Doubao, featuring powerful image understanding and reasoning capabilities along with precise instruction comprehension. It demonstrates strong performance in image-text information extraction and image-based reasoning tasks, applicable to more complex and diverse visual question answering scenarios."
   },
   "doubao-vision-pro-32k": {
     "description": "The Doubao-vision model is a multimodal large model launched by Doubao, featuring powerful image understanding and reasoning capabilities along with precise instruction comprehension. It demonstrates strong performance in image-text information extraction and image-based reasoning tasks, applicable to more complex and diverse visual question answering scenarios."
+=======
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
   "emohaa": {
     "description": "Emohaa is a psychological model with professional counseling capabilities, helping users understand emotional issues."

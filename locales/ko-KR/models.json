@@ -940,12 +940,15 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Doubao-Seed-1.6-thinking 모델은 사고 능력이 크게 강화되어 Doubao-1.5-thinking-pro에 비해 코딩, 수학, 논리 추론 등 기본 능력이 더욱 향상되었으며, 시각 이해도 지원합니다. 256k 컨텍스트 창을 지원하며, 출력 길이는 최대 16k 토큰까지 가능합니다."
+<<<<<<< HEAD
   },
   "doubao-vision-lite-32k": {
     "description": "Doubao-vision 모델은 Doubao에서 출시한 다중 모달 대형 모델로, 강력한 이미지 이해 및 추론 능력과 정밀한 명령 이해 능력을 갖추고 있습니다. 이미지 텍스트 정보 추출 및 이미지 기반 추론 작업에서 뛰어난 성능을 보여, 더 복잡하고 광범위한 시각 질문 응답 작업에 적용할 수 있습니다."
   },
   "doubao-vision-pro-32k": {
     "description": "Doubao-vision 모델은 Doubao에서 출시한 다중 모달 대형 모델로, 강력한 이미지 이해 및 추론 능력과 정밀한 명령 이해 능력을 갖추고 있습니다. 이미지 텍스트 정보 추출 및 이미지 기반 추론 작업에서 뛰어난 성능을 보여, 더 복잡하고 광범위한 시각 질문 응답 작업에 적용할 수 있습니다."
+=======
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
   "emohaa": {
     "description": "Emohaa는 심리 모델로, 전문 상담 능력을 갖추고 있어 사용자가 감정 문제를 이해하는 데 도움을 줍니다."

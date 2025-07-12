@@ -940,12 +940,15 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Doubao-Seed-1.6-thinking model heeft sterk verbeterde denkvermogens, met verdere verbeteringen in basisvaardigheden zoals coderen, wiskunde en logisch redeneren ten opzichte van Doubao-1.5-thinking-pro, en ondersteunt visueel begrip. Ondersteunt een contextvenster van 256k en een maximale uitvoerlengte van 16k tokens."
+<<<<<<< HEAD
   },
   "doubao-vision-lite-32k": {
     "description": "Het Doubao-vision model is een multimodaal groot model van Doubao met krachtige beeldbegrip- en redeneercapaciteiten, evenals nauwkeurige instructiebegrip. Het model presteert sterk bij het extraheren van beeld- en tekstinformatie en bij beeldgebaseerde redeneertaken, en is toepasbaar op complexere en bredere visuele vraag-en-antwoord scenario's."
   },
   "doubao-vision-pro-32k": {
     "description": "Het Doubao-vision model is een multimodaal groot model van Doubao met krachtige beeldbegrip- en redeneercapaciteiten, evenals nauwkeurige instructiebegrip. Het model presteert sterk bij het extraheren van beeld- en tekstinformatie en bij beeldgebaseerde redeneertaken, en is toepasbaar op complexere en bredere visuele vraag-en-antwoord scenario's."
+=======
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
   "emohaa": {
     "description": "Emohaa is een psychologisch model met professionele adviescapaciteiten, dat gebruikers helpt emotionele problemen te begrijpen."

@@ -940,12 +940,15 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Le modèle Doubao-Seed-1.6-thinking a une capacité de réflexion considérablement renforcée. Par rapport à Doubao-1.5-thinking-pro, il améliore davantage les compétences fondamentales telles que le codage, les mathématiques et le raisonnement logique, tout en supportant la compréhension visuelle. Il prend en charge une fenêtre contextuelle de 256k et une longueur de sortie maximale de 16k tokens."
+<<<<<<< HEAD
   },
   "doubao-vision-lite-32k": {
     "description": "Le modèle Doubao-vision est un grand modèle multimodal développé par Doubao, doté de puissantes capacités de compréhension et de raisonnement d'images, ainsi que d'une compréhension précise des instructions. Il excelle dans l'extraction d'informations texte-image et les tâches de raisonnement basées sur l'image, pouvant être appliqué à des tâches de questions-réponses visuelles plus complexes et étendues."
   },
   "doubao-vision-pro-32k": {
     "description": "Le modèle Doubao-vision est un grand modèle multimodal développé par Doubao, doté de puissantes capacités de compréhension et de raisonnement d'images, ainsi que d'une compréhension précise des instructions. Il excelle dans l'extraction d'informations texte-image et les tâches de raisonnement basées sur l'image, pouvant être appliqué à des tâches de questions-réponses visuelles plus complexes et étendues."
+=======
+>>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
   "emohaa": {
     "description": "Emohaa est un modèle psychologique, doté de compétences de conseil professionnel, aidant les utilisateurs à comprendre les problèmes émotionnels."
