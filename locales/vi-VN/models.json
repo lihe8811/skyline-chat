@@ -73,20 +73,26 @@
   },
   "Doubao-lite-128k": {
     "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 128k."
+    "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 128k."
   },
   "Doubao-lite-32k": {
+    "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
     "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
   },
   "Doubao-lite-4k": {
     "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 4k."
+    "description": "Doubao-lite sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 4k."
   },
   "Doubao-pro-128k": {
+    "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 128k."
     "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 128k."
   },
   "Doubao-pro-32k": {
     "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
+    "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
   },
   "Doubao-pro-4k": {
+    "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 4k."
     "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 4k."
   },
   "ERNIE-3.5-128K": {
@@ -909,8 +915,38 @@
   "doubao-1.5-ui-tars": {
     "description": "Doubao-1.5-UI-TARS là mô hình Agent nguyên bản hướng tới tương tác giao diện đồ họa (GUI). Thông qua khả năng nhận thức, suy luận và hành động giống con người, tương tác liền mạch với GUI."
   },
+  "doubao-1.5-thinking-pro-m": {
+    "description": "Doubao-1.5 là mô hình tư duy sâu hoàn toàn mới (phiên bản m có khả năng suy luận đa phương thức sâu nguyên bản), thể hiện xuất sắc trong các lĩnh vực chuyên môn như toán học, lập trình, suy luận khoa học và các nhiệm vụ sáng tạo chung. Đạt hoặc gần đạt trình độ hàng đầu ngành trên nhiều chuẩn đánh giá uy tín như AIME 2024, Codeforces, GPQA. Hỗ trợ cửa sổ ngữ cảnh 128k, đầu ra 16k."
+  },
+  "doubao-1.5-thinking-vision-pro": {
+    "description": "Mô hình tư duy sâu đa phương thức hoàn toàn mới, có khả năng hiểu và suy luận đa phương thức tổng quát mạnh mẽ, đạt hiệu suất SOTA trên 37 trong số 59 chuẩn đánh giá công khai."
+  },
+  "doubao-1.5-ui-tars": {
+    "description": "Doubao-1.5-UI-TARS là mô hình Agent nguyên bản hướng tới tương tác giao diện đồ họa (GUI). Thông qua khả năng nhận thức, suy luận và hành động giống con người, tương tác liền mạch với GUI."
+  },
   "doubao-1.5-vision-lite": {
     "description": "Doubao-1.5-vision-lite là mô hình đa phương tiện lớn được nâng cấp mới, hỗ trợ nhận diện hình ảnh với bất kỳ độ phân giải nào và tỷ lệ dài rộng cực đoan, tăng cường khả năng suy luận hình ảnh, nhận diện tài liệu, hiểu thông tin chi tiết và tuân thủ hướng dẫn. Hỗ trợ cửa sổ ngữ cảnh 128k, độ dài đầu ra tối đa 16k tokens."
+  },
+  "doubao-1.5-vision-pro": {
+    "description": "Doubao-1.5-vision-pro là mô hình đa phương thức lớn được nâng cấp hoàn toàn mới, hỗ trợ nhận dạng hình ảnh với độ phân giải tùy ý và tỷ lệ khung hình cực đoan, tăng cường khả năng suy luận thị giác, nhận dạng tài liệu, hiểu thông tin chi tiết và tuân thủ chỉ dẫn."
+  },
+  "doubao-1.5-vision-pro-32k": {
+    "description": "Doubao-1.5-vision-pro là mô hình đa phương thức lớn được nâng cấp hoàn toàn mới, hỗ trợ nhận dạng hình ảnh với độ phân giải tùy ý và tỷ lệ khung hình cực đoan, tăng cường khả năng suy luận thị giác, nhận dạng tài liệu, hiểu thông tin chi tiết và tuân thủ chỉ dẫn."
+  },
+  "doubao-lite-128k": {
+    "description": "Sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 128k."
+  },
+  "doubao-lite-32k": {
+    "description": "Sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
+  },
+  "doubao-lite-4k": {
+    "description": "Sở hữu tốc độ phản hồi tối ưu, hiệu quả chi phí tốt hơn, cung cấp lựa chọn linh hoạt hơn cho các kịch bản khác nhau của khách hàng. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 4k."
+  },
+  "doubao-pro-256k": {
+    "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 256k."
+  },
+  "doubao-pro-32k": {
+    "description": "Mô hình chủ lực với hiệu quả tốt nhất, phù hợp xử lý các nhiệm vụ phức tạp, có hiệu quả xuất sắc trong các kịch bản như hỏi đáp tham khảo, tóm tắt, sáng tạo, phân loại văn bản, nhập vai. Hỗ trợ suy luận và tinh chỉnh với cửa sổ ngữ cảnh 32k."
   },
   "doubao-1.5-vision-pro": {
     "description": "Doubao-1.5-vision-pro là mô hình đa phương thức lớn được nâng cấp hoàn toàn mới, hỗ trợ nhận dạng hình ảnh với độ phân giải tùy ý và tỷ lệ khung hình cực đoan, tăng cường khả năng suy luận thị giác, nhận dạng tài liệu, hiểu thông tin chi tiết và tuân thủ chỉ dẫn."
@@ -941,6 +977,12 @@
   },
   "doubao-seed-1.6-thinking": {
     "description": "Mô hình Doubao-Seed-1.6-thinking có khả năng suy nghĩ được tăng cường đáng kể, so với Doubao-1.5-thinking-pro, nâng cao hơn nữa các năng lực cơ bản như lập trình, toán học, suy luận logic, đồng thời hỗ trợ hiểu hình ảnh. Hỗ trợ cửa sổ ngữ cảnh 256k, độ dài đầu ra tối đa 16k tokens."
+  },
+  "doubao-vision-lite-32k": {
+    "description": "Mô hình Doubao-vision là mô hình đa phương thức lớn do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cùng khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất vượt trội trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể ứng dụng trong các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "Mô hình Doubao-vision là mô hình đa phương thức lớn do Doubao phát triển, có khả năng hiểu và suy luận hình ảnh mạnh mẽ, cùng khả năng hiểu chỉ dẫn chính xác. Mô hình thể hiện hiệu suất vượt trội trong việc trích xuất thông tin văn bản từ hình ảnh và các nhiệm vụ suy luận dựa trên hình ảnh, có thể ứng dụng trong các nhiệm vụ hỏi đáp thị giác phức tạp và đa dạng hơn."
   },
   "emohaa": {
     "description": "Emohaa là mô hình tâm lý, có khả năng tư vấn chuyên nghiệp, giúp người dùng hiểu các vấn đề cảm xúc."
@@ -1350,6 +1392,9 @@
   "gpt-4o-mini-transcribe": {
     "description": "GPT-4o Mini Transcribe là mô hình chuyển đổi giọng nói thành văn bản sử dụng GPT-4o để phiên âm âm thanh. So với mô hình Whisper gốc, nó cải thiện tỷ lệ lỗi từ và nâng cao khả năng nhận diện ngôn ngữ cũng như độ chính xác. Sử dụng nó để có bản phiên âm chính xác hơn."
   },
+  "gpt-4o-mini-transcribe": {
+    "description": "GPT-4o Mini Transcribe là mô hình chuyển đổi giọng nói thành văn bản sử dụng GPT-4o để phiên âm âm thanh. So với mô hình Whisper gốc, nó cải thiện tỷ lệ lỗi từ và nâng cao khả năng nhận diện ngôn ngữ cũng như độ chính xác. Sử dụng nó để có bản phiên âm chính xác hơn."
+  },
   "gpt-4o-mini-tts": {
     "description": "GPT-4o mini TTS là mô hình chuyển văn bản thành giọng nói dựa trên GPT-4o mini, cung cấp sinh âm thanh cao cấp với chi phí thấp hơn."
   },
@@ -1361,6 +1406,8 @@
   },
   "gpt-4o-realtime-preview-2025-06-03": {
     "description": "Phiên bản thời gian thực của GPT-4o, hỗ trợ nhập xuất âm thanh và văn bản theo thời gian thực."
+  "gpt-4o-realtime-preview-2025-06-03": {
+    "description": "Phiên bản thời gian thực của GPT-4o, hỗ trợ nhập xuất âm thanh và văn bản theo thời gian thực."
   },
   "gpt-4o-search-preview": {
     "description": "GPT-4o phiên bản xem trước tìm kiếm là mô hình được huấn luyện chuyên biệt để hiểu và thực thi các truy vấn tìm kiếm trên web, sử dụng API Chat Completions. Ngoài phí token, truy vấn tìm kiếm trên web còn tính phí theo mỗi lần gọi công cụ."
@@ -1368,18 +1415,6 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe là mô hình chuyển đổi giọng nói thành văn bản sử dụng GPT-4o để phiên âm âm thanh. So với mô hình Whisper gốc, nó cải thiện tỷ lệ lỗi từ và nâng cao khả năng nhận diện ngôn ngữ cũng như độ chính xác. Sử dụng nó để có bản phiên âm chính xác hơn."
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "gpt-image-1": {
-    "description": "Mô hình tạo hình ảnh đa phương thức nguyên bản của ChatGPT"
-  },
-=======
->>>>>>> 25158750c (💄 style: update i18n (#8410))
-=======
-  "gpt-image-1": {
-    "description": "Mô hình tạo hình ảnh đa phương thức nguyên bản của ChatGPT"
-  },
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "Mô hình này đã được cải thiện về độ chính xác, khả năng tuân thủ hướng dẫn và khả năng đa ngôn ngữ."
   },
@@ -1526,6 +1561,9 @@
   },
   "jina-deepsearch-v1": {
     "description": "Tìm kiếm sâu kết hợp tìm kiếm trên mạng, đọc và suy luận, có thể thực hiện điều tra toàn diện. Bạn có thể coi nó như một đại lý, nhận nhiệm vụ nghiên cứu của bạn - nó sẽ thực hiện tìm kiếm rộng rãi và qua nhiều lần lặp lại trước khi đưa ra câu trả lời. Quá trình này liên quan đến nghiên cứu liên tục, suy luận và giải quyết vấn đề từ nhiều góc độ. Điều này khác biệt hoàn toàn với việc tạo ra câu trả lời trực tiếp từ dữ liệu đã được huấn luyện trước của các mô hình lớn tiêu chuẩn và các hệ thống RAG truyền thống dựa vào tìm kiếm bề mặt một lần."
+  },
+  "kimi-k2-0711-preview": {
+    "description": "kimi-k2 là mô hình cơ sở kiến trúc MoE với khả năng mã hóa và Agent cực mạnh, tổng số tham số 1T, tham số kích hoạt 32B. Trong các bài kiểm tra hiệu năng chuẩn về suy luận kiến thức chung, lập trình, toán học, Agent và các lĩnh vực chính khác, mô hình K2 vượt trội hơn các mô hình mã nguồn mở phổ biến khác."
   },
   "kimi-k2-0711-preview": {
     "description": "kimi-k2 là mô hình cơ sở kiến trúc MoE với khả năng mã hóa và Agent cực mạnh, tổng số tham số 1T, tham số kích hoạt 32B. Trong các bài kiểm tra hiệu năng chuẩn về suy luận kiến thức chung, lập trình, toán học, Agent và các lĩnh vực chính khác, mô hình K2 vượt trội hơn các mô hình mã nguồn mở phổ biến khác."
@@ -2423,6 +2461,7 @@
     "description": "Mô hình v0-1.5-md phù hợp cho các nhiệm vụ hàng ngày và tạo giao diện người dùng (UI)"
   },
   "whisper-1": {
+    "description": "Mô hình nhận dạng giọng nói đa năng, hỗ trợ nhận dạng giọng nói đa ngôn ngữ, dịch giọng nói và nhận diện ngôn ngữ."
     "description": "Mô hình nhận dạng giọng nói đa năng, hỗ trợ nhận dạng giọng nói đa ngôn ngữ, dịch giọng nói và nhận diện ngôn ngữ."
   },
   "wizardlm2": {
