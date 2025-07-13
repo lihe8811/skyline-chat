@@ -950,6 +950,12 @@
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
+  "doubao-vision-lite-32k": {
+    "description": "Le modèle Doubao-vision est un grand modèle multimodal développé par Doubao, doté de puissantes capacités de compréhension et de raisonnement d'images, ainsi que d'une compréhension précise des instructions. Il excelle dans l'extraction d'informations texte-image et les tâches de raisonnement basées sur l'image, pouvant être appliqué à des tâches de questions-réponses visuelles plus complexes et étendues."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "Le modèle Doubao-vision est un grand modèle multimodal développé par Doubao, doté de puissantes capacités de compréhension et de raisonnement d'images, ainsi que d'une compréhension précise des instructions. Il excelle dans l'extraction d'informations texte-image et les tâches de raisonnement basées sur l'image, pouvant être appliqué à des tâches de questions-réponses visuelles plus complexes et étendues."
+  },
   "emohaa": {
     "description": "Emohaa est un modèle psychologique, doté de compétences de conseil professionnel, aidant les utilisateurs à comprendre les problèmes émotionnels."
   },
@@ -1376,9 +1382,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe est un modèle de transcription audio en texte utilisant GPT-4o. Par rapport au modèle Whisper original, il améliore le taux d'erreur des mots ainsi que la reconnaissance et la précision linguistiques. Utilisez-le pour obtenir des transcriptions plus précises."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "Modèle natif multimodal de génération d'images de ChatGPT."
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "Ce modèle a été amélioré en termes de précision, de respect des instructions et de capacités multilingues."
   },

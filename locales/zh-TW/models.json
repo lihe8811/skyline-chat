@@ -1373,9 +1373,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe 是一種使用 GPT-4o 轉錄音訊的語音轉文字模型。與原始 Whisper 模型相比，它降低了字詞錯誤率，並提升了語言識別和準確性。使用它來獲得更準確的轉錄。"
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT 原生多模態圖片生成模型"
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "該模型在準確性、指令遵循和多語言能力方面有所改進。"
   },

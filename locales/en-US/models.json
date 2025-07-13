@@ -950,6 +950,12 @@
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
+  "doubao-vision-lite-32k": {
+    "description": "The Doubao-vision model is a multimodal large model launched by Doubao, featuring powerful image understanding and reasoning capabilities along with precise instruction comprehension. It demonstrates strong performance in image-text information extraction and image-based reasoning tasks, applicable to more complex and diverse visual question answering scenarios."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "The Doubao-vision model is a multimodal large model launched by Doubao, featuring powerful image understanding and reasoning capabilities along with precise instruction comprehension. It demonstrates strong performance in image-text information extraction and image-based reasoning tasks, applicable to more complex and diverse visual question answering scenarios."
+  },
   "emohaa": {
     "description": "Emohaa is a psychological model with professional counseling capabilities, helping users understand emotional issues."
   },
@@ -1376,9 +1382,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe is a speech-to-text model that uses GPT-4o to transcribe audio. Compared to the original Whisper model, it improves word error rate, language recognition, and accuracy. Use it for more precise transcriptions."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT native multimodal image generation model."
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "This model has improved in accuracy, instruction adherence, and multilingual capabilities."
   },

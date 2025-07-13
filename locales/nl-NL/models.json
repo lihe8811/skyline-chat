@@ -950,6 +950,12 @@
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
+  "doubao-vision-lite-32k": {
+    "description": "Het Doubao-vision model is een multimodaal groot model van Doubao met krachtige beeldbegrip- en redeneercapaciteiten, evenals nauwkeurige instructiebegrip. Het model presteert sterk bij het extraheren van beeld- en tekstinformatie en bij beeldgebaseerde redeneertaken, en is toepasbaar op complexere en bredere visuele vraag-en-antwoord scenario's."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "Het Doubao-vision model is een multimodaal groot model van Doubao met krachtige beeldbegrip- en redeneercapaciteiten, evenals nauwkeurige instructiebegrip. Het model presteert sterk bij het extraheren van beeld- en tekstinformatie en bij beeldgebaseerde redeneertaken, en is toepasbaar op complexere en bredere visuele vraag-en-antwoord scenario's."
+  },
   "emohaa": {
     "description": "Emohaa is een psychologisch model met professionele adviescapaciteiten, dat gebruikers helpt emotionele problemen te begrijpen."
   },
@@ -1376,9 +1382,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe is een spraak-naar-tekstmodel dat GPT-4o gebruikt voor audiotranscriptie. Vergeleken met het originele Whisper-model verbetert het de woordfoutpercentage en verhoogt het de taalherkenning en nauwkeurigheid. Gebruik het voor nauwkeurigere transcripties."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT native multimodaal afbeeldingsgeneratiemodel"
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "Dit model heeft verbeteringen aangebracht in nauwkeurigheid, instructievolging en meertalige capaciteiten."
   },

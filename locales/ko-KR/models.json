@@ -950,6 +950,12 @@
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
+  "doubao-vision-lite-32k": {
+    "description": "Doubao-vision 모델은 Doubao에서 출시한 다중 모달 대형 모델로, 강력한 이미지 이해 및 추론 능력과 정밀한 명령 이해 능력을 갖추고 있습니다. 이미지 텍스트 정보 추출 및 이미지 기반 추론 작업에서 뛰어난 성능을 보여, 더 복잡하고 광범위한 시각 질문 응답 작업에 적용할 수 있습니다."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "Doubao-vision 모델은 Doubao에서 출시한 다중 모달 대형 모델로, 강력한 이미지 이해 및 추론 능력과 정밀한 명령 이해 능력을 갖추고 있습니다. 이미지 텍스트 정보 추출 및 이미지 기반 추론 작업에서 뛰어난 성능을 보여, 더 복잡하고 광범위한 시각 질문 응답 작업에 적용할 수 있습니다."
+  },
   "emohaa": {
     "description": "Emohaa는 심리 모델로, 전문 상담 능력을 갖추고 있어 사용자가 감정 문제를 이해하는 데 도움을 줍니다."
   },
@@ -1376,9 +1382,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe는 GPT-4o를 사용하여 오디오를 텍스트로 전사하는 음성 인식 모델입니다. 원래 Whisper 모델에 비해 단어 오류율이 개선되었고, 언어 인식 및 정확도가 향상되었습니다. 보다 정확한 전사를 위해 사용하세요."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT 네이티브 멀티모달 이미지 생성 모델"
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "이 모델은 정확성, 지시 준수 및 다국어 능력에서 개선되었습니다."
   },

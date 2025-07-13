@@ -651,11 +651,17 @@
     "description": "Codestral é um modelo gerador de ponta focado em geração de código, otimizado para preenchimento intermediário e tarefas de conclusão de código."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "codex-mini-latest": {
     "description": "codex-mini-latest é uma versão ajustada do o4-mini, especialmente para Codex CLI. Para uso direto via API, recomendamos começar pelo gpt-4.1."
   },
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
+=======
+  "codex-mini-latest": {
+    "description": "codex-mini-latest é uma versão ajustada do o4-mini, especialmente para Codex CLI. Para uso direto via API, recomendamos começar pelo gpt-4.1."
+  },
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "cognitivecomputations/dolphin-mixtral-8x22b": {
     "description": "Dolphin Mixtral 8x22B é um modelo projetado para seguir instruções, diálogos e programação."
   },
@@ -915,6 +921,9 @@
     "description": "Doubao-1.5-vision-lite é um modelo multimodal atualizado, suportando reconhecimento de imagens de qualquer resolução e proporções extremas, melhorando a capacidade de raciocínio visual, reconhecimento de documentos, compreensão de informações detalhadas e seguimento de instruções. Suporta uma janela de contexto de 128k, com comprimento de saída de até 16k tokens."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "doubao-1.5-vision-pro": {
     "description": "Doubao-1.5-vision-pro é um modelo multimodal avançado, suportando reconhecimento de imagens em qualquer resolução e proporção extrema, com capacidades aprimoradas de raciocínio visual, reconhecimento de documentos, compreensão de detalhes e seguimento de instruções."
   },
@@ -951,8 +960,11 @@
   "doubao-vision-pro-32k": {
     "description": "O modelo Doubao-vision é um grande modelo multimodal lançado pela Doubao, com forte capacidade de compreensão e inferência de imagens, além de compreensão precisa de instruções. O modelo demonstra desempenho robusto em extração de informações de texto em imagens e tarefas de inferência baseadas em imagens, podendo ser aplicado a tarefas visuais de perguntas e respostas mais complexas e amplas."
   },
+<<<<<<< HEAD
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "emohaa": {
     "description": "O Emohaa é um modelo psicológico com capacidade de consultoria profissional, ajudando os usuários a entender questões emocionais."
   },
@@ -1379,9 +1391,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe é um modelo de transcrição de áudio para texto que utiliza GPT-4o. Em comparação com o modelo Whisper original, melhora a taxa de erro de palavras, além do reconhecimento e precisão linguística. Use-o para obter transcrições mais precisas."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "Modelo nativo multimodal de geração de imagens do ChatGPT"
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "Este modelo apresenta melhorias em precisão, conformidade com instruções e capacidade multilíngue."
   },
@@ -1954,11 +1969,17 @@
     "description": "o1 é o novo modelo de raciocínio da OpenAI, adequado para tarefas complexas que exigem amplo conhecimento geral. Este modelo possui um contexto de 128K e uma data limite de conhecimento em outubro de 2023."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "o1-pro": {
     "description": "A série o1 é treinada com aprendizado por reforço, capaz de pensar antes de responder e executar tarefas complexas de raciocínio. O modelo o1-pro utiliza mais recursos computacionais para um pensamento mais profundo, oferecendo respostas de qualidade superior continuamente."
   },
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
+=======
+  "o1-pro": {
+    "description": "A série o1 é treinada com aprendizado por reforço, capaz de pensar antes de responder e executar tarefas complexas de raciocínio. O modelo o1-pro utiliza mais recursos computacionais para um pensamento mais profundo, oferecendo respostas de qualidade superior continuamente."
+  },
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "o3": {
     "description": "o3 é um modelo versátil e poderoso, com excelente desempenho em várias áreas. Ele estabelece novos padrões para tarefas de matemática, ciência, programação e raciocínio visual. Também é bom em redação técnica e seguimento de instruções. Os usuários podem utilizá-lo para analisar textos, códigos e imagens, resolvendo problemas complexos em múltiplas etapas."
   },
@@ -1969,11 +1990,17 @@
     "description": "o3-mini é nosso mais recente modelo de inferência em miniatura, oferecendo alta inteligência com os mesmos custos e metas de latência que o o1-mini."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "o3-pro": {
     "description": "O modelo o3-pro utiliza mais computação para pensar mais profundamente e sempre fornecer respostas melhores, suportado apenas via API Responses."
   },
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
+=======
+  "o3-pro": {
+    "description": "O modelo o3-pro utiliza mais computação para pensar mais profundamente e sempre fornecer respostas melhores, suportado apenas via API Responses."
+  },
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "o4-mini": {
     "description": "o4-mini é nosso mais recente modelo compacto da série o. Ele é otimizado para inferência rápida e eficaz, apresentando alta eficiência e desempenho em tarefas de codificação e visuais."
   },

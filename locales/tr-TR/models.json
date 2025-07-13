@@ -950,6 +950,12 @@
 =======
 >>>>>>> 637d75cde (💄 style: Support new Doubao thinking models (#8174))
   },
+  "doubao-vision-lite-32k": {
+    "description": "Doubao-vision modeli, Doubao tarafından geliştirilen çok modlu büyük bir modeldir. Güçlü görüntü anlama ve çıkarım yeteneklerine ve hassas komut anlama becerisine sahiptir. Model, görüntü metin bilgisi çıkarımı ve görüntü tabanlı çıkarım görevlerinde güçlü performans sergiler ve daha karmaşık, geniş kapsamlı görsel soru-cevap görevlerinde kullanılabilir."
+  },
+  "doubao-vision-pro-32k": {
+    "description": "Doubao-vision modeli, Doubao tarafından geliştirilen çok modlu büyük bir modeldir. Güçlü görüntü anlama ve çıkarım yeteneklerine ve hassas komut anlama becerisine sahiptir. Model, görüntü metin bilgisi çıkarımı ve görüntü tabanlı çıkarım görevlerinde güçlü performans sergiler ve daha karmaşık, geniş kapsamlı görsel soru-cevap görevlerinde kullanılabilir."
+  },
   "emohaa": {
     "description": "Emohaa, duygusal sorunları anlamalarına yardımcı olmak için profesyonel danışmanlık yeteneklerine sahip bir psikolojik modeldir."
   },
@@ -1376,9 +1382,12 @@
   "gpt-4o-transcribe": {
     "description": "GPT-4o Transcribe, GPT-4o kullanarak sesleri metne dönüştüren bir konuşma tanıma modelidir. Orijinal Whisper modeline kıyasla kelime hata oranını düşürür ve dil tanıma ile doğruluğu artırır. Daha doğru transkripsiyonlar için kullanın."
   },
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT'nin yerel çok modlu görüntü oluşturma modeli"
   },
+=======
+>>>>>>> 25158750c (💄 style: update i18n (#8410))
   "grok-2-1212": {
     "description": "Bu model, doğruluk, talimat takibi ve çok dilli yetenekler açısından geliştirilmiştir."
   },
