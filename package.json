@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "1.99.2",
 =======
   "version": "1.97.2",
@@ -61,6 +62,9 @@
 =======
   "version": "1.97.16",
 >>>>>>> feb42fcc9 (:bookmark: chore(release): v1.97.16 [skip ci])
+=======
+  "version": "1.97.17",
+>>>>>>> 127d38d70 (:bookmark: chore(release): v1.97.17 [skip ci])
   "description": "Lobe Chat - an open-source, high-performance chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Supports one-click free deployment of your private ChatGPT/LLM web application.",
   "keywords": [
     "framework",
