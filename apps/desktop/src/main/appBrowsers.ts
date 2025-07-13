@@ -36,7 +36,10 @@ export const appBrowsers = {
     autoHideMenuBar: true,
     height: 800,
     identifier: 'settings',
+<<<<<<< HEAD
     // keepAlive: true,
+=======
+>>>>>>> 46d25092a (✨ feat: add network proxy for desktop (#7848))
     minWidth: 600,
     parentIdentifier: 'chat',
     path: '/settings',

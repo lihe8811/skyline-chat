@@ -51,10 +51,14 @@
     "consola": "^3.1.0",
     "cookie": "^1.0.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "electron": "~37.1.0",
 =======
     "electron": "^37.2.0",
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+    "electron": "~37.1.0",
+>>>>>>> 46d25092a (✨ feat: add network proxy for desktop (#7848))
     "electron-builder": "^26.0.12",
     "electron-is": "^3.0.0",
     "electron-log": "^5.3.3",
