@@ -77,6 +77,7 @@
       "secondary": "Yüklemek için tıklayın"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "Yeni bir satır ekle",
     "deleteTooltip": "Sil",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "Anahtar",
     "valuePlaceholder": "Değer"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "Sınırsız"
   },

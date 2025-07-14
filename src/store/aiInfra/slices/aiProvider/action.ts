@@ -183,11 +183,14 @@ export const createAiProviderSlice: StateCreator<
         return {
           enabledAiModels: allModels.filter((m) => m.enabled),
           enabledAiProviders: enabledAiProviders,
+<<<<<<< HEAD
           enabledChatAiProviders: enabledAiProviders.filter((provider) => {
             return allModels.some(
               (model) => model.providerId === provider.id && model.type === 'chat',
             );
           }),
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
           enabledImageAiProviders: enabledAiProviders
             .filter((provider) => {
               return allModels.some(

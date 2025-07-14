@@ -77,6 +77,7 @@
       "secondary": "Кликнете, за да качите"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "Добавяне на ред",
     "deleteTooltip": "Изтриване",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "Ключ",
     "valuePlaceholder": "Стойност"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "Неограничено"
   },

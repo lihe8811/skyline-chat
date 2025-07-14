@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Proporcje",
       "lock": "Zablokuj proporcje",
       "unlock": "Odblokuj proporcje"
+=======
+      "label": "Proporcje"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Prosty opis, twórz natychmiast",

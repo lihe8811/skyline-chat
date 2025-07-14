@@ -77,6 +77,7 @@
       "secondary": "Click to Upload"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "Add a row",
     "deleteTooltip": "Delete",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "Key",
     "valuePlaceholder": "Value"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "Unlimited"
   },

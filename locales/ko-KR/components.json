@@ -77,6 +77,7 @@
       "secondary": "클릭하여 업로드"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "새 행 추가",
     "deleteTooltip": "삭제",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "키",
     "valuePlaceholder": "값"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "무제한"
   },

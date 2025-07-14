@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "比例",
       "lock": "鎖定寬高比",
       "unlock": "解鎖寬高比"
+=======
+      "label": "比例"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "簡單描述，即刻創作",

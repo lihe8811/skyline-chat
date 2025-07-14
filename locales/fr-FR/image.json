@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Ratio",
       "lock": "Verrouiller le rapport hauteur/largeur",
       "unlock": "Déverrouiller le rapport hauteur/largeur"
+=======
+      "label": "Ratio"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Description simple, création immédiate",

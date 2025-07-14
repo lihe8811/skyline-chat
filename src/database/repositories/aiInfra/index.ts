@@ -159,13 +159,17 @@ export class AiInfraRepos {
       runtimeConfig[key] = merge(this.providerConfigs[key] || {}, value);
     });
     const enabledAiModels = allModels.filter((model) => model.enabled);
+<<<<<<< HEAD
     const enabledChatAiProviders = enabledAiProviders.filter((provider) => {
       return allModels.some((model) => model.providerId === provider.id && model.type === 'chat');
     });
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     const enabledImageAiProviders = enabledAiProviders.filter((provider) => {
       return allModels.some((model) => model.providerId === provider.id && model.type === 'image');
     });
 
+<<<<<<< HEAD
     return {
       enabledAiModels,
       enabledAiProviders,
@@ -173,6 +177,9 @@ export class AiInfraRepos {
       enabledImageAiProviders,
       runtimeConfig,
     };
+=======
+    return { enabledAiModels, enabledAiProviders, enabledImageAiProviders, runtimeConfig };
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   };
 
   getAiProviderModelList = async (providerId: string) => {

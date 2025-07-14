@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Tỷ lệ",
       "lock": "Khóa tỷ lệ khung hình",
       "unlock": "Mở khóa tỷ lệ khung hình"
+=======
+      "label": "Tỷ lệ"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Mô tả ngắn gọn, sáng tạo ngay lập tức",

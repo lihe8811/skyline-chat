@@ -77,6 +77,7 @@
       "secondary": "انقر للتحميل"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "إضافة صف جديد",
     "deleteTooltip": "حذف",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "المفتاح",
     "valuePlaceholder": "القيمة"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "غير محدود"
   },

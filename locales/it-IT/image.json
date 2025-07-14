@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Rapporto",
       "lock": "Blocca rapporto d'aspetto",
       "unlock": "Sblocca rapporto d'aspetto"
+=======
+      "label": "Rapporto"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Descrizione semplice, crea subito",

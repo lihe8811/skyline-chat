@@ -79,6 +79,7 @@ export default {
       secondary: '点击上传',
     },
   },
+<<<<<<< HEAD
   KeyValueEditor: {
     addButton: '新增一行',
     deleteTooltip: '删除',
@@ -86,6 +87,8 @@ export default {
     keyPlaceholder: '键',
     valuePlaceholder: '值',
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   MaxTokenSlider: {
     unlimited: '无限制',
   },

@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Seitenverhältnis",
       "lock": "Seitenverhältnis sperren",
       "unlock": "Seitenverhältnis entsperren"
+=======
+      "label": "Seitenverhältnis"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Einfache Beschreibung, sofortige Kreation",

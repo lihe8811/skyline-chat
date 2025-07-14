@@ -190,6 +190,9 @@
       "tag": "0026_add_autovacuum_tuning",
       "breakpoints": true
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     {
       "idx": 27,
@@ -197,8 +200,11 @@
       "when": 1752413805765,
       "tag": "0027_ai_image",
       "breakpoints": true
+<<<<<<< HEAD
 =======
 >>>>>>> 09f921d53 (⚡️ perf: add database autovacuum sql (#8395))
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     }
   ],
   "version": "6"

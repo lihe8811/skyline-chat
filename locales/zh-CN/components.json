@@ -69,6 +69,7 @@
     "back": "返回"
   },
   "ImageUpload": {
+<<<<<<< HEAD
     "actions": {
       "changeImage": "点击更换图片"
     },
@@ -84,6 +85,16 @@
     "keyPlaceholder": "键",
     "valuePlaceholder": "值"
   },
+=======
+    "placeholder": {
+      "primary": "添加图片",
+      "secondary": "点击上传"
+    },
+    "actions": {
+      "changeImage": "点击更换图片"
+    }
+  },
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "无限制"
   },
@@ -108,6 +119,7 @@
     "title": "模型"
   },
   "MultiImagesUpload": {
+<<<<<<< HEAD
     "actions": {
       "uploadMore": "点击上传更多"
     },
@@ -118,12 +130,27 @@
       "title": "管理图片 ({{count}})",
       "upload": "上传图片"
     },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     "placeholder": {
       "primary": "点击上传图片",
       "secondary": "支持多张图片选择"
     },
     "progress": {
       "uploadingWithCount": "{{completed}}/{{total}} 已上传"
+<<<<<<< HEAD
+=======
+    },
+    "actions": {
+      "uploadMore": "点击上传更多"
+    },
+    "modal": {
+      "title": "管理图片 ({{count}})",
+      "upload": "上传图片",
+      "complete": "完成",
+      "newFileIndicator": "新增",
+      "selectImageToPreview": "请选择要预览的图片"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     }
   },
   "OllamaSetupGuide": {

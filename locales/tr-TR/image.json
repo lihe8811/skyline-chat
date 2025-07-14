@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Oran",
       "lock": "En boy oranını kilitle",
       "unlock": "En boy oranının kilidini aç"
+=======
+      "label": "Oran"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Basit açıklama, hemen yarat",

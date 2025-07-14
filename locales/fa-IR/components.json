@@ -77,6 +77,7 @@
       "secondary": "برای بارگذاری کلیک کنید"
     }
   },
+<<<<<<< HEAD
   "KeyValueEditor": {
     "addButton": "افزودن یک ردیف",
     "deleteTooltip": "حذف",
@@ -84,6 +85,8 @@
     "keyPlaceholder": "کلید",
     "valuePlaceholder": "مقدار"
   },
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   "MaxTokenSlider": {
     "unlimited": "نامحدود"
   },

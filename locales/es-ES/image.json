@@ -1,9 +1,13 @@
 {
   "config": {
     "aspectRatio": {
+<<<<<<< HEAD
       "label": "Proporción",
       "lock": "Bloquear relación de aspecto",
       "unlock": "Desbloquear relación de aspecto"
+=======
+      "label": "Proporción"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Descripción simple, crea al instante",

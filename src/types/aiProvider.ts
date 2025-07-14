@@ -255,7 +255,10 @@ export interface AiProviderRuntimeConfig {
 export interface AiProviderRuntimeState {
   enabledAiModels: EnabledAiModel[];
   enabledAiProviders: EnabledProvider[];
+<<<<<<< HEAD
   enabledChatAiProviders: EnabledProvider[];
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
   enabledImageAiProviders: EnabledProvider[];
   runtimeConfig: Record<string, AiProviderRuntimeConfig>;
 }

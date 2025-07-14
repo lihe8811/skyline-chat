@@ -1,6 +1,9 @@
 'use client';
 
+<<<<<<< HEAD
 import { LoadingOutlined } from '@ant-design/icons';
+=======
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
 import { Block } from '@lobehub/ui';
 import { Spin } from 'antd';
 import { memo } from 'react';
@@ -33,7 +36,11 @@ export const LoadingState = memo<LoadingStateProps>(({ generation, aspectRatio, 
       variant={'filled'}
     >
       <Center gap={8}>
+<<<<<<< HEAD
         <Spin indicator={<LoadingOutlined spin />} />
+=======
+        <Spin percent={'auto'} />
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
         <ElapsedTime generationId={generation.id} isActive={isGenerating} />
       </Center>
       <ActionButtons onDelete={onDelete} />
