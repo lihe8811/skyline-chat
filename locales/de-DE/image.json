@@ -1,23 +1,9 @@
 {
   "config": {
     "aspectRatio": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "label": "Seitenverhältnis",
       "lock": "Seitenverhältnis sperren",
       "unlock": "Seitenverhältnis entsperren"
-=======
-      "label": "Seitenverhältnis"
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
-      "label": "Seitenverhältnis",
-      "lock": "Seitenverhältnis sperren",
-      "unlock": "Seitenverhältnis entsperren"
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
-      "label": "Seitenverhältnis"
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Einfache Beschreibung, sofortige Kreation",

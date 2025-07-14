@@ -60,11 +60,27 @@
       "advanced": {
         "title": "Paramètres avancés"
       },
+      "advanced": {
+        "title": "Paramètres avancés"
+      },
       "args": {
         "desc": "Liste des paramètres à passer à la commande d'exécution, généralement ici le nom du serveur MCP ou le chemin du script de démarrage",
         "label": "Paramètres de commande",
         "placeholder": "Par exemple : --port 8080 --debug",
         "required": "Veuillez entrer les paramètres de démarrage"
+      },
+      "auth": {
+        "bear": "Clé API",
+        "desc": "Choisissez le mode d'authentification du serveur MCP",
+        "label": "Type d'authentification",
+        "none": "Aucune authentification requise",
+        "placeholder": "Veuillez sélectionner un type d'authentification",
+        "token": {
+          "desc": "Entrez votre clé API ou jeton Bearer",
+          "label": "Clé API",
+          "placeholder": "sk-xxxxx",
+          "required": "Veuillez saisir le jeton d'authentification"
+        }
       },
       "auth": {
         "bear": "Clé API",
@@ -105,6 +121,11 @@
         "keyRequired": "La clé du champ ne peut pas être vide",
         "label": "Variables d'environnement du serveur MCP",
         "stringifyError": "Impossible de sérialiser les paramètres, veuillez vérifier le format des paramètres"
+      },
+      "headers": {
+        "add": "Ajouter une ligne",
+        "desc": "Entrez les en-têtes de la requête",
+        "label": "En-têtes HTTP"
       },
       "headers": {
         "add": "Ajouter une ligne",
@@ -290,8 +311,8 @@
       "showDetails": "Afficher les détails"
     },
     "errorTypes": {
-      "AUTHORIZATION_ERROR": "Erreur de vérification d'autorisation",
-      "CONNECTION_FAILED": "La connexion a échoué",
+      "AUTHORIZATION_ERROR": "Erreur d'autorisation",
+      "CONNECTION_FAILED": "Échec de la connexion",
       "INITIALIZATION_TIMEOUT": "Délai d'initialisation dépassé",
       "PROCESS_SPAWN_ERROR": "Erreur de lancement du processus",
       "UNKNOWN_ERROR": "Erreur inconnue",

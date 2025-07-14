@@ -60,11 +60,27 @@
       "advanced": {
         "title": "Ustawienia zaawansowane"
       },
+      "advanced": {
+        "title": "Ustawienia zaawansowane"
+      },
       "args": {
         "desc": "Lista argumentów przekazywanych do polecenia wykonawczego, zazwyczaj wpisz tutaj nazwę serwera MCP lub ścieżkę do skryptu uruchamiającego",
         "label": "Argumenty polecenia",
         "placeholder": "Na przykład: mcp-hello-world",
         "required": "Proszę wprowadzić parametry uruchomienia"
+      },
+      "auth": {
+        "bear": "Klucz API",
+        "desc": "Wybierz metodę uwierzytelniania serwera MCP",
+        "label": "Typ uwierzytelniania",
+        "none": "Brak uwierzytelniania",
+        "placeholder": "Wybierz typ uwierzytelniania",
+        "token": {
+          "desc": "Wprowadź swój klucz API lub token Bearer",
+          "label": "Klucz API",
+          "placeholder": "sk-xxxxx",
+          "required": "Proszę wprowadzić token uwierzytelniający"
+        }
       },
       "auth": {
         "bear": "Klucz API",
@@ -105,6 +121,11 @@
         "keyRequired": "Klucz pola nie może być pusty",
         "label": "Zmienne środowiskowe serwera MCP",
         "stringifyError": "Nie można zserializować argumentów, sprawdź format argumentów"
+      },
+      "headers": {
+        "add": "Dodaj wiersz",
+        "desc": "Wprowadź nagłówki żądania",
+        "label": "Nagłówki HTTP"
       },
       "headers": {
         "add": "Dodaj wiersz",
@@ -291,9 +312,9 @@
     },
     "errorTypes": {
       "AUTHORIZATION_ERROR": "Błąd autoryzacji",
-      "CONNECTION_FAILED": "Połączenie nie powiodło się",
-      "INITIALIZATION_TIMEOUT": "Przekroczono limit czasu inicjalizacji",
-      "PROCESS_SPAWN_ERROR": "Błąd uruchamiania procesu",
+      "CONNECTION_FAILED": "Nieudane połączenie",
+      "INITIALIZATION_TIMEOUT": "Przekroczono czas inicjalizacji",
+      "PROCESS_SPAWN_ERROR": "Błąd uruchomienia procesu",
       "UNKNOWN_ERROR": "Nieznany błąd",
       "VALIDATION_ERROR": "Walidacja parametrów nie powiodła się"
     },

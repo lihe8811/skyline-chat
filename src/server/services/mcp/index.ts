@@ -216,7 +216,7 @@ class MCPService {
       log(`New client initialized and cached for key: ${key.slice(0, 20)}`);
       return client;
     } catch (error) {
-      console.error(`Failed to initialize MCP client for key ${key}:`, error);
+      console.error(`Failed to initialize MCP client:`, error);
 
       // 保留完整的错误信息，特别是详细的 stderr 输出
       const errorMessage = error instanceof Error ? error.message : String(error);

@@ -60,11 +60,27 @@ export default {
       advanced: {
         title: '高级设置',
       },
+      advanced: {
+        title: '高级设置',
+      },
       args: {
         desc: '传递给执行命令的参数列表，一般在这里输入 MCP 服务器名称，或启动脚本路径',
         label: '命令参数',
         placeholder: '例如：mcp-hello-world',
         required: '请输入启动参数',
+      },
+      auth: {
+        bear: 'API Key',
+        desc: '选择 MCP 服务器的认证方式',
+        label: '认证类型',
+        none: '无需认证',
+        placeholder: '请选择认证类型',
+        token: {
+          desc: '输入你的 API Key 或 Bearer Token',
+          label: 'API Key',
+          placeholder: 'sk-xxxxx',
+          required: '请输入认证令牌',
+        },
       },
       auth: {
         bear: 'API Key',
@@ -105,6 +121,11 @@ export default {
         keyRequired: '字段键不能为空',
         label: 'MCP Server 环境变量',
         stringifyError: '无法序列化参数，请检查参数格式',
+      },
+      headers: {
+        add: '新增一行',
+        desc: '输入请求头',
+        label: 'HTTP Headers',
       },
       headers: {
         add: '新增一行',
@@ -292,17 +313,7 @@ export default {
       showDetails: '查看详情',
     },
     errorTypes: {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       AUTHORIZATION_ERROR: '授权验证错误',
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      AUTHORIZATION_ERROR: '授权验证错误',
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       CONNECTION_FAILED: '连接失败',
       INITIALIZATION_TIMEOUT: '初始化超时',
       PROCESS_SPAWN_ERROR: '进程启动失败',

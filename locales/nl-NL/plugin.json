@@ -60,11 +60,27 @@
       "advanced": {
         "title": "Geavanceerde instellingen"
       },
+      "advanced": {
+        "title": "Geavanceerde instellingen"
+      },
       "args": {
         "desc": "Een lijst met parameters die aan het uitvoeringscommando worden doorgegeven, meestal hier de naam van de MCP-server of het pad naar het opstartscript invoeren.",
         "label": "Commando-parameters",
         "placeholder": "Bijvoorbeeld: --port 8080 --debug",
         "required": "Voer de opstartparameters in"
+      },
+      "auth": {
+        "bear": "API-sleutel",
+        "desc": "Kies de authenticatiemethode voor de MCP-server",
+        "label": "Authenticatietype",
+        "none": "Geen authenticatie vereist",
+        "placeholder": "Selecteer een authenticatietype",
+        "token": {
+          "desc": "Voer je API-sleutel of Bearer-token in",
+          "label": "API-sleutel",
+          "placeholder": "sk-xxxxx",
+          "required": "Voer het authenticatietoken in"
+        }
       },
       "auth": {
         "bear": "API-sleutel",
@@ -105,6 +121,11 @@
         "keyRequired": "Veldsleutel mag niet leeg zijn",
         "label": "Omgevingsvariabelen voor MCP-server",
         "stringifyError": "Kan parameters niet serialiseren, controleer het parameterformaat"
+      },
+      "headers": {
+        "add": "Voeg een regel toe",
+        "desc": "Voer de verzoekheaders in",
+        "label": "HTTP-headers"
       },
       "headers": {
         "add": "Voeg een regel toe",
@@ -291,9 +312,9 @@
     },
     "errorTypes": {
       "AUTHORIZATION_ERROR": "Autorisatiefout",
-      "CONNECTION_FAILED": "Verbindingsfout",
-      "INITIALIZATION_TIMEOUT": "Initialisatietime-out",
-      "PROCESS_SPAWN_ERROR": "Processtartfout",
+      "CONNECTION_FAILED": "Verbinding mislukt",
+      "INITIALIZATION_TIMEOUT": "Initialisatie time-out",
+      "PROCESS_SPAWN_ERROR": "Proces starten mislukt",
       "UNKNOWN_ERROR": "Onbekende fout",
       "VALIDATION_ERROR": "Parametervalidatiefout"
     },

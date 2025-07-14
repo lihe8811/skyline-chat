@@ -228,8 +228,14 @@ export const createMCPPluginStoreSlice: StateCreator<
         );
       }
       if (connection?.type === 'http') {
-        const res = await mcpService.getMcpManifest(
+        manifest = await mcpService.getStreamableMcpServerManifest(
           {
+            identifier,
+            metadata: {
+              avatar: plugin.icon,
+              description: plugin.description,
+            },
+            url: connection.url!,
             identifier,
             metadata: {
               avatar: plugin.icon,

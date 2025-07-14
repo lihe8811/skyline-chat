@@ -60,11 +60,27 @@
       "advanced": {
         "title": "Разширени настройки"
       },
+      "advanced": {
+        "title": "Разширени настройки"
+      },
       "args": {
         "desc": "Списък с параметри, предадени на командата за изпълнение, обикновено тук се въвежда името на MCP сървъра или пътя до стартиращия скрипт",
         "label": "Командни параметри",
         "placeholder": "Например: --port 8080 --debug",
         "required": "Моля, въведете параметри за стартиране"
+      },
+      "auth": {
+        "bear": "API ключ",
+        "desc": "Изберете метод за удостоверяване на MCP сървъра",
+        "label": "Тип удостоверяване",
+        "none": "Без удостоверяване",
+        "placeholder": "Моля, изберете тип удостоверяване",
+        "token": {
+          "desc": "Въведете своя API ключ или Bearer токен",
+          "label": "API ключ",
+          "placeholder": "sk-xxxxx",
+          "required": "Моля, въведете удостоверителния токен"
+        }
       },
       "auth": {
         "bear": "API ключ",
@@ -105,6 +121,11 @@
         "keyRequired": "Ключът на полето не може да бъде празен",
         "label": "Променливи на средата на MCP сървър",
         "stringifyError": "Не може да се сериализира параметър, моля проверете формата на параметрите"
+      },
+      "headers": {
+        "add": "Добави ред",
+        "desc": "Въведете HTTP заглавки",
+        "label": "HTTP заглавки"
       },
       "headers": {
         "add": "Добави ред",
@@ -290,17 +311,7 @@
       "showDetails": "Покажи детайли"
     },
     "errorTypes": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Грешка при удостоверяване на разрешения",
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
-=======
-      "AUTHORIZATION_ERROR": "Грешка при удостоверяване на разрешения",
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
->>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
       "CONNECTION_FAILED": "Връзката не бе осъществена",
       "INITIALIZATION_TIMEOUT": "Времето за инициализация изтече",
       "PROCESS_SPAWN_ERROR": "Неуспешно стартиране на процеса",

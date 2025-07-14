@@ -60,11 +60,27 @@
       "advanced": {
         "title": "Impostazioni avanzate"
       },
+      "advanced": {
+        "title": "Impostazioni avanzate"
+      },
       "args": {
         "desc": "Elenco di parametri da passare al comando di esecuzione, di solito qui si inserisce il nome del server MCP o il percorso dello script di avvio",
         "label": "Parametri del comando",
         "placeholder": "Ad esempio: --port 8080 --debug",
         "required": "Inserisci i parametri di avvio"
+      },
+      "auth": {
+        "bear": "API Key",
+        "desc": "Seleziona il metodo di autenticazione del server MCP",
+        "label": "Tipo di autenticazione",
+        "none": "Nessuna autenticazione richiesta",
+        "placeholder": "Seleziona il tipo di autenticazione",
+        "token": {
+          "desc": "Inserisci la tua API Key o Bearer Token",
+          "label": "API Key",
+          "placeholder": "sk-xxxxx",
+          "required": "Inserisci il token di autenticazione"
+        }
       },
       "auth": {
         "bear": "API Key",
@@ -105,6 +121,11 @@
         "keyRequired": "La chiave del campo non può essere vuota",
         "label": "Variabili d'ambiente del server MCP",
         "stringifyError": "Impossibile serializzare i parametri, controlla il formato dei parametri"
+      },
+      "headers": {
+        "add": "Aggiungi una riga",
+        "desc": "Inserisci le intestazioni della richiesta",
+        "label": "Intestazioni HTTP"
       },
       "headers": {
         "add": "Aggiungi una riga",
@@ -290,8 +311,8 @@
       "showDetails": "Mostra dettagli"
     },
     "errorTypes": {
-      "AUTHORIZATION_ERROR": "Errore di verifica dell'autorizzazione",
-      "CONNECTION_FAILED": "Connessione non riuscita",
+      "AUTHORIZATION_ERROR": "Errore di autorizzazione",
+      "CONNECTION_FAILED": "Connessione fallita",
       "INITIALIZATION_TIMEOUT": "Timeout di inizializzazione",
       "PROCESS_SPAWN_ERROR": "Errore di avvio del processo",
       "UNKNOWN_ERROR": "Errore sconosciuto",

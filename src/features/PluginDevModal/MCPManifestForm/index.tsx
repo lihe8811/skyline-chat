@@ -1,20 +1,22 @@
 import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
-import { Alert, FormItem, Input, InputPassword, TextArea } from '@lobehub/ui';
+import { Alert, FormItem, Input, InputPassword } from '@lobehub/ui';
 import { Button, Divider, Form, FormInstance, Radio } from 'antd';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import KeyValueEditor from '@/components/KeyValueEditor';
+import KeyValueEditor from '@/components/KeyValueEditor';
 import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
-import { isDesktop } from '@/const/version';
 import { mcpService } from '@/services/mcp';
 import { useToolStore } from '@/store/tool';
 import { pluginSelectors } from '@/store/tool/selectors';
 
 import ArgsInput from './ArgsInput';
 import CollapsibleSection from './CollapsibleSection';
+import CollapsibleSection from './CollapsibleSection';
 import MCPTypeSelect from './MCPTypeSelect';
+import QuickImportSection from './QuickImportSection';
 import QuickImportSection from './QuickImportSection';
 
 interface MCPManifestFormProps {
@@ -33,10 +35,16 @@ const AUTH_TYPE = ['customParams', 'mcp', 'auth', 'type'];
 const AUTH_TOKEN = ['customParams', 'mcp', 'auth', 'token'];
 // 新增 headers 相关常量
 const HEADERS = ['customParams', 'mcp', 'headers'];
+// 新增认证相关常量
+const AUTH_TYPE = ['customParams', 'mcp', 'auth', 'type'];
+const AUTH_TOKEN = ['customParams', 'mcp', 'auth', 'token'];
+// 新增 headers 相关常量
+const HEADERS = ['customParams', 'mcp', 'headers'];
 
 const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
   const { t } = useTranslation('plugin');
   const mcpType = Form.useWatch(MCP_TYPE, form);
+  const authType = Form.useWatch(AUTH_TYPE, form);
   const authType = Form.useWatch(AUTH_TYPE, form);
 
   const pluginIds = useToolStore(pluginSelectors.storeAndInstallPluginsIdList);
@@ -51,7 +59,20 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
     let isValid = false;
     try {
       const fieldsToValidate = [
+      const fieldsToValidate = [
         ...(mcpType === 'http' ? [HTTP_URL_KEY] : [STDIO_COMMAND, STDIO_ARGS]),
+      ];
+
+      // 如果是 HTTP 类型，还需要验证认证字段
+      if (mcpType === 'http') {
+        fieldsToValidate.push(AUTH_TYPE);
+        const currentAuthType = form.getFieldValue(AUTH_TYPE);
+        if (currentAuthType === 'bearer') {
+          fieldsToValidate.push(AUTH_TOKEN);
+        }
+      }
+
+      await form.validateFields(fieldsToValidate);
       ];
 
       // 如果是 HTTP 类型，还需要验证认证字段
@@ -85,6 +106,12 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
 
       if (mcp.type === 'http') {
         if (!mcp.url) throw new Error(t('dev.mcp.url.required'));
+        data = await mcpService.getStreamableMcpServerManifest({
+          auth: mcp.auth,
+          headers: mcp.headers,
+          identifier: id,
+          metadata: { avatar, description },
+          url: mcp.url,
         data = await mcpService.getStreamableMcpServerManifest({
           auth: mcp.auth,
           headers: mcp.headers,
@@ -131,9 +158,15 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
         isEditMode={isEditMode}
         onClearConnectionError={() => setConnectionError(null)}
       />
+      <QuickImportSection
+        form={form}
+        isEditMode={isEditMode}
+        onClearConnectionError={() => setConnectionError(null)}
+      />
       <Form form={form} layout={'vertical'}>
         <Flexbox>
           <Form.Item
+            initialValue={'http'}
             initialValue={'http'}
             label={t('dev.mcp.type.title')}
             name={['customParams', 'mcp', 'type']}
@@ -180,7 +213,67 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
                     message: t('dev.mcp.url.invalid'),
                     validator: async (_, value) => {
                       if (!value) return true;
+            <>
+              <FormItem
+                desc={t('dev.mcp.url.desc')}
+                label={t('dev.mcp.url.label')}
+                name={HTTP_URL_KEY}
+                rules={[
+                  { message: t('dev.mcp.url.required'), required: true },
+                  {
+                    message: t('dev.mcp.url.invalid'),
+                    validator: async (_, value) => {
+                      if (!value) return true;
 
+                      // 如果不是 URL 就会自动抛出错误
+                      new URL(value);
+                    },
+                  },
+                ]}
+                tag={'url'}
+              >
+                <Input placeholder="https://mcp.higress.ai/mcp-github/xxxxx" />
+              </FormItem>
+              <FormItem
+                desc={t('dev.mcp.auth.desc')}
+                initialValue={'none'}
+                label={t('dev.mcp.auth.label')}
+                name={AUTH_TYPE}
+              >
+                <Radio.Group
+                  options={[
+                    {
+                      label: t('dev.mcp.auth.none'),
+                      value: 'none',
+                    },
+                    {
+                      label: t('dev.mcp.auth.bear'),
+                      value: 'bearer',
+                    },
+                  ]}
+                  style={{ width: '100%' }}
+                />
+              </FormItem>
+              {authType === 'bearer' && (
+                <FormItem
+                  desc={t('dev.mcp.auth.token.desc')}
+                  label={t('dev.mcp.auth.token.label')}
+                  name={AUTH_TOKEN}
+                  rules={[{ message: t('dev.mcp.auth.token.required'), required: true }]}
+                >
+                  <InputPassword placeholder={t('dev.mcp.auth.token.placeholder')} />
+                </FormItem>
+              )}
+              <CollapsibleSection title={t('dev.mcp.advanced.title')}>
+                <FormItem
+                  desc={t('dev.mcp.headers.desc')}
+                  label={t('dev.mcp.headers.label')}
+                  name={HEADERS}
+                >
+                  <KeyValueEditor addButtonText={t('dev.mcp.headers.add')} />
+                </FormItem>
+              </CollapsibleSection>
+            </>
                       // 如果不是 URL 就会自动抛出错误
                       new URL(value);
                     },
@@ -257,6 +350,10 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
                 name={STDIO_ENV}
                 tag={'env'}
               >
+                <KeyValueEditor
+                  addButtonText={t('dev.mcp.env.add')}
+                  keyPlaceholder="VARIABLE_NAME"
+                />
                 <KeyValueEditor
                   addButtonText={t('dev.mcp.env.add')}
                   keyPlaceholder="VARIABLE_NAME"

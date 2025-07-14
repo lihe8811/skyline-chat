@@ -1,23 +1,9 @@
 {
   "config": {
     "aspectRatio": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "label": "Verhouding",
       "lock": "Vergrendel beeldverhouding",
       "unlock": "Ontgrendel beeldverhouding"
-=======
-      "label": "Verhouding"
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
-      "label": "Verhouding",
-      "lock": "Vergrendel beeldverhouding",
-      "unlock": "Ontgrendel beeldverhouding"
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-=======
-      "label": "Verhouding"
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "Eenvoudige beschrijving, direct creëren",
