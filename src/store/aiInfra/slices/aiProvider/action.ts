@@ -189,6 +189,11 @@ export const createAiProviderSlice: StateCreator<
         return {
           enabledAiModels: allModels.filter((m) => m.enabled),
           enabledAiProviders: enabledAiProviders,
+          enabledChatAiProviders: enabledAiProviders.filter((provider) => {
+            return allModels.some(
+              (model) => model.providerId === provider.id && model.type === 'chat',
+            );
+          }),
           enabledImageAiProviders: enabledAiProviders
             .filter((provider) => {
               return allModels.some(
