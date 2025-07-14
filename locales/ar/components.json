@@ -77,22 +77,6 @@
       "secondary": "انقر للتحميل"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "إضافة صف جديد",
-    "deleteTooltip": "حذف",
-    "duplicateKeyError": "يجب أن يكون اسم المفتاح فريدًا",
-    "keyPlaceholder": "المفتاح",
-    "valuePlaceholder": "القيمة"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "غير محدود"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "اذهب إلى الإعدادات",
     "provider": "مزود",
     "title": "نموذج"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "انقر لتحميل المزيد"
+    },
+    "modal": {
+      "complete": "اكتمل",
+      "newFileIndicator": "جديد",
+      "selectImageToPreview": "يرجى اختيار صورة للمعاينة",
+      "title": "إدارة الصور ({{count}})",
+      "upload": "تحميل الصور"
+    },
+    "placeholder": {
+      "primary": "انقر لتحميل الصور",
+      "secondary": "يدعم اختيار عدة صور"
+    },
+    "progress": {
+      "uploadingWithCount": "تم تحميل {{completed}} من أصل {{total}}"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

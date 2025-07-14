@@ -77,22 +77,6 @@
       "secondary": "Nhấn để tải lên"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "Thêm một dòng",
-    "deleteTooltip": "Xóa",
-    "duplicateKeyError": "Tên khóa phải duy nhất",
-    "keyPlaceholder": "Khóa",
-    "valuePlaceholder": "Giá trị"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "Không giới hạn"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "Đi đến cài đặt",
     "provider": "Nhà cung cấp",
     "title": "Mô hình"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Nhấn để tải thêm"
+    },
+    "modal": {
+      "complete": "Hoàn thành",
+      "newFileIndicator": "Mới thêm",
+      "selectImageToPreview": "Vui lòng chọn hình ảnh để xem trước",
+      "title": "Quản lý hình ảnh ({{count}})",
+      "upload": "Tải lên hình ảnh"
+    },
+    "placeholder": {
+      "primary": "Nhấn để tải lên hình ảnh",
+      "secondary": "Hỗ trợ chọn nhiều hình ảnh"
+    },
+    "progress": {
+      "uploadingWithCount": "Đã tải lên {{completed}}/{{total}}"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

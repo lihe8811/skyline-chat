@@ -1,19 +1,7 @@
 {
   "config": {
     "aspectRatio": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "label": "النسبة",
-      "lock": "قفل نسبة العرض إلى الارتفاع",
-      "unlock": "إلغاء قفل نسبة العرض إلى الارتفاع"
-=======
       "label": "النسبة"
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
-      "label": "النسبة",
-      "lock": "قفل نسبة العرض إلى الارتفاع",
-      "unlock": "إلغاء قفل نسبة العرض إلى الارتفاع"
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     },
     "header": {
       "desc": "وصف بسيط، ابتكر فورًا",

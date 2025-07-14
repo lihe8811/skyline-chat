@@ -97,7 +97,14 @@ export class AiInfraRepos {
       this.aiModelModel.getAllModels(),
     ]);
     const enabledProviders = providers.filter((item) => (filterEnabled ? item.enabled : true));
+  getEnabledModels = async (filterEnabled: boolean = true) => {
+    const [providers, allModels] = await Promise.all([
+      this.getAiProviderList(),
+      this.aiModelModel.getAllModels(),
+    ]);
+    const enabledProviders = providers.filter((item) => (filterEnabled ? item.enabled : true));
 
+    const builtinModelList = await pMap(
     const builtinModelList = await pMap(
       enabledProviders,
       async (provider) => {
@@ -115,6 +122,7 @@ export class AiInfraRepos {
 
             return {
               ...item,
+              ...item,
               abilities: !isEmpty(user.abilities) ? user.abilities : item.abilities || {},
               config: !isEmpty(user.config) ? user.config : item.config,
               contextWindowTokens:
@@ -131,10 +139,19 @@ export class AiInfraRepos {
             };
           })
           .filter((item) => (filterEnabled ? item.enabled : true));
+          .filter((item) => (filterEnabled ? item.enabled : true));
       },
       { concurrency: 10 },
     );
 
+    const enabledProviderIds = new Set(enabledProviders.map((item) => item.id));
+
+    return [
+      ...builtinModelList.flat(),
+      ...allModels.filter((item) =>
+        filterEnabled ? enabledProviderIds.has(item.providerId) && item.enabled : true,
+      ),
+    ].sort((a, b) => (a?.sort || -1) - (b?.sort || -1)) as EnabledAiModel[];
     const enabledProviderIds = new Set(enabledProviders.map((item) => item.id));
 
     return [
@@ -153,45 +170,22 @@ export class AiInfraRepos {
       this.getUserEnabledProviderList(),
       this.getEnabledModels(false),
     ]);
+    const [result, enabledAiProviders, allModels] = await Promise.all([
+      this.aiProviderModel.getAiProviderRuntimeConfig(decryptor),
+      this.getUserEnabledProviderList(),
+      this.getEnabledModels(false),
+    ]);
 
     const runtimeConfig = result;
     Object.entries(result).forEach(([key, value]) => {
       runtimeConfig[key] = merge(this.providerConfigs[key] || {}, value);
     });
     const enabledAiModels = allModels.filter((model) => model.enabled);
-<<<<<<< HEAD
-<<<<<<< HEAD
-    const enabledChatAiProviders = enabledAiProviders.filter((provider) => {
-      return allModels.some((model) => model.providerId === provider.id && model.type === 'chat');
-    });
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
-    const enabledChatAiProviders = enabledAiProviders.filter((provider) => {
-      return allModels.some((model) => model.providerId === provider.id && model.type === 'chat');
-    });
->>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
     const enabledImageAiProviders = enabledAiProviders.filter((provider) => {
       return allModels.some((model) => model.providerId === provider.id && model.type === 'image');
     });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
-    return {
-      enabledAiModels,
-      enabledAiProviders,
-      enabledChatAiProviders,
-      enabledImageAiProviders,
-      runtimeConfig,
-    };
-<<<<<<< HEAD
-=======
     return { enabledAiModels, enabledAiProviders, enabledImageAiProviders, runtimeConfig };
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
   };
 
   getAiProviderModelList = async (providerId: string) => {

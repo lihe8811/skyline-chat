@@ -79,22 +79,6 @@ export default {
       secondary: '点击上传',
     },
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  KeyValueEditor: {
-    addButton: '新增一行',
-    deleteTooltip: '删除',
-    duplicateKeyError: '键名必须唯一',
-    keyPlaceholder: '键',
-    valuePlaceholder: '值',
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   MaxTokenSlider: {
     unlimited: '无限制',
   },
@@ -117,6 +101,25 @@ export default {
     goToSettings: '前往设置',
     provider: '服务商',
     title: '模型',
+  },
+  MultiImagesUpload: {
+    actions: {
+      uploadMore: '点击上传更多',
+    },
+    modal: {
+      complete: '完成',
+      newFileIndicator: '新增',
+      selectImageToPreview: '请选择要预览的图片',
+      title: '管理图片 ({{count}})',
+      upload: '上传图片',
+    },
+    placeholder: {
+      primary: '点击上传图片',
+      secondary: '支持多张图片选择',
+    },
+    progress: {
+      uploadingWithCount: '{{completed}}/{{total}} 已上传',
+    },
   },
   MultiImagesUpload: {
     actions: {

@@ -77,22 +77,6 @@
       "secondary": "Clicca per caricare"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "Aggiungi una riga",
-    "deleteTooltip": "Elimina",
-    "duplicateKeyError": "Il nome della chiave deve essere univoco",
-    "keyPlaceholder": "Chiave",
-    "valuePlaceholder": "Valore"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "Illimitato"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "Vai alle impostazioni",
     "provider": "Provider",
     "title": "Modello"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Clicca per caricare altre"
+    },
+    "modal": {
+      "complete": "Completa",
+      "newFileIndicator": "Nuovo",
+      "selectImageToPreview": "Seleziona un'immagine da visualizzare in anteprima",
+      "title": "Gestisci immagini ({{count}})",
+      "upload": "Carica immagine"
+    },
+    "placeholder": {
+      "primary": "Clicca per caricare immagini",
+      "secondary": "Supporta la selezione di più immagini"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} caricati"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

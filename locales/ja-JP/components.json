@@ -77,22 +77,6 @@
       "secondary": "クリックしてアップロード"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "新しい行を追加",
-    "deleteTooltip": "削除",
-    "duplicateKeyError": "キー名は一意でなければなりません",
-    "keyPlaceholder": "キー",
-    "valuePlaceholder": "値"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "無制限"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "設定に移動",
     "provider": "プロバイダー",
     "title": "モデル"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "さらにアップロード"
+    },
+    "modal": {
+      "complete": "完了",
+      "newFileIndicator": "新規追加",
+      "selectImageToPreview": "プレビューする画像を選択してください",
+      "title": "画像管理 ({{count}})",
+      "upload": "画像をアップロード"
+    },
+    "placeholder": {
+      "primary": "クリックして画像をアップロード",
+      "secondary": "複数の画像を選択可能"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} アップロード済み"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

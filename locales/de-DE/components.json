@@ -77,22 +77,6 @@
       "secondary": "Zum Hochladen klicken"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "Neue Zeile hinzufügen",
-    "deleteTooltip": "Löschen",
-    "duplicateKeyError": "Der Schlüsselname muss eindeutig sein",
-    "keyPlaceholder": "Schlüssel",
-    "valuePlaceholder": "Wert"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "Unbegrenzt"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "Zu den Einstellungen gehen",
     "provider": "Anbieter",
     "title": "Modell"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Klicken Sie, um weitere hochzuladen"
+    },
+    "modal": {
+      "complete": "Fertig",
+      "newFileIndicator": "Neu",
+      "selectImageToPreview": "Bitte wählen Sie ein Bild zur Vorschau aus",
+      "title": "Bilder verwalten ({{count}})",
+      "upload": "Bild hochladen"
+    },
+    "placeholder": {
+      "primary": "Klicken Sie, um Bilder hochzuladen",
+      "secondary": "Mehrere Bilder können ausgewählt werden"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} hochgeladen"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

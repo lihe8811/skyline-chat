@@ -3,6 +3,7 @@
     "aspectRatio": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "label": "نسبت ابعاد",
       "lock": "قفل نسبت ابعاد",
       "unlock": "باز کردن قفل نسبت ابعاد"
@@ -14,6 +15,9 @@
       "lock": "قفل نسبت ابعاد",
       "unlock": "باز کردن قفل نسبت ابعاد"
 >>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
+=======
+      "label": "نسبت ابعاد"
+>>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
     },
     "header": {
       "desc": "توضیح ساده، خلق فوری",

@@ -1,4 +1,5 @@
 import { createTRPCClient, httpLink } from '@trpc/client';
+import debug from 'debug';
 import superjson from 'superjson';
 import urlJoin from 'url-join';
 

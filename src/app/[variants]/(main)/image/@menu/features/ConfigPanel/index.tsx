@@ -26,15 +26,7 @@ interface ConfigItemLayoutProps {
 const ConfigItemLayout = memo<ConfigItemLayoutProps>(({ label, children }) => {
   return (
     <Flexbox gap={8}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      {label && <Text weight={500}>{label}</Text>}
-=======
       {label && <Text weight={500}>{label.toUpperCase()}</Text>}
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
-      {label && <Text weight={500}>{label}</Text>}
->>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
       {children}
     </Flexbox>
   );

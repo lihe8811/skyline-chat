@@ -77,22 +77,6 @@
       "secondary": "Нажмите, чтобы загрузить"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "Добавить строку",
-    "deleteTooltip": "Удалить",
-    "duplicateKeyError": "Имя ключа должно быть уникальным",
-    "keyPlaceholder": "Ключ",
-    "valuePlaceholder": "Значение"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "Без ограничений"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "Перейти в настройки",
     "provider": "Поставщик",
     "title": "Модель"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Нажмите, чтобы загрузить ещё"
+    },
+    "modal": {
+      "complete": "Готово",
+      "newFileIndicator": "Новое",
+      "selectImageToPreview": "Выберите изображение для просмотра",
+      "title": "Управление изображениями ({{count}})",
+      "upload": "Загрузить изображение"
+    },
+    "placeholder": {
+      "primary": "Нажмите, чтобы загрузить изображение",
+      "secondary": "Поддерживается выбор нескольких изображений"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} загружено"
+    }
   },
   "MultiImagesUpload": {
     "actions": {

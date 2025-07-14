@@ -8,6 +8,7 @@ import { useClientDataSWR } from '@/libs/swr';
 import { aiProviderService } from '@/services/aiProvider';
 import { AiInfraStore } from '@/store/aiInfra/store';
 import { AIImageModelCard, ModelAbilities } from '@/types/aiModel';
+import { AIImageModelCard, ModelAbilities } from '@/types/aiModel';
 import {
   AiProviderDetailItem,
   AiProviderListItem,
@@ -15,6 +16,7 @@ import {
   AiProviderSortMap,
   AiProviderSourceEnum,
   CreateAiProviderParams,
+  EnabledProvider,
   EnabledProvider,
   UpdateAiProviderConfigParams,
   UpdateAiProviderParams,
@@ -180,14 +182,13 @@ export const createAiProviderSlice: StateCreator<
           (provider) => provider.enabled,
         ).map((item) => ({ id: item.id, name: item.name, source: 'builtin' }));
         const allModels = LOBE_DEFAULT_MODEL_LIST;
+        const enabledAiProviders: EnabledProvider[] = DEFAULT_MODEL_PROVIDER_LIST.filter(
+          (provider) => provider.enabled,
+        ).map((item) => ({ id: item.id, name: item.name, source: 'builtin' }));
+        const allModels = LOBE_DEFAULT_MODEL_LIST;
         return {
           enabledAiModels: allModels.filter((m) => m.enabled),
           enabledAiProviders: enabledAiProviders,
-          enabledChatAiProviders: enabledAiProviders.filter((provider) => {
-            return allModels.some(
-              (model) => model.providerId === provider.id && model.type === 'chat',
-            );
-          }),
           enabledImageAiProviders: enabledAiProviders
             .filter((provider) => {
               return allModels.some(
@@ -214,6 +215,9 @@ export const createAiProviderSlice: StateCreator<
                 ...(model.type === 'image' && {
                   parameters: (model as AIImageModelCard).parameters,
                 }),
+                ...(model.type === 'image' && {
+                  parameters: (model as AIImageModelCard).parameters,
+                }),
               }));
 
             return uniqBy(models, 'id');
@@ -231,6 +235,12 @@ export const createAiProviderSlice: StateCreator<
             children: getModelListByType(provider.id, 'image'),
             name: provider.name || provider.id,
           }));
+
+          const enabledImageModelList = data.enabledImageAiProviders.map((provider) => ({
+            ...provider,
+            children: getModelListByType(provider.id, 'image'),
+            name: provider.name || provider.id,
+          }));
           const { LOBE_DEFAULT_MODEL_LIST } = await import('@/config/aiModels');
 
           set(
@@ -240,6 +250,7 @@ export const createAiProviderSlice: StateCreator<
               enabledAiModels: data.enabledAiModels,
               enabledAiProviders: data.enabledAiProviders,
               enabledChatModelList,
+              enabledImageModelList,
               enabledImageModelList,
             },
             false,

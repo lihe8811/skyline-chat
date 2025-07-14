@@ -77,22 +77,6 @@
       "secondary": "Yüklemek için tıklayın"
     }
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
-  "KeyValueEditor": {
-    "addButton": "Yeni bir satır ekle",
-    "deleteTooltip": "Sil",
-    "duplicateKeyError": "Anahtar adı benzersiz olmalıdır",
-    "keyPlaceholder": "Anahtar",
-    "valuePlaceholder": "Değer"
-  },
-<<<<<<< HEAD
-=======
->>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
-=======
->>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "Sınırsız"
   },
@@ -115,6 +99,25 @@
     "goToSettings": "Ayrıntılara git",
     "provider": "Sağlayıcı",
     "title": "Model"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Daha fazla yüklemek için tıklayın"
+    },
+    "modal": {
+      "complete": "Tamamla",
+      "newFileIndicator": "Yeni",
+      "selectImageToPreview": "Önizlemek için resim seçin",
+      "title": "Resimleri Yönet ({{count}})",
+      "upload": "Resim Yükle"
+    },
+    "placeholder": {
+      "primary": "Resim yüklemek için tıklayın",
+      "secondary": "Birden fazla resim seçimi desteklenir"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} yüklendi"
+    }
   },
   "MultiImagesUpload": {
     "actions": {
