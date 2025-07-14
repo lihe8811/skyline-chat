@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### [Version 1.99.2](https://github.com/lobehub/lobe-chat/compare/v1.99.1...v1.99.2)
 
 <sup>Released on **2025-07-15**</sup>
@@ -115,6 +116,8 @@
 
 </div>
 
+=======
+>>>>>>> b2a2fe361 (:bookmark: chore(release): v1.98.1 [skip ci])
 ### [Version 1.98.1](https://github.com/lobehub/lobe-chat/compare/v1.98.0...v1.98.1)
 
 <sup>Released on **2025-07-14**</sup>
@@ -140,8 +143,11 @@
 
 </div>
 
+<<<<<<< HEAD
 =======
 >>>>>>> 1c9c8d75e (:bookmark: chore(release): v1.98.0 [skip ci])
+=======
+>>>>>>> b2a2fe361 (:bookmark: chore(release): v1.98.1 [skip ci])
 ## [Version 1.98.0](https://github.com/lobehub/lobe-chat/compare/v1.97.17...v1.98.0)
 
 <sup>Released on **2025-07-13**</sup>
