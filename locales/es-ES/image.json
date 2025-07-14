@@ -2,12 +2,18 @@
   "config": {
     "aspectRatio": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "label": "Proporción",
       "lock": "Bloquear relación de aspecto",
       "unlock": "Desbloquear relación de aspecto"
 =======
       "label": "Proporción"
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+      "label": "Proporción",
+      "lock": "Bloquear relación de aspecto",
+      "unlock": "Desbloquear relación de aspecto"
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     },
     "header": {
       "desc": "Descripción simple, crea al instante",

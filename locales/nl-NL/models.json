@@ -1383,11 +1383,17 @@
     "description": "GPT-4o Transcribe is een spraak-naar-tekstmodel dat GPT-4o gebruikt voor audiotranscriptie. Vergeleken met het originele Whisper-model verbetert het de woordfoutpercentage en verhoogt het de taalherkenning en nauwkeurigheid. Gebruik het voor nauwkeurigere transcripties."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT native multimodaal afbeeldingsgeneratiemodel"
   },
 =======
 >>>>>>> 25158750c (💄 style: update i18n (#8410))
+=======
+  "gpt-image-1": {
+    "description": "ChatGPT native multimodaal afbeeldingsgeneratiemodel"
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "Dit model heeft verbeteringen aangebracht in nauwkeurigheid, instructievolging en meertalige capaciteiten."
   },

@@ -1374,11 +1374,17 @@
     "description": "GPT-4o Transcribe è un modello di trascrizione vocale che utilizza GPT-4o per convertire audio in testo. Rispetto al modello Whisper originale, migliora il tasso di errore delle parole e la precisione nel riconoscimento linguistico. Usalo per ottenere trascrizioni più accurate."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "Modello nativo multimodale di generazione immagini di ChatGPT"
   },
 =======
 >>>>>>> 25158750c (💄 style: update i18n (#8410))
+=======
+  "gpt-image-1": {
+    "description": "Modello nativo multimodale di generazione immagini di ChatGPT"
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "Questo modello ha migliorato l'accuratezza, il rispetto delle istruzioni e le capacità multilingue."
   },

@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KeyValueEditor from '@/components/KeyValueEditor';
 import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
 import ArgsInput from '@/features/PluginDevModal/MCPManifestForm/ArgsInput';
@@ -15,6 +16,11 @@ import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
 import ArgsInput from '@/features/PluginDevModal/MCPManifestForm/ArgsInput';
 import EnvEditor from '@/features/PluginDevModal/MCPManifestForm/EnvEditor';
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+import KeyValueEditor from '@/components/KeyValueEditor';
+import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
+import ArgsInput from '@/features/PluginDevModal/MCPManifestForm/ArgsInput';
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 import { useToolStore } from '@/store/tool';
 import { pluginSelectors } from '@/store/tool/selectors';
 
@@ -349,13 +355,19 @@ const Settings = memo<{ identifier: string }>(({ identifier }) => {
             >
               <AForm.Item name="env" style={{ marginBottom: 0 }}>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
                 <KeyValueEditor
                   addButtonText={t('dev.mcp.env.add')}
                   keyPlaceholder="VARIABLE_NAME"
                 />
+<<<<<<< HEAD
 =======
                 <EnvEditor />
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
               </AForm.Item>
               <div className={styles.footer}>
                 <Space>

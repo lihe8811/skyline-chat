@@ -241,6 +241,9 @@ export class MCPClient {
       log('MCP connection failed:', e);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       if (this.params.type === 'http') {
         const error = e as Error;
         if (error.message.includes('401'))
@@ -291,11 +294,15 @@ export class MCPClient {
           {
             originalError: (e as Error).message,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
             params: {
               args: this.params.args,
               command: this.params.command,
               type: this.params.type,
             },
+<<<<<<< HEAD
 =======
             params:
               this.params.type === 'stdio'
@@ -308,12 +315,15 @@ export class MCPClient {
                     type: this.params.type,
                   },
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
             step: 'mcp_connect',
           },
         );
       }
 
       // Wrap other unknown errors
+<<<<<<< HEAD
 <<<<<<< HEAD
       throw createMCPError('UNKNOWN_ERROR', (e as Error).message, {
         originalError: (e as Error).message,
@@ -336,6 +346,15 @@ export class MCPClient {
                 type: this.params.type,
               },
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+      throw createMCPError('UNKNOWN_ERROR', (e as Error).message, {
+        originalError: (e as Error).message,
+        params: {
+          args: this.params.args,
+          command: this.params.command,
+          type: this.params.type,
+        },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
         step: 'mcp_connect',
       });
     }

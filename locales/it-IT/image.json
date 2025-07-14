@@ -2,12 +2,18 @@
   "config": {
     "aspectRatio": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "label": "Rapporto",
       "lock": "Blocca rapporto d'aspetto",
       "unlock": "Sblocca rapporto d'aspetto"
 =======
       "label": "Rapporto"
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+      "label": "Rapporto",
+      "lock": "Blocca rapporto d'aspetto",
+      "unlock": "Sblocca rapporto d'aspetto"
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     },
     "header": {
       "desc": "Descrizione semplice, crea subito",

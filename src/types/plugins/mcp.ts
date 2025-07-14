@@ -1,9 +1,13 @@
 import { PluginQueryParams, SystemDependency } from '@lobehub/market-sdk';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { MCPErrorType } from '@/libs/mcp';
 =======
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+import { MCPErrorType } from '@/libs/mcp';
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 import { MCPInstallStep } from '@/store/tool/slices/mcpStore';
 
 export interface CheckMcpInstallParams {
@@ -152,6 +156,7 @@ export interface MCPErrorInfo {
    * 错误类型
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
   type: MCPErrorType;
 =======
   type:
@@ -161,6 +166,9 @@ export interface MCPErrorInfo {
     | 'VALIDATION_ERROR'
     | 'UNKNOWN_ERROR';
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+  type: MCPErrorType;
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
 }
 
 export interface MCPInstallProgress {

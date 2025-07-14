@@ -1383,11 +1383,17 @@
     "description": "GPT-4o Transcribe is a speech-to-text model that uses GPT-4o to transcribe audio. Compared to the original Whisper model, it improves word error rate, language recognition, and accuracy. Use it for more precise transcriptions."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT native multimodal image generation model."
   },
 =======
 >>>>>>> 25158750c (💄 style: update i18n (#8410))
+=======
+  "gpt-image-1": {
+    "description": "ChatGPT native multimodal image generation model."
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "This model has improved in accuracy, instruction adherence, and multilingual capabilities."
   },

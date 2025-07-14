@@ -1383,11 +1383,17 @@
     "description": "GPT-4o Transcribe, GPT-4o kullanarak sesleri metne dönüştüren bir konuşma tanıma modelidir. Orijinal Whisper modeline kıyasla kelime hata oranını düşürür ve dil tanıma ile doğruluğu artırır. Daha doğru transkripsiyonlar için kullanın."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT'nin yerel çok modlu görüntü oluşturma modeli"
   },
 =======
 >>>>>>> 25158750c (💄 style: update i18n (#8410))
+=======
+  "gpt-image-1": {
+    "description": "ChatGPT'nin yerel çok modlu görüntü oluşturma modeli"
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "Bu model, doğruluk, talimat takibi ve çok dilli yetenekler açısından geliştirilmiştir."
   },

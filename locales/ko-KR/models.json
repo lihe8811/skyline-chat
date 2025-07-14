@@ -1383,11 +1383,17 @@
     "description": "GPT-4o Transcribe는 GPT-4o를 사용하여 오디오를 텍스트로 전사하는 음성 인식 모델입니다. 원래 Whisper 모델에 비해 단어 오류율이 개선되었고, 언어 인식 및 정확도가 향상되었습니다. 보다 정확한 전사를 위해 사용하세요."
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "gpt-image-1": {
     "description": "ChatGPT 네이티브 멀티모달 이미지 생성 모델"
   },
 =======
 >>>>>>> 25158750c (💄 style: update i18n (#8410))
+=======
+  "gpt-image-1": {
+    "description": "ChatGPT 네이티브 멀티모달 이미지 생성 모델"
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "grok-2-1212": {
     "description": "이 모델은 정확성, 지시 준수 및 다국어 능력에서 개선되었습니다."
   },

@@ -70,6 +70,7 @@
   },
   "ImageUpload": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "actions": {
       "changeImage": "点击更换图片"
     },
@@ -86,15 +87,27 @@
     "valuePlaceholder": "值"
   },
 =======
+=======
+    "actions": {
+      "changeImage": "点击更换图片"
+    },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     "placeholder": {
       "primary": "添加图片",
       "secondary": "点击上传"
-    },
-    "actions": {
-      "changeImage": "点击更换图片"
     }
   },
+<<<<<<< HEAD
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+  "KeyValueEditor": {
+    "addButton": "新增一行",
+    "deleteTooltip": "删除",
+    "duplicateKeyError": "键名必须唯一",
+    "keyPlaceholder": "键",
+    "valuePlaceholder": "值"
+  },
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   "MaxTokenSlider": {
     "unlimited": "无限制"
   },
@@ -120,6 +133,9 @@
   },
   "MultiImagesUpload": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     "actions": {
       "uploadMore": "点击上传更多"
     },
@@ -130,14 +146,18 @@
       "title": "管理图片 ({{count}})",
       "upload": "上传图片"
     },
+<<<<<<< HEAD
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     "placeholder": {
       "primary": "点击上传图片",
       "secondary": "支持多张图片选择"
     },
     "progress": {
       "uploadingWithCount": "{{completed}}/{{total}} 已上传"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     },
@@ -151,6 +171,8 @@
       "newFileIndicator": "新增",
       "selectImageToPreview": "请选择要预览的图片"
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     }
   },
   "OllamaSetupGuide": {

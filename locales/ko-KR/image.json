@@ -2,12 +2,18 @@
   "config": {
     "aspectRatio": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "label": "비율",
       "lock": "가로 세로 비율 고정",
       "unlock": "가로 세로 비율 해제"
 =======
       "label": "비율"
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+      "label": "비율",
+      "lock": "가로 세로 비율 고정",
+      "unlock": "가로 세로 비율 해제"
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
     },
     "header": {
       "desc": "간단한 설명, 즉시 창작",

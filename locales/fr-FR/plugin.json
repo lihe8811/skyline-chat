@@ -291,9 +291,13 @@
     },
     "errorTypes": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "AUTHORIZATION_ERROR": "Erreur d'autorisation",
 =======
 >>>>>>> 416a4b121 (✨ feat: Add MCP marketplace and mcp plugin one-click installation in desktop (#8334))
+=======
+      "AUTHORIZATION_ERROR": "Erreur d'autorisation",
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
       "CONNECTION_FAILED": "Échec de la connexion",
       "INITIALIZATION_TIMEOUT": "Délai d'initialisation dépassé",
       "PROCESS_SPAWN_ERROR": "Échec du démarrage du processus",

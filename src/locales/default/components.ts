@@ -80,6 +80,9 @@ export default {
     },
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   KeyValueEditor: {
     addButton: '新增一行',
     deleteTooltip: '删除',
@@ -87,8 +90,11 @@ export default {
     keyPlaceholder: '键',
     valuePlaceholder: '值',
   },
+<<<<<<< HEAD
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> 853a09af1 (✨ feat(plugin): support Streamable HTTP MCP Server Auth (#8425))
   MaxTokenSlider: {
     unlimited: '无限制',
   },
