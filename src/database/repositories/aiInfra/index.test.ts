@@ -444,11 +444,17 @@ describe('AiInfraRepos', () => {
         ],
         enabledAiProviders: [{ id: 'openai', logo: 'logo1', name: 'OpenAI', source: 'builtin' }],
 <<<<<<< HEAD
+<<<<<<< HEAD
         enabledChatAiProviders: [
           { id: 'openai', logo: 'logo1', name: 'OpenAI', source: 'builtin' },
         ],
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+        enabledChatAiProviders: [
+          { id: 'openai', logo: 'logo1', name: 'OpenAI', source: 'builtin' },
+        ],
+>>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
         enabledImageAiProviders: [],
         runtimeConfig: {
           openai: {
@@ -532,11 +538,17 @@ describe('AiInfraRepos', () => {
           { id: 'fal', logo: 'fal-logo', name: 'Fal', source: 'builtin' },
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         enabledChatAiProviders: [
           { id: 'openai', logo: 'openai-logo', name: 'OpenAI', source: 'builtin' },
         ],
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+        enabledChatAiProviders: [
+          { id: 'openai', logo: 'openai-logo', name: 'OpenAI', source: 'builtin' },
+        ],
+>>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
         enabledImageAiProviders: [
           expect.objectContaining({
             id: 'fal',

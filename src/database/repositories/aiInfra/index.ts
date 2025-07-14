@@ -160,16 +160,25 @@ export class AiInfraRepos {
     });
     const enabledAiModels = allModels.filter((model) => model.enabled);
 <<<<<<< HEAD
+<<<<<<< HEAD
     const enabledChatAiProviders = enabledAiProviders.filter((provider) => {
       return allModels.some((model) => model.providerId === provider.id && model.type === 'chat');
     });
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+    const enabledChatAiProviders = enabledAiProviders.filter((provider) => {
+      return allModels.some((model) => model.providerId === provider.id && model.type === 'chat');
+    });
+>>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
     const enabledImageAiProviders = enabledAiProviders.filter((provider) => {
       return allModels.some((model) => model.providerId === provider.id && model.type === 'image');
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
     return {
       enabledAiModels,
       enabledAiProviders,
@@ -177,9 +186,12 @@ export class AiInfraRepos {
       enabledImageAiProviders,
       runtimeConfig,
     };
+<<<<<<< HEAD
 =======
     return { enabledAiModels, enabledAiProviders, enabledImageAiProviders, runtimeConfig };
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> 9557d79e3 (🐛  fix: some ai image bugs (#8432))
   };
 
   getAiProviderModelList = async (providerId: string) => {
