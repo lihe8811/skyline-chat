@@ -25,6 +25,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8c99c5dfd (:bookmark: chore(release): v1.99.2 [skip ci])
 ### [Version 1.99.2](https://github.com/lobehub/lobe-chat/compare/v1.99.1...v1.99.2)
 
 <sup>Released on **2025-07-15**</sup>
@@ -50,8 +53,11 @@
 
 </div>
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e4f59c25 (:bookmark: chore(release): v1.99.1 [skip ci])
+=======
+>>>>>>> 8c99c5dfd (:bookmark: chore(release): v1.99.2 [skip ci])
 ### [Version 1.99.1](https://github.com/lobehub/lobe-chat/compare/v1.99.0...v1.99.1)
 
 <sup>Released on **2025-07-15**</sup>
