@@ -4,9 +4,13 @@
 import { createStyles, useTheme } from 'antd-style';
 import { Image as ImageIcon, X } from 'lucide-react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Image from 'next/image';
 =======
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+import Image from 'next/image';
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
 import React, { type FC, memo, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center } from 'react-layout-kit';
@@ -434,6 +438,7 @@ const ImageThumbnails: FC<ImageThumbnailsProps> = memo(({ images, onClick, onDel
     return (
       <div className={styles.imageItem} key={imageUrl}>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Image
           alt={`Uploaded image ${index + 1}`}
           fill
@@ -442,10 +447,19 @@ const ImageThumbnails: FC<ImageThumbnailsProps> = memo(({ images, onClick, onDel
           unoptimized
 =======
         <img
+=======
+        <Image
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
           alt={`Uploaded image ${index + 1}`}
+          fill
           src={imageUrl}
+<<<<<<< HEAD
           style={{ height: '100%', objectFit: 'cover', width: '100%' }}
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+          style={{ objectFit: 'cover' }}
+          unoptimized
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
         />
         {!showOverlay && (
           <div
@@ -492,6 +506,7 @@ const SingleImageDisplay: FC<SingleImageDisplayProps> = memo(({ imageUrl, onClic
   return (
     <div className={styles.singleImageDisplay}>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Image
         alt="Uploaded image"
         fill
@@ -500,10 +515,19 @@ const SingleImageDisplay: FC<SingleImageDisplayProps> = memo(({ imageUrl, onClic
         unoptimized
 =======
       <img
+=======
+      <Image
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
         alt="Uploaded image"
+        fill
         src={imageUrl}
+<<<<<<< HEAD
         style={{ height: '100%', objectFit: 'cover', width: '100%' }}
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+        style={{ objectFit: 'contain' }}
+        unoptimized
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
       />
 
       {/* Delete button */}

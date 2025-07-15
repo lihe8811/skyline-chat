@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { AuroraBackground } from '@lobehub/ui/awesome';
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
 import { memo } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';
 
@@ -10,6 +13,9 @@ import PromptInput from '../PromptInput';
 const EmptyState = memo(() => {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
     <Flexbox
       flex={1}
       height="100%"
@@ -22,6 +28,7 @@ const EmptyState = memo(() => {
         <PromptInput showTitle={true} />
       </Center>
     </Flexbox>
+<<<<<<< HEAD
 =======
     <>
       <AuroraBackground
@@ -49,6 +56,8 @@ const EmptyState = memo(() => {
       </Flexbox>
     </>
 >>>>>>> 095de5767 (✨ feat:  support AI Image (#8312))
+=======
+>>>>>>> bc413299b (🐛 fix: some ai image generation feedback issues (#8440))
   );
 });
 
