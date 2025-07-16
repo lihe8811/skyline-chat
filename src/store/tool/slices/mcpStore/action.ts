@@ -228,24 +228,14 @@ export const createMCPPluginStoreSlice: StateCreator<
         );
       }
       if (connection?.type === 'http') {
-        manifest = await mcpService.getStreamableMcpServerManifest(
-          {
-            identifier,
-            metadata: {
-              avatar: plugin.icon,
-              description: plugin.description,
-            },
-            url: connection.url!,
-            identifier,
-            metadata: {
-              avatar: plugin.icon,
-              description: plugin.description,
-            },
-            url: connection.url!,
+        manifest = await mcpService.getStreamableMcpServerManifest({
+          identifier,
+          metadata: {
+            avatar: plugin.icon,
+            description: plugin.description,
           },
-          abortController.signal,
-        );
-        manifest = res.manifest;
+          url: connection.url!,
+        }, abortController.signal);
       }
 
       // set version

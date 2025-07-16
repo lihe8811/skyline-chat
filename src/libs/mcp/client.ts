@@ -307,24 +307,34 @@ export class MCPClient {
           'Failed to connect to MCP server, please check your configuration',
           {
             originalError: (e as Error).message,
-            params: {
-              args: this.params.args,
-              command: this.params.command,
-              type: this.params.type,
-            },
+            params:
+              this.params.type === 'stdio'
+                ? {
+                    args: this.params.args,
+                    command: this.params.command,
+                    type: this.params.type,
+                  }
+                : {
+                    type: this.params.type,
+                  },
             step: 'mcp_connect',
           },
         );
       }
 
       // Wrap other unknown errors
-      throw createMCPError('UNKNOWN_ERROR', (e as Error).message, {
+      throw createMCPError('UNKNOWN_ERROR', 'Unknown error occurred', {
         originalError: (e as Error).message,
-        params: {
-          args: this.params.args,
-          command: this.params.command,
-          type: this.params.type,
-        },
+        params:
+          this.params.type === 'stdio'
+            ? {
+                args: this.params.args,
+                command: this.params.command,
+                type: this.params.type,
+              }
+            : {
+                type: this.params.type,
+              },
         step: 'mcp_connect',
       });
     }

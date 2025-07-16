@@ -9,6 +9,7 @@ import { Flexbox } from 'react-layout-kit';
 import KeyValueEditor from '@/components/KeyValueEditor';
 import MCPStdioCommandInput from '@/components/MCPStdioCommandInput';
 import ArgsInput from '@/features/PluginDevModal/MCPManifestForm/ArgsInput';
+import EnvEditor from '@/features/PluginDevModal/MCPManifestForm/EnvEditor';
 import { useToolStore } from '@/store/tool';
 import { pluginSelectors } from '@/store/tool/selectors';
 
